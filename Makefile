@@ -14,7 +14,19 @@ CFLAGS      +=         -Wall -Wextra -Werror -fvisibility=hidden $(INCLUDE)
 
 SOURCES      =         src/
 
-SRC          =         $(SOURCES)main.c
+ENCRYPT      =         encrypt/
+
+DECRYPT      =         decrypt/
+
+PY           =         python/
+
+PYTHON       =         $(SOURCES)$(ENCRYPT)$(PY)python_parser.c
+
+FROM         =         $(PYTHON)
+
+SRC          =         $(SOURCES)main.c \
+					   $(SOURCES)buff_from_file.c \
+					   $(FROM)
 
 SRC_COUNT    =         $(words $(SRC))
 

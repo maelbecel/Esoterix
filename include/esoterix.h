@@ -16,6 +16,9 @@
     #include "formatstring.h"
     #include <stdbool.h>
     #include <stddef.h>
+    #include <stdlib.h>
+    #include <fcntl.h>
+    #include <sys/stat.h>
 
     ////////////////////////////////////////////////////////////
     /// \brief Typedefs
@@ -48,6 +51,26 @@
         BRAINFUCK,
         CHEF
     };
+
+    ////////////////////////////////////////////////////////////
+    /// \brief Get content of a file
+    ///
+    /// \param file name of the file to read
+    ///
+    /// \return Content of the file
+    ///
+    ////////////////////////////////////////////////////////////
+    char *buff_from_file(char *file);
+
+    ////////////////////////////////////////////////////////////
+    /// \brief Translate python script in language X
+    ///
+    /// \param file name of the file to read
+    ///
+    /// \return Content traduce
+    ///
+    ////////////////////////////////////////////////////////////
+    char *__python__(char *file);
 
     ////////////////////////////////////////////////////////////
     /// \brief Struct for a type
