@@ -73,6 +73,60 @@
     char *__python__(char *file);
 
     ////////////////////////////////////////////////////////////
+    /// \brief Delete all time str in array
+    ///
+    /// \param array array to clean
+    /// \param str string to delete
+    ///
+    /// \return array without the string
+    ///
+    ////////////////////////////////////////////////////////////
+    char **remove_all(char **array, char *str);
+
+    ////////////////////////////////////////////////////////////
+    /// \brief Check if a string is in an array
+    ///
+    /// \param array array to check
+    /// \param str string to check
+    ///
+    /// \return true if str is in array, false otherwise
+    ///
+    ////////////////////////////////////////////////////////////
+    bool is_in(char **array, char *str);
+
+    ////////////////////////////////////////////////////////////
+    /// \brief Remove first occurence of a string in an array
+    ///
+    /// \param array array to check
+    /// \param str string to check
+    ///
+    /// \return array without the string
+    ///
+    ////////////////////////////////////////////////////////////
+    char **remove(char **array, char *str);
+
+    ////////////////////////////////////////////////////////////
+    /// \brief Add a string in an Array
+    ///
+    /// \param array array to check
+    /// \param str string to check
+    ///
+    /// \return array with the string
+    ///
+    ////////////////////////////////////////////////////////////
+    char **append(char **array, char *str);
+
+    ////////////////////////////////////////////////////////////
+    /// \brief Delete double in an array
+    ///
+    /// \param array array to check
+    ///
+    /// \return array without double
+    ///
+    ////////////////////////////////////////////////////////////
+    char **no_double(char **array);
+
+    ////////////////////////////////////////////////////////////
     /// \brief Struct for a type
     ///
     /// Contain the reference to the type to compile, his abbreviations, and a

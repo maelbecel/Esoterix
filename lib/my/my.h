@@ -7,7 +7,7 @@
 
 #ifndef MY_H_
     #define MY_H_
-    
+
     ////////////////////////////////////////////////////////////
     /// \def UNUSED __attribute__((unused))
     /// \param unused Unused variable
@@ -392,6 +392,6 @@
     /// \return Array of string
     ///
     ////////////////////////////////////////////////////////////
-    char **my_str_to_word_array(char *str, char sep);
+    char **my_str_to_word_array(char *str, char *sep);
 
 #endif

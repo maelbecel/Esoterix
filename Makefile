@@ -26,6 +26,7 @@ FROM         =         $(PYTHON)
 
 SRC          =         $(SOURCES)main.c \
 					   $(SOURCES)buff_from_file.c \
+					   $(SOURCES)array.c \
 					   $(FROM)
 
 SRC_COUNT    =         $(words $(SRC))
