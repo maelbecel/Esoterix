@@ -9,6 +9,8 @@
 
 bool is_in(char **array, char *str)
 {
+    if (!array)
+        return false;
     for (int i = 0; array[i]; i++) {
         if (my_strcmp(array[i], str) == 0)
             return true;
@@ -25,7 +27,6 @@ char **append(char **array, char *str)
         tmp[i] = array[i];
     tmp[size] = str;
     tmp[size + 1] = NULL;
-    free(array);
     return tmp;
 }
 
@@ -41,7 +42,6 @@ char **remove(char **array, char *str)
         tmp[i++] = array[j];
     }
     tmp[i] = NULL;
-    free(array);
     return tmp;
 }
 
@@ -65,4 +65,3 @@ char **no_double(char **array)
     }
     return tmp;
 }
-
