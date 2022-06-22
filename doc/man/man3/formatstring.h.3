@@ -1,0 +1,430 @@
+.TH "lib/formatstring/formatstring.h" 3 "Thu Jun 23 2022" "Version 1.0" "Esoterix" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+lib/formatstring/formatstring.h
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <stdarg\&.h>\fP
+.br
+\fC#include <unistd\&.h>\fP
+.br
+
+.SS "Data Structures"
+
+.in +1c
+.ti -1c
+.RI "struct \fBfflags\fP"
+.br
+.RI "Struct for a flag,\&. "
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "char * \fBfdisplaybinary\fP (va_list argv)"
+.br
+.RI "Format binary representation\&. "
+.ti -1c
+.RI "char * \fBfdisplaychar\fP (va_list argv)"
+.br
+.RI "Format char representation\&. "
+.ti -1c
+.RI "char * \fBfdisplaynbr_dec\fP (va_list argv)"
+.br
+.RI "Format decimal representation\&. "
+.ti -1c
+.RI "char * \fBfdisplaynbr_hexa_capital\fP (va_list argv)"
+.br
+.RI "Format hexadecimal capital representation\&. "
+.ti -1c
+.RI "char * \fBfdisplaynbr_hexa_capital_hashtag\fP (va_list argv)"
+.br
+.RI "Format hexadecimal capital representation\&. "
+.ti -1c
+.RI "char * \fBfdisplaynbr_hexa\fP (va_list argv)"
+.br
+.RI "Format hexadecimal representation\&. "
+.ti -1c
+.RI "char * \fBfdisplaynbr_hexa_hashtag\fP (va_list argv)"
+.br
+.RI "Format hexadecimal representation\&. "
+.ti -1c
+.RI "char * \fBfdisplaynbr_octal\fP (va_list argv)"
+.br
+.RI "Format octal representation\&. "
+.ti -1c
+.RI "char * \fBfdisplaynbr_octal_hashtag\fP (va_list argv)"
+.br
+.RI "Format octal representation\&. "
+.ti -1c
+.RI "char * \fBfdisplaynbr_long\fP (va_list argv)"
+.br
+.RI "Format nb representation\&. "
+.ti -1c
+.RI "char * \fBfdisplaypercent\fP (__attribute__((unused)) va_list argv)"
+.br
+.RI "Format percent representation\&. "
+.ti -1c
+.RI "char * \fBfdisplaypointer\fP (va_list argv)"
+.br
+.RI "Format pointer representation\&. "
+.ti -1c
+.RI "char * \fBfdisplaystr_unprintable\fP (va_list argv)"
+.br
+.RI "Format unprintable representation\&. "
+.ti -1c
+.RI "char * \fBfdisplayoctal\fP (int nb)"
+.br
+.RI "Format octal representation\&. "
+.ti -1c
+.RI "char * \fBfus\fP (char *a, char *b)"
+.br
+.RI "Fusion of two strings\&. "
+.ti -1c
+.RI "char * \fBfdisplaystr\fP (va_list argv)"
+.br
+.RI "Format string representation\&. "
+.ti -1c
+.RI "char * \fBfdisplaynbr\fP (va_list argv)"
+.br
+.RI "Format nbr representation\&. "
+.ti -1c
+.RI "char * \fBformat\fP (char const *str,\&.\&.\&.)"
+.br
+.RI "Format string representation\&. "
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "char* fdisplaybinary (va_list argv)"
+
+.PP
+Format binary representation\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIva_list\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+String of the binary 
+.RE
+.PP
+
+.PP
+Definition at line 22 of file displaybinary\&.c\&.
+.SS "char* fdisplaychar (va_list argv)"
+
+.PP
+Format char representation\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIva_list\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+String of the char 
+.RE
+.PP
+
+.PP
+Definition at line 21 of file displaychar\&.c\&.
+.SS "char* fdisplaynbr (va_list argv)"
+
+.PP
+Format nbr representation\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIva_list\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+String of the nbr 
+.RE
+.PP
+
+.PP
+Definition at line 40 of file displaynbr\&.c\&.
+.SS "char* fdisplaynbr_dec (va_list argv)"
+
+.PP
+Format decimal representation\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIva_list\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+String of the decimal 
+.RE
+.PP
+
+.PP
+Definition at line 54 of file displaynbr_dec\&.c\&.
+.SS "char* fdisplaynbr_hexa (va_list argv)"
+
+.PP
+Format hexadecimal representation\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIva_list\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+String of the hexadecimal 
+.RE
+.PP
+
+.PP
+Definition at line 37 of file displaynbr_hexa\&.c\&.
+.SS "char* fdisplaynbr_hexa_capital (va_list argv)"
+
+.PP
+Format hexadecimal capital representation\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIva_list\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+String of the hexadecimal 
+.RE
+.PP
+
+.PP
+Definition at line 37 of file displaynbr_hexa_capital\&.c\&.
+.SS "char* fdisplaynbr_hexa_capital_hashtag (va_list argv)"
+
+.PP
+Format hexadecimal capital representation\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIva_list\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+String of the hexadecimal 
+.RE
+.PP
+
+.PP
+Definition at line 44 of file displaynbr_hexa_capital\&.c\&.
+.SS "char* fdisplaynbr_hexa_hashtag (va_list argv)"
+
+.PP
+Format hexadecimal representation\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIva_list\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+String of the hexadecimal 
+.RE
+.PP
+
+.PP
+Definition at line 44 of file displaynbr_hexa\&.c\&.
+.SS "char* fdisplaynbr_long (va_list argv)"
+
+.PP
+Format nb representation\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIva_list\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+String of the nb 
+.RE
+.PP
+
+.PP
+Definition at line 79 of file displaynbr\&.c\&.
+.SS "char* fdisplaynbr_octal (va_list argv)"
+
+.PP
+Format octal representation\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIva_list\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+String of the octal 
+.RE
+.PP
+
+.PP
+Definition at line 62 of file displaynbr_octal\&.c\&.
+.SS "char* fdisplaynbr_octal_hashtag (va_list argv)"
+
+.PP
+Format octal representation\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIva_list\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+String of the octal 
+.RE
+.PP
+
+.PP
+Definition at line 71 of file displaynbr_octal\&.c\&.
+.SS "char* fdisplayoctal (int nb)"
+
+.PP
+Format octal representation\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIva_list\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+String of the octal 
+.RE
+.PP
+
+.PP
+Definition at line 23 of file displaystr_unprintable\&.c\&.
+.SS "char* fdisplaypercent (__attribute__((unused)) va_list argv)"
+
+.PP
+Format percent representation\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIva_list\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+String of the percent 
+.RE
+.PP
+
+.PP
+Definition at line 11 of file displaypercent\&.c\&.
+.SS "char* fdisplaypointer (va_list argv)"
+
+.PP
+Format pointer representation\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIva_list\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+String of the pointer 
+.RE
+.PP
+
+.PP
+Definition at line 36 of file displaypointer\&.c\&.
+.SS "char* fdisplaystr (va_list argv)"
+
+.PP
+Format string representation\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIva_list\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+String of the string 
+.RE
+.PP
+
+.PP
+Definition at line 15 of file displaystr\&.c\&.
+.SS "char* fdisplaystr_unprintable (va_list argv)"
+
+.PP
+Format unprintable representation\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIva_list\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+String of the unprintable 
+.RE
+.PP
+
+.PP
+Definition at line 47 of file displaystr_unprintable\&.c\&.
+.SS "char* format (char const * str,  \&.\&.\&.)"
+
+.PP
+Format string representation\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIstr\fP string to format 
+.br
+\fI\&.\&.\&.\fP list of arguments
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+String of the string 
+.RE
+.PP
+
+.PP
+Definition at line 81 of file formatstring\&.c\&.
+.SS "char* fus (char * a, char * b)"
+
+.PP
+Fusion of two strings\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIa\fP first string 
+.br
+\fIb\fP second string
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+String of the fusion 
+.RE
+.PP
+
+.PP
+Definition at line 46 of file formatstring\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Esoterix from the source code\&.

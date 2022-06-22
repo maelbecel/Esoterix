@@ -1,0 +1,171 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="my__strcmp_8c" kind="file" language="C++">
+    <compoundname>my_strcmp.c</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="my__strcmp_8c_1a3b3960588932459570799afa357e32b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int my_strlen</definition>
+        <argsstring>(char const *str)</argsstring>
+        <name>my_strlen</name>
+        <param>
+          <type>char const *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>Get the lenth of a string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string to check</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Length of the string </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/my/my_strcmp.c" line="8" column="5" bodyfile="lib/my/my_strlen.c" bodystart="10" bodyend="17" declfile="lib/my/my_strcmp.c" declline="8" declcolumn="5"/>
+        <referencedby refid="my__strcmp_8c_1a12d4044e7c0ab78ca1f186e0abdb08c6" compoundref="my__strcmp_8c" startline="12" endline="21">my_strcmp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="my__strcmp_8c_1a4d74d542203cda4321599a3298ea42e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int my_strncmp</definition>
+        <argsstring>(char const *s1, char const *s2, int n)</argsstring>
+        <name>my_strncmp</name>
+        <param>
+          <type>char const *</type>
+          <declname>s1</declname>
+        </param>
+        <param>
+          <type>char const *</type>
+          <declname>s2</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>Compare firsts characters of two string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string to check </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>s2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string to check </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of characters to compare</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if equal, difference between otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/my/my_strcmp.c" line="10" column="5" bodyfile="lib/my/my_strncmp.c" bodystart="8" bodyend="24" declfile="lib/my/my_strcmp.c" declline="10" declcolumn="5"/>
+        <references refid="namespacetest_1aa4c2a5552e9bc49b1816ff532f558c74" compoundref="test_8py" startline="1">test.a</references>
+        <references refid="namespacetest_1a21ad0bd836b90d08f4cf640b4c298e7c" compoundref="test_8py" startline="2">test.b</references>
+        <referencedby refid="my__strcmp_8c_1a12d4044e7c0ab78ca1f186e0abdb08c6" compoundref="my__strcmp_8c" startline="12" endline="21">my_strcmp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="my__strcmp_8c_1a12d4044e7c0ab78ca1f186e0abdb08c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int my_strcmp</definition>
+        <argsstring>(char const *s1, char const *s2)</argsstring>
+        <name>my_strcmp</name>
+        <param>
+          <type>char const *</type>
+          <declname>s1</declname>
+        </param>
+        <param>
+          <type>char const *</type>
+          <declname>s2</declname>
+        </param>
+        <briefdescription>
+<para>Compare two string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string to check </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>s2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string to check</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if equal, difference between otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/my/my_strcmp.c" line="12" column="5" bodyfile="lib/my/my_strcmp.c" bodystart="12" bodyend="21"/>
+        <references refid="my__strcmp_8c_1a3b3960588932459570799afa357e32b5" compoundref="my__strlen_8c" startline="10" endline="17">my_strlen</references>
+        <references refid="my__strcmp_8c_1a4d74d542203cda4321599a3298ea42e7" compoundref="my__strncmp_8c" startline="8" endline="24">my_strncmp</references>
+        <referencedby refid="array_8c_1a5e4216c3a9c693ea1e816c062b2f4382" compoundref="array_8c" startline="10" endline="19">is_in</referencedby>
+        <referencedby refid="main_8c_1ab6ab5095713a29ce48356b13afcb3a42" compoundref="main_8c" startline="33" endline="45">main</referencedby>
+        <referencedby refid="array_8c_1a72059dc959d6669f93addf413d969ff7" compoundref="array_8c" startline="33" endline="46">remove</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">**<sp/>EPITECH<sp/>PROJECT,<sp/>2021</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">**<sp/>star.c</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">**<sp/>File<sp/>description:</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">**<sp/>star.c</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="my__strcmp_8c_1a3b3960588932459570799afa357e32b5" kindref="member">my_strlen</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*str);</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="my__strcmp_8c_1a4d74d542203cda4321599a3298ea42e7" kindref="member">my_strncmp</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*s1,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*s2,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="my__strcmp_8c_1a12d4044e7c0ab78ca1f186e0abdb08c6" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="my__strcmp_8c_1a12d4044e7c0ab78ca1f186e0abdb08c6" kindref="member">my_strcmp</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*s1,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*s2)</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>s1_len<sp/>=<sp/><ref refid="my__strcmp_8c_1a3b3960588932459570799afa357e32b5" kindref="member">my_strlen</ref>(s1);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>s2_len<sp/>=<sp/><ref refid="my__strcmp_8c_1a3b3960588932459570799afa357e32b5" kindref="member">my_strlen</ref>(s2);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(s1_len<sp/>&gt;=<sp/>s2_len)</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="my__strcmp_8c_1a4d74d542203cda4321599a3298ea42e7" kindref="member">my_strncmp</ref>(s1,<sp/>s2,<sp/>s1_len));</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="my__strcmp_8c_1a4d74d542203cda4321599a3298ea42e7" kindref="member">my_strncmp</ref>(s1,<sp/>s2,<sp/>s2_len));</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="lib/my/my_strcmp.c"/>
+  </compounddef>
+</doxygen>

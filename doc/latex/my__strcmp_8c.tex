@@ -1,0 +1,118 @@
+\hypertarget{my__strcmp_8c}{}\doxysection{lib/my/my\+\_\+strcmp.c File Reference}
+\label{my__strcmp_8c}\index{lib/my/my\_strcmp.c@{lib/my/my\_strcmp.c}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{my__strcmp_8c_a3b3960588932459570799afa357e32b5}{my\+\_\+strlen}} (char const $\ast$str)
+\begin{DoxyCompactList}\small\item\em Get the lenth of a string. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{my__strcmp_8c_a4d74d542203cda4321599a3298ea42e7}{my\+\_\+strncmp}} (char const $\ast$s1, char const $\ast$s2, int n)
+\begin{DoxyCompactList}\small\item\em Compare firsts characters of two string. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{my__strcmp_8c_a12d4044e7c0ab78ca1f186e0abdb08c6}{my\+\_\+strcmp}} (char const $\ast$s1, char const $\ast$s2)
+\begin{DoxyCompactList}\small\item\em Compare two string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{my__strcmp_8c_a12d4044e7c0ab78ca1f186e0abdb08c6}\label{my__strcmp_8c_a12d4044e7c0ab78ca1f186e0abdb08c6}} 
+\index{my\_strcmp.c@{my\_strcmp.c}!my\_strcmp@{my\_strcmp}}
+\index{my\_strcmp@{my\_strcmp}!my\_strcmp.c@{my\_strcmp.c}}
+\doxysubsubsection{\texorpdfstring{my\_strcmp()}{my\_strcmp()}}
+{\footnotesize\ttfamily int my\+\_\+strcmp (\begin{DoxyParamCaption}\item[{char const $\ast$}]{s1,  }\item[{char const $\ast$}]{s2 }\end{DoxyParamCaption})}
+
+
+
+Compare two string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s1} & string to check \\
+\hline
+{\em s2} & string to check\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if equal, difference between otherwise 
+\end{DoxyReturn}
+
+
+Definition at line 12 of file my\+\_\+strcmp.\+c.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{my__strcmp_8c_a12d4044e7c0ab78ca1f186e0abdb08c6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{my__strcmp_8c_a12d4044e7c0ab78ca1f186e0abdb08c6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{my__strcmp_8c_a3b3960588932459570799afa357e32b5}\label{my__strcmp_8c_a3b3960588932459570799afa357e32b5}} 
+\index{my\_strcmp.c@{my\_strcmp.c}!my\_strlen@{my\_strlen}}
+\index{my\_strlen@{my\_strlen}!my\_strcmp.c@{my\_strcmp.c}}
+\doxysubsubsection{\texorpdfstring{my\_strlen()}{my\_strlen()}}
+{\footnotesize\ttfamily int my\+\_\+strlen (\begin{DoxyParamCaption}\item[{char const $\ast$}]{str }\end{DoxyParamCaption})}
+
+
+
+Get the lenth of a string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & string to check\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Length of the string 
+\end{DoxyReturn}
+
+
+Definition at line 10 of file my\+\_\+strlen.\+c.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{my__strcmp_8c_a3b3960588932459570799afa357e32b5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{my__strcmp_8c_a4d74d542203cda4321599a3298ea42e7}\label{my__strcmp_8c_a4d74d542203cda4321599a3298ea42e7}} 
+\index{my\_strcmp.c@{my\_strcmp.c}!my\_strncmp@{my\_strncmp}}
+\index{my\_strncmp@{my\_strncmp}!my\_strcmp.c@{my\_strcmp.c}}
+\doxysubsubsection{\texorpdfstring{my\_strncmp()}{my\_strncmp()}}
+{\footnotesize\ttfamily int my\+\_\+strncmp (\begin{DoxyParamCaption}\item[{char const $\ast$}]{s1,  }\item[{char const $\ast$}]{s2,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Compare firsts characters of two string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s1} & string to check \\
+\hline
+{\em s2} & string to check \\
+\hline
+{\em n} & number of characters to compare\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if equal, difference between otherwise 
+\end{DoxyReturn}
+
+
+Definition at line 8 of file my\+\_\+strncmp.\+c.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{my__strcmp_8c_a4d74d542203cda4321599a3298ea42e7_icgraph}
+\end{center}
+\end{figure}

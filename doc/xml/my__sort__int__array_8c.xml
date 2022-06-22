@@ -1,0 +1,163 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="my__sort__int__array_8c" kind="file" language="C++">
+    <compoundname>my_sort_int_array.c</compoundname>
+    <includes local="no">stdio.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>lib/my/my_sort_int_array.c</label>
+        <link refid="my__sort__int__array_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="my__sort__int__array_8c_1a92c3b3939f4e66e7058ef83a392fc24c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void swap</definition>
+        <argsstring>(int *array, int a, int b)</argsstring>
+        <name>swap</name>
+        <param>
+          <type>int *</type>
+          <declname>array</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/my/my_sort_int_array.c" line="10" column="6" bodyfile="lib/my/my_sort_int_array.c" bodystart="10" bodyend="17"/>
+        <references refid="namespacetest_1aa4c2a5552e9bc49b1816ff532f558c74" compoundref="test_8py" startline="1">test.a</references>
+        <references refid="namespacetest_1a21ad0bd836b90d08f4cf640b4c298e7c" compoundref="test_8py" startline="2">test.b</references>
+        <referencedby refid="my__sort__int__array_8c_1aa862f23a88ad821af3d087ab6f9303ab" compoundref="my__sort__int__array_8c" startline="19" endline="26">compare</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="my__sort__int__array_8c_1aa862f23a88ad821af3d087ab6f9303ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int compare</definition>
+        <argsstring>(int *array, int i, int sorted)</argsstring>
+        <name>compare</name>
+        <param>
+          <type>int *</type>
+          <declname>array</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sorted</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/my/my_sort_int_array.c" line="19" column="5" bodyfile="lib/my/my_sort_int_array.c" bodystart="19" bodyend="26"/>
+        <references refid="my__sort__int__array_8c_1a92c3b3939f4e66e7058ef83a392fc24c" compoundref="my__sort__int__array_8c" startline="10" endline="17">swap</references>
+        <referencedby refid="my__sort__int__array_8c_1ac4ac17b559bd0cc09f3f38805e9846d3" compoundref="my__sort__int__array_8c" startline="28" endline="39">my_sort_int_array</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="my__sort__int__array_8c_1ac4ac17b559bd0cc09f3f38805e9846d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void my_sort_int_array</definition>
+        <argsstring>(int *array, int size)</argsstring>
+        <name>my_sort_int_array</name>
+        <param>
+          <type>int *</type>
+          <declname>tab</declname>
+          <defname>array</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Write an int array in the standard output. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tab</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of the int array </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/my/my_sort_int_array.c" line="28" column="6" bodyfile="lib/my/my_sort_int_array.c" bodystart="28" bodyend="39"/>
+        <references refid="my__sort__int__array_8c_1aa862f23a88ad821af3d087ab6f9303ab" compoundref="my__sort__int__array_8c" startline="19" endline="26">compare</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">**<sp/>EPITECH<sp/>PROJECT,<sp/>2021</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">**<sp/>my_swap.c</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">**<sp/>File<sp/>description:</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">**<sp/>my<sp/>swap</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="my__sort__int__array_8c_1a92c3b3939f4e66e7058ef83a392fc24c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="my__sort__int__array_8c_1a92c3b3939f4e66e7058ef83a392fc24c" kindref="member">swap</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*array,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespacetest_1aa4c2a5552e9bc49b1816ff532f558c74" kindref="member">a</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespacetest_1a21ad0bd836b90d08f4cf640b4c298e7c" kindref="member">b</ref>)</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tmp<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>tmp<sp/>=<sp/>array[<ref refid="namespacetest_1aa4c2a5552e9bc49b1816ff532f558c74" kindref="member">a</ref>];</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>array[<ref refid="namespacetest_1aa4c2a5552e9bc49b1816ff532f558c74" kindref="member">a</ref>]<sp/>=<sp/>array[<ref refid="namespacetest_1a21ad0bd836b90d08f4cf640b4c298e7c" kindref="member">b</ref>];</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>array[<ref refid="namespacetest_1a21ad0bd836b90d08f4cf640b4c298e7c" kindref="member">b</ref>]<sp/>=<sp/>tmp;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="my__sort__int__array_8c_1aa862f23a88ad821af3d087ab6f9303ab" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="my__sort__int__array_8c_1aa862f23a88ad821af3d087ab6f9303ab" kindref="member">compare</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*array,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sorted)</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(array[i]<sp/>&gt;<sp/>array[i<sp/>+<sp/>1])<sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="my__sort__int__array_8c_1a92c3b3939f4e66e7058ef83a392fc24c" kindref="member">swap</ref>(array,<sp/>i,<sp/>i<sp/>+<sp/>1);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sorted<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sorted;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="my__sort__int__array_8c_1ac4ac17b559bd0cc09f3f38805e9846d3" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="my__sort__int__array_8c_1ac4ac17b559bd0cc09f3f38805e9846d3" kindref="member">my_sort_int_array</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*array,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size)</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sorted<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(sorted<sp/>==<sp/>1)<sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sorted<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>size;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="my__sort__int__array_8c_1aa862f23a88ad821af3d087ab6f9303ab" kindref="member">compare</ref>(array,<sp/>i,<sp/>sorted);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="lib/my/my_sort_int_array.c"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,70 @@
+.TH "lib/my/concat.c" 3 "Thu Jun 23 2022" "Version 1.0" "Esoterix" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+lib/my/concat.c
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <stdlib\&.h>\fP
+.br
+\fC#include 'my\&.h'\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "int \fBmy_strlen\fP (char const *str)"
+.br
+.RI "Get the lenth of a string\&. "
+.ti -1c
+.RI "char * \fBconcat\fP (char *before, char *mid, char *after)"
+.br
+.RI "Concat three strings\&. "
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "char* concat (char * before, char * mid, char * after)"
+
+.PP
+Concat three strings\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIbefore\fP first string to concat 
+.br
+\fImid\fP second string to concat 
+.br
+\fIafter\fP third string to concat
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Concatenated string 
+.RE
+.PP
+
+.PP
+Definition at line 13 of file concat\&.c\&.
+.SS "int my_strlen (char const * str)"
+
+.PP
+Get the lenth of a string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIstr\fP string to check
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Length of the string 
+.RE
+.PP
+
+.PP
+Definition at line 10 of file my_strlen\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Esoterix from the source code\&.

@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_2a29050bf896c92dd0369caa9ca4db3e" kind="dir">
+    <compoundname>lib/formatstring</compoundname>
+    <innerfile refid="formatstring_2displaybinary_8c">displaybinary.c</innerfile>
+    <innerfile refid="formatstring_2displaychar_8c">displaychar.c</innerfile>
+    <innerfile refid="formatstring_2displaynbr_8c">displaynbr.c</innerfile>
+    <innerfile refid="formatstring_2displaynbr__dec_8c">displaynbr_dec.c</innerfile>
+    <innerfile refid="formatstring_2displaynbr__hexa_8c">displaynbr_hexa.c</innerfile>
+    <innerfile refid="formatstring_2displaynbr__hexa__capital_8c">displaynbr_hexa_capital.c</innerfile>
+    <innerfile refid="formatstring_2displaynbr__octal_8c">displaynbr_octal.c</innerfile>
+    <innerfile refid="formatstring_2displaypercent_8c">displaypercent.c</innerfile>
+    <innerfile refid="formatstring_2displaypointer_8c">displaypointer.c</innerfile>
+    <innerfile refid="formatstring_2displaystr_8c">displaystr.c</innerfile>
+    <innerfile refid="formatstring_2displaystr__unprintable_8c">displaystr_unprintable.c</innerfile>
+    <innerfile refid="formatstring_8c">formatstring.c</innerfile>
+    <innerfile refid="lib_2formatstring_2formatstring_8h">formatstring.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="lib/formatstring/"/>
+  </compounddef>
+</doxygen>

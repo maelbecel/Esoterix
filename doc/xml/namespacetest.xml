@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespacetest" kind="namespace" language="Python">
+    <compoundname>test</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacetest_1aa4c2a5552e9bc49b1816ff532f558c74" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int a</definition>
+        <argsstring></argsstring>
+        <name>a</name>
+        <initializer>=  3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test/test.py" line="1" column="1" bodyfile="test/test.py" bodystart="1" bodyend="-1"/>
+        <referencedby refid="my__sort__int__array_8c_1a92c3b3939f4e66e7058ef83a392fc24c" compoundref="my__sort__int__array_8c" startline="10" endline="17">swap</referencedby>
+        <referencedby refid="my__strncmp_8c_1a4d74d542203cda4321599a3298ea42e7" compoundref="my__strncmp_8c" startline="8" endline="24">my_strncmp</referencedby>
+        <referencedby refid="my__swap_8c_1a2cd02d2d23c5c4edd026ad1fd3dafc8f" compoundref="my__swap_8c" startline="8" endline="15">my_swap</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetest_1a21ad0bd836b90d08f4cf640b4c298e7c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <initializer>=  print(&apos;hello&apos;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test/test.py" line="2" column="1" bodyfile="test/test.py" bodystart="2" bodyend="-1"/>
+        <referencedby refid="my__sort__int__array_8c_1a92c3b3939f4e66e7058ef83a392fc24c" compoundref="my__sort__int__array_8c" startline="10" endline="17">swap</referencedby>
+        <referencedby refid="my__strncmp_8c_1a4d74d542203cda4321599a3298ea42e7" compoundref="my__strncmp_8c" startline="8" endline="24">my_strncmp</referencedby>
+        <referencedby refid="my__swap_8c_1a2cd02d2d23c5c4edd026ad1fd3dafc8f" compoundref="my__swap_8c" startline="8" endline="15">my_swap</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="test/test.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

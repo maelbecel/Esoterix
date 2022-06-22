@@ -1,0 +1,86 @@
+.TH "lib/formatstring/formatstring.c" 3 "Thu Jun 23 2022" "Version 1.0" "Esoterix" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+lib/formatstring/formatstring.c
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'formatstring\&.h'\fP
+.br
+\fC#include <stdarg\&.h>\fP
+.br
+\fC#include <stdlib\&.h>\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "char * \fBfus\fP (char *a, char *b)"
+.br
+.RI "Fusion of two strings\&. "
+.ti -1c
+.RI "char * \fBfdisplayhashtag\fP (char c, va_list argv)"
+.br
+.ti -1c
+.RI "char * \fBfdisplayflags\fP (char c, va_list argv)"
+.br
+.ti -1c
+.RI "char * \fBformat\fP (char const *str,\&.\&.\&.)"
+.br
+.RI "Format string representation\&. "
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "char* fdisplayflags (char c, va_list argv)"
+
+.PP
+Definition at line 71 of file formatstring\&.c\&.
+.SS "char* fdisplayhashtag (char c, va_list argv)"
+
+.PP
+Definition at line 61 of file formatstring\&.c\&.
+.SS "char* format (char const * str,  \&.\&.\&.)"
+
+.PP
+Format string representation\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIstr\fP string to format 
+.br
+\fI\&.\&.\&.\fP list of arguments
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+String of the string 
+.RE
+.PP
+
+.PP
+Definition at line 81 of file formatstring\&.c\&.
+.SS "char* fus (char * a, char * b)"
+
+.PP
+Fusion of two strings\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIa\fP first string 
+.br
+\fIb\fP second string
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+String of the fusion 
+.RE
+.PP
+
+.PP
+Definition at line 46 of file formatstring\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Esoterix from the source code\&.

@@ -1,0 +1,115 @@
+.TH "build" 3 "Thu Jun 23 2022" "Version 1.0" "Esoterix" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+build
+.SH SYNOPSIS
+.br
+.PP
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "string \fBbold\fP = '\\033[1m'"
+.br
+.ti -1c
+.RI "string \fBnormal\fP = '\\033[0m'"
+.br
+.ti -1c
+.RI "string \fBred\fP = '\\033[31m\\033[1m'"
+.br
+.ti -1c
+.RI "string \fByellow\fP = '\\033[33m\\033[1m'"
+.br
+.ti -1c
+.RI "string \fBgreen\fP = '\\033[32m\\033[1m'"
+.br
+.ti -1c
+.RI "string \fBspaces\fP = ' '*50"
+.br
+.ti -1c
+.RI "\fBfile\fP = sys\&.argv[1]"
+.br
+.ti -1c
+.RI "\fBnb\fP = sys\&.argv[2]"
+.br
+.ti -1c
+.RI "\fBall\fP = sys\&.argv[3]"
+.br
+.ti -1c
+.RI "int \fBplace\fP = 40"
+.br
+.ti -1c
+.RI "int \fBpercentage\fP = int(\fBnb\fP) * 100 / int(\fBall\fP)"
+.br
+.ti -1c
+.RI "string \fBdisplay\fP = \fBbold\fP + \fBfile\fP"
+.br
+.ti -1c
+.RI "string \fBcolor\fP = \fBgreen\fP"
+.br
+.ti -1c
+.RI "\fBtemp\fP = int(int(\fBpercentage\fP) * \fBplace\fP / 100)"
+.br
+.in -1c
+.SH "Variable Documentation"
+.PP 
+.SS "all = sys\&.argv[3]"
+
+.PP
+Definition at line 20 of file build\&.py\&.
+.SS "string bold = '\\033[1m'"
+
+.PP
+Definition at line 7 of file build\&.py\&.
+.SS "string color = \fBgreen\fP"
+
+.PP
+Definition at line 32 of file build\&.py\&.
+.SS "string display = \fBbold\fP + \fBfile\fP"
+
+.PP
+Definition at line 25 of file build\&.py\&.
+.SS "file = sys\&.argv[1]"
+
+.PP
+Definition at line 18 of file build\&.py\&.
+.SS "string green = '\\033[32m\\033[1m'"
+
+.PP
+Definition at line 11 of file build\&.py\&.
+.SS "nb = sys\&.argv[2]"
+
+.PP
+Definition at line 19 of file build\&.py\&.
+.SS "string normal = '\\033[0m'"
+
+.PP
+Definition at line 8 of file build\&.py\&.
+.SS "int percentage = int(\fBnb\fP) * 100 / int(\fBall\fP)"
+
+.PP
+Definition at line 23 of file build\&.py\&.
+.SS "int place = 40"
+
+.PP
+Definition at line 22 of file build\&.py\&.
+.SS "string red = '\\033[31m\\033[1m'"
+
+.PP
+Definition at line 9 of file build\&.py\&.
+.SS "string spaces = ' '*50"
+
+.PP
+Definition at line 13 of file build\&.py\&.
+.SS "temp = int(int(\fBpercentage\fP) * \fBplace\fP / 100)"
+
+.PP
+Definition at line 39 of file build\&.py\&.
+.SS "string yellow = '\\033[33m\\033[1m'"
+
+.PP
+Definition at line 10 of file build\&.py\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Esoterix from the source code\&.

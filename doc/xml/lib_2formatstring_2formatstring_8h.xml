@@ -1,0 +1,768 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="lib_2formatstring_2formatstring_8h" kind="file" language="C++">
+    <compoundname>formatstring.h</compoundname>
+    <includes local="no">stdarg.h</includes>
+    <includes local="no">unistd.h</includes>
+    <includedby refid="formatstring_2displaybinary_8c" local="yes">lib/formatstring/displaybinary.c</includedby>
+    <includedby refid="formatstring_2displaychar_8c" local="yes">lib/formatstring/displaychar.c</includedby>
+    <includedby refid="formatstring_2displaynbr_8c" local="yes">lib/formatstring/displaynbr.c</includedby>
+    <includedby refid="formatstring_2displaynbr__dec_8c" local="yes">lib/formatstring/displaynbr_dec.c</includedby>
+    <includedby refid="formatstring_2displaynbr__hexa_8c" local="yes">lib/formatstring/displaynbr_hexa.c</includedby>
+    <includedby refid="formatstring_2displaynbr__hexa__capital_8c" local="yes">lib/formatstring/displaynbr_hexa_capital.c</includedby>
+    <includedby refid="formatstring_2displaynbr__octal_8c" local="yes">lib/formatstring/displaynbr_octal.c</includedby>
+    <includedby refid="formatstring_2displaypercent_8c" local="yes">lib/formatstring/displaypercent.c</includedby>
+    <includedby refid="formatstring_2displaypointer_8c" local="yes">lib/formatstring/displaypointer.c</includedby>
+    <includedby refid="formatstring_2displaystr_8c" local="yes">lib/formatstring/displaystr.c</includedby>
+    <includedby refid="formatstring_2displaystr__unprintable_8c" local="yes">lib/formatstring/displaystr_unprintable.c</includedby>
+    <includedby refid="formatstring_8c" local="yes">lib/formatstring/formatstring.c</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>stdarg.h</label>
+      </node>
+      <node id="1">
+        <label>lib/formatstring/formatstring.h</label>
+        <link refid="lib_2formatstring_2formatstring_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>unistd.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="10">
+        <label>lib/formatstring/displaypointer.c</label>
+        <link refid="formatstring_2displaypointer_8c"/>
+      </node>
+      <node id="12">
+        <label>lib/formatstring/displaystr_unprintable.c</label>
+        <link refid="formatstring_2displaystr__unprintable_8c"/>
+      </node>
+      <node id="6">
+        <label>lib/formatstring/displaynbr_hexa.c</label>
+        <link refid="formatstring_2displaynbr__hexa_8c"/>
+      </node>
+      <node id="13">
+        <label>lib/formatstring/formatstring.c</label>
+        <link refid="formatstring_8c"/>
+      </node>
+      <node id="1">
+        <label>lib/formatstring/formatstring.h</label>
+        <link refid="lib_2formatstring_2formatstring_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>lib/formatstring/displaypercent.c</label>
+        <link refid="formatstring_2displaypercent_8c"/>
+      </node>
+      <node id="11">
+        <label>lib/formatstring/displaystr.c</label>
+        <link refid="formatstring_2displaystr_8c"/>
+      </node>
+      <node id="3">
+        <label>lib/formatstring/displaychar.c</label>
+        <link refid="formatstring_2displaychar_8c"/>
+      </node>
+      <node id="8">
+        <label>lib/formatstring/displaynbr_octal.c</label>
+        <link refid="formatstring_2displaynbr__octal_8c"/>
+      </node>
+      <node id="4">
+        <label>lib/formatstring/displaynbr.c</label>
+        <link refid="formatstring_2displaynbr_8c"/>
+      </node>
+      <node id="7">
+        <label>lib/formatstring/displaynbr_hexa_capital.c</label>
+        <link refid="formatstring_2displaynbr__hexa__capital_8c"/>
+      </node>
+      <node id="2">
+        <label>lib/formatstring/displaybinary.c</label>
+        <link refid="formatstring_2displaybinary_8c"/>
+      </node>
+      <node id="5">
+        <label>lib/formatstring/displaynbr_dec.c</label>
+        <link refid="formatstring_2displaynbr__dec_8c"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structfflags" prot="public">fflags</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="lib_2formatstring_2formatstring_8h_1a9e9aec7c965581332d7de2360dbe460a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* fdisplaybinary</definition>
+        <argsstring>(va_list argv)</argsstring>
+        <name>fdisplaybinary</name>
+        <param>
+          <type>va_list</type>
+          <declname>argv</declname>
+        </param>
+        <briefdescription>
+<para>Format binary representation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>va_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>String of the binary </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/formatstring/formatstring.h" line="32" column="10" bodyfile="lib/formatstring/displaybinary.c" bodystart="22" bodyend="44" declfile="lib/formatstring/formatstring.h" declline="32" declcolumn="10"/>
+        <references refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" compoundref="build_8py" startline="19">build.nb</references>
+      </memberdef>
+      <memberdef kind="function" id="lib_2formatstring_2formatstring_8h_1a04fb9590cfae84e0f3f68e96dd7c2869" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* fdisplaychar</definition>
+        <argsstring>(va_list argv)</argsstring>
+        <name>fdisplaychar</name>
+        <param>
+          <type>va_list</type>
+          <declname>argv</declname>
+        </param>
+        <briefdescription>
+<para>Format char representation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>va_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>String of the char </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/formatstring/formatstring.h" line="42" column="10" bodyfile="lib/formatstring/displaychar.c" bodystart="21" bodyend="25" declfile="lib/formatstring/formatstring.h" declline="42" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="lib_2formatstring_2formatstring_8h_1ae1476a39a946a2cb992280290bf9eb2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* fdisplaynbr_dec</definition>
+        <argsstring>(va_list argv)</argsstring>
+        <name>fdisplaynbr_dec</name>
+        <param>
+          <type>va_list</type>
+          <declname>argv</declname>
+        </param>
+        <briefdescription>
+<para>Format decimal representation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>va_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>String of the decimal </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/formatstring/formatstring.h" line="52" column="10" bodyfile="lib/formatstring/displaynbr_dec.c" bodystart="54" bodyend="68" declfile="lib/formatstring/formatstring.h" declline="52" declcolumn="10"/>
+        <references refid="formatstring_2displaynbr__dec_8c_1a16748cdf7671e747b143f18eaa99b537" compoundref="formatstring_2displaynbr__dec_8c" startline="40" endline="52">fmy_put_nbr_dec</references>
+        <references refid="include_2formatstring_8h_1a5432efb36b44010f8bd84ef49de4cac5" compoundref="formatstring_8c" startline="46" endline="59">fus</references>
+        <references refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" compoundref="build_8py" startline="19">build.nb</references>
+      </memberdef>
+      <memberdef kind="function" id="lib_2formatstring_2formatstring_8h_1adfb009226e03785c142d0f4c2132087f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* fdisplaynbr_hexa_capital</definition>
+        <argsstring>(va_list argv)</argsstring>
+        <name>fdisplaynbr_hexa_capital</name>
+        <param>
+          <type>va_list</type>
+          <declname>argv</declname>
+        </param>
+        <briefdescription>
+<para>Format hexadecimal capital representation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>va_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>String of the hexadecimal </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/formatstring/formatstring.h" line="62" column="10" bodyfile="lib/formatstring/displaynbr_hexa_capital.c" bodystart="37" bodyend="42" declfile="lib/formatstring/formatstring.h" declline="62" declcolumn="10"/>
+        <references refid="formatstring_2displaynbr__hexa__capital_8c_1ac5ba071f55c348180492a38b85cfb5f9" compoundref="formatstring_2displaynbr__hexa__capital_8c" startline="13" endline="35">fmy_putinhexa_capital</references>
+        <references refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" compoundref="build_8py" startline="19">build.nb</references>
+      </memberdef>
+      <memberdef kind="function" id="lib_2formatstring_2formatstring_8h_1a767ec4b68c7c5d6ff9736c40c61ea46d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* fdisplaynbr_hexa_capital_hashtag</definition>
+        <argsstring>(va_list argv)</argsstring>
+        <name>fdisplaynbr_hexa_capital_hashtag</name>
+        <param>
+          <type>va_list</type>
+          <declname>argv</declname>
+        </param>
+        <briefdescription>
+<para>Format hexadecimal capital representation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>va_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>String of the hexadecimal </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/formatstring/formatstring.h" line="72" column="10" bodyfile="lib/formatstring/displaynbr_hexa_capital.c" bodystart="44" bodyend="49" declfile="lib/formatstring/formatstring.h" declline="72" declcolumn="10"/>
+        <references refid="formatstring_2displaynbr__hexa__capital_8c_1ac5ba071f55c348180492a38b85cfb5f9" compoundref="formatstring_2displaynbr__hexa__capital_8c" startline="13" endline="35">fmy_putinhexa_capital</references>
+        <references refid="include_2formatstring_8h_1a5432efb36b44010f8bd84ef49de4cac5" compoundref="formatstring_8c" startline="46" endline="59">fus</references>
+        <references refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" compoundref="build_8py" startline="19">build.nb</references>
+      </memberdef>
+      <memberdef kind="function" id="lib_2formatstring_2formatstring_8h_1a8344c554de69d67d5014e8ae42ad4fad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* fdisplaynbr_hexa</definition>
+        <argsstring>(va_list argv)</argsstring>
+        <name>fdisplaynbr_hexa</name>
+        <param>
+          <type>va_list</type>
+          <declname>argv</declname>
+        </param>
+        <briefdescription>
+<para>Format hexadecimal representation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>va_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>String of the hexadecimal </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/formatstring/formatstring.h" line="82" column="10" bodyfile="lib/formatstring/displaynbr_hexa.c" bodystart="37" bodyend="42" declfile="lib/formatstring/formatstring.h" declline="82" declcolumn="10"/>
+        <references refid="formatstring_2displaynbr__hexa_8c_1a894e47c3589075e2209185fb3a680019" compoundref="formatstring_2displaynbr__hexa_8c" startline="13" endline="35">fmy_putinhexa</references>
+        <references refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" compoundref="build_8py" startline="19">build.nb</references>
+      </memberdef>
+      <memberdef kind="function" id="lib_2formatstring_2formatstring_8h_1a3c360431991fea5eaf959d1bb8425c83" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* fdisplaynbr_hexa_hashtag</definition>
+        <argsstring>(va_list argv)</argsstring>
+        <name>fdisplaynbr_hexa_hashtag</name>
+        <param>
+          <type>va_list</type>
+          <declname>argv</declname>
+        </param>
+        <briefdescription>
+<para>Format hexadecimal representation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>va_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>String of the hexadecimal </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/formatstring/formatstring.h" line="92" column="10" bodyfile="lib/formatstring/displaynbr_hexa.c" bodystart="44" bodyend="49" declfile="lib/formatstring/formatstring.h" declline="92" declcolumn="10"/>
+        <references refid="formatstring_2displaynbr__hexa_8c_1a894e47c3589075e2209185fb3a680019" compoundref="formatstring_2displaynbr__hexa_8c" startline="13" endline="35">fmy_putinhexa</references>
+        <references refid="include_2formatstring_8h_1a5432efb36b44010f8bd84ef49de4cac5" compoundref="formatstring_8c" startline="46" endline="59">fus</references>
+        <references refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" compoundref="build_8py" startline="19">build.nb</references>
+      </memberdef>
+      <memberdef kind="function" id="lib_2formatstring_2formatstring_8h_1a4303b79e90cde5fd473e12899e6f83db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* fdisplaynbr_octal</definition>
+        <argsstring>(va_list argv)</argsstring>
+        <name>fdisplaynbr_octal</name>
+        <param>
+          <type>va_list</type>
+          <declname>argv</declname>
+        </param>
+        <briefdescription>
+<para>Format octal representation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>va_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>String of the octal </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/formatstring/formatstring.h" line="102" column="10" bodyfile="lib/formatstring/displaynbr_octal.c" bodystart="62" bodyend="69" declfile="lib/formatstring/formatstring.h" declline="102" declcolumn="10"/>
+        <references refid="include_2formatstring_8h_1a5432efb36b44010f8bd84ef49de4cac5" compoundref="formatstring_8c" startline="46" endline="59">fus</references>
+        <references refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" compoundref="build_8py" startline="19">build.nb</references>
+        <referencedby refid="lib_2formatstring_2formatstring_8h_1a9678a1cd650015bcf953f5924e1ea362" compoundref="formatstring_2displaynbr__octal_8c" startline="71" endline="74">fdisplaynbr_octal_hashtag</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="lib_2formatstring_2formatstring_8h_1a9678a1cd650015bcf953f5924e1ea362" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* fdisplaynbr_octal_hashtag</definition>
+        <argsstring>(va_list argv)</argsstring>
+        <name>fdisplaynbr_octal_hashtag</name>
+        <param>
+          <type>va_list</type>
+          <declname>argv</declname>
+        </param>
+        <briefdescription>
+<para>Format octal representation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>va_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>String of the octal </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/formatstring/formatstring.h" line="112" column="10" bodyfile="lib/formatstring/displaynbr_octal.c" bodystart="71" bodyend="74" declfile="lib/formatstring/formatstring.h" declline="112" declcolumn="10"/>
+        <references refid="formatstring_2displaynbr__octal_8c_1a4303b79e90cde5fd473e12899e6f83db" compoundref="formatstring_2displaynbr__octal_8c" startline="62" endline="69">fdisplaynbr_octal</references>
+      </memberdef>
+      <memberdef kind="function" id="lib_2formatstring_2formatstring_8h_1acd26263c8c06ea09b5d22cc84150eb87" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* fdisplaynbr_long</definition>
+        <argsstring>(va_list argv)</argsstring>
+        <name>fdisplaynbr_long</name>
+        <param>
+          <type>va_list</type>
+          <declname>argv</declname>
+        </param>
+        <briefdescription>
+<para>Format nb representation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>va_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>String of the nb </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/formatstring/formatstring.h" line="122" column="10" bodyfile="lib/formatstring/displaynbr.c" bodystart="79" bodyend="97" declfile="lib/formatstring/formatstring.h" declline="122" declcolumn="10"/>
+        <references refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" compoundref="build_8py" startline="19">build.nb</references>
+      </memberdef>
+      <memberdef kind="function" id="lib_2formatstring_2formatstring_8h_1ac9045c01823ed91b0837ebc9b13af9a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* fdisplaypercent</definition>
+        <argsstring>(__attribute__((unused)) va_list argv)</argsstring>
+        <name>fdisplaypercent</name>
+        <param>
+          <type>__attribute__((unused)) va_list</type>
+          <declname>argv</declname>
+        </param>
+        <briefdescription>
+<para>Format percent representation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>va_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>String of the percent </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/formatstring/formatstring.h" line="132" column="10" bodyfile="lib/formatstring/displaypercent.c" bodystart="11" bodyend="15" declfile="lib/formatstring/formatstring.h" declline="132" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="lib_2formatstring_2formatstring_8h_1a6ff3b70cadd15c01a5a11640f0666b86" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* fdisplaypointer</definition>
+        <argsstring>(va_list argv)</argsstring>
+        <name>fdisplaypointer</name>
+        <param>
+          <type>va_list</type>
+          <declname>argv</declname>
+        </param>
+        <briefdescription>
+<para>Format pointer representation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>va_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>String of the pointer </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/formatstring/formatstring.h" line="142" column="10" bodyfile="lib/formatstring/displaypointer.c" bodystart="36" bodyend="42" declfile="lib/formatstring/formatstring.h" declline="142" declcolumn="10"/>
+        <references refid="formatstring_2displaypointer_8c_1adca22517da37e91d0fef80da51583561" compoundref="formatstring_2displaypointer_8c" startline="13" endline="34">fmy_putadress</references>
+        <references refid="include_2formatstring_8h_1a5432efb36b44010f8bd84ef49de4cac5" compoundref="formatstring_8c" startline="46" endline="59">fus</references>
+        <references refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" compoundref="build_8py" startline="19">build.nb</references>
+      </memberdef>
+      <memberdef kind="function" id="lib_2formatstring_2formatstring_8h_1acf4fe44a073b5962d505a98c7e941008" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* fdisplaystr_unprintable</definition>
+        <argsstring>(va_list argv)</argsstring>
+        <name>fdisplaystr_unprintable</name>
+        <param>
+          <type>va_list</type>
+          <declname>argv</declname>
+        </param>
+        <briefdescription>
+<para>Format unprintable representation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>va_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>String of the unprintable </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/formatstring/formatstring.h" line="152" column="10" bodyfile="lib/formatstring/displaystr_unprintable.c" bodystart="47" bodyend="62" declfile="lib/formatstring/formatstring.h" declline="152" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="lib_2formatstring_2formatstring_8h_1a58840f6b2b1afbe706871afc1aff9f75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* fdisplayoctal</definition>
+        <argsstring>(int nb)</argsstring>
+        <name>fdisplayoctal</name>
+        <param>
+          <type>int</type>
+          <declname>nb</declname>
+        </param>
+        <briefdescription>
+<para>Format octal representation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>va_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>String of the octal </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/formatstring/formatstring.h" line="162" column="10" bodyfile="lib/formatstring/displaystr_unprintable.c" bodystart="23" bodyend="45" declfile="lib/formatstring/formatstring.h" declline="162" declcolumn="10"/>
+        <references refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" compoundref="build_8py" startline="19">build.nb</references>
+      </memberdef>
+      <memberdef kind="function" id="lib_2formatstring_2formatstring_8h_1a5432efb36b44010f8bd84ef49de4cac5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* fus</definition>
+        <argsstring>(char *a, char *b)</argsstring>
+        <name>fus</name>
+        <param>
+          <type>char *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+<para>Fusion of two strings. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>first string </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>second string</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>String of the fusion </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/formatstring/formatstring.h" line="173" column="10" bodyfile="lib/formatstring/formatstring.c" bodystart="46" bodyend="59" declfile="lib/formatstring/formatstring.h" declline="173" declcolumn="10"/>
+        <referencedby refid="lib_2formatstring_2formatstring_8h_1a6f2c69610dc237549da5171b58e348d6" compoundref="formatstring_8c" startline="81" endline="103">format</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="lib_2formatstring_2formatstring_8h_1a466cc39f2b821d00978d7e3b321366dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* fdisplaystr</definition>
+        <argsstring>(va_list argv)</argsstring>
+        <name>fdisplaystr</name>
+        <param>
+          <type>va_list</type>
+          <declname>argv</declname>
+        </param>
+        <briefdescription>
+<para>Format string representation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>va_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>String of the string </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/formatstring/formatstring.h" line="183" column="10" bodyfile="lib/formatstring/displaystr.c" bodystart="15" bodyend="20" declfile="lib/formatstring/formatstring.h" declline="183" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="lib_2formatstring_2formatstring_8h_1a39b754de814ecb66a412e3474e147c01" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* fdisplaynbr</definition>
+        <argsstring>(va_list argv)</argsstring>
+        <name>fdisplaynbr</name>
+        <param>
+          <type>va_list</type>
+          <declname>argv</declname>
+        </param>
+        <briefdescription>
+<para>Format nbr representation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>va_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>String of the nbr </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/formatstring/formatstring.h" line="193" column="10" bodyfile="lib/formatstring/displaynbr.c" bodystart="40" bodyend="58" declfile="lib/formatstring/formatstring.h" declline="193" declcolumn="10"/>
+        <references refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" compoundref="build_8py" startline="19">build.nb</references>
+      </memberdef>
+      <memberdef kind="function" id="lib_2formatstring_2formatstring_8h_1a6f2c69610dc237549da5171b58e348d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* format</definition>
+        <argsstring>(char const *str,...)</argsstring>
+        <name>format</name>
+        <param>
+          <type>char const *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+<para>Format string representation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string to format </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>...</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>list of arguments</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>String of the string </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/formatstring/formatstring.h" line="204" column="10" bodyfile="lib/formatstring/formatstring.c" bodystart="81" bodyend="103" declfile="lib/formatstring/formatstring.h" declline="204" declcolumn="10"/>
+        <references refid="formatstring_8c_1ac996d1a134b0ebf6f918a86c2ab05284" compoundref="formatstring_8c" startline="71" endline="79">fdisplayflags</references>
+        <references refid="formatstring_8c_1a5432efb36b44010f8bd84ef49de4cac5" compoundref="formatstring_8c" startline="46" endline="59">fus</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">**<sp/>EPITECH<sp/>PROJECT,<sp/>2021</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">**<sp/>star.c</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">**<sp/>File<sp/>description:</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">**<sp/>star.c</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>FORMATSTRING_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>FORMATSTRING_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#include<sp/>&lt;stdarg.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#include<sp/>&lt;unistd.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structfflags" kindref="compound">fflags</ref><sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*(*func)(va_list);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="structfflags_1a11764cc96bb263d1f257bcc01205a787" kindref="member">flag</ref>;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="include_2formatstring_8h_1a9e9aec7c965581332d7de2360dbe460a" kindref="member">fdisplaybinary</ref>(va_list<sp/>argv);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="include_2formatstring_8h_1a04fb9590cfae84e0f3f68e96dd7c2869" kindref="member">fdisplaychar</ref>(va_list<sp/>argv);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="include_2formatstring_8h_1ae1476a39a946a2cb992280290bf9eb2a" kindref="member">fdisplaynbr_dec</ref>(va_list<sp/>argv);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="include_2formatstring_8h_1adfb009226e03785c142d0f4c2132087f" kindref="member">fdisplaynbr_hexa_capital</ref>(va_list<sp/>argv);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="include_2formatstring_8h_1a767ec4b68c7c5d6ff9736c40c61ea46d" kindref="member">fdisplaynbr_hexa_capital_hashtag</ref>(va_list<sp/>argv);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="include_2formatstring_8h_1a8344c554de69d67d5014e8ae42ad4fad" kindref="member">fdisplaynbr_hexa</ref>(va_list<sp/>argv);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="include_2formatstring_8h_1a3c360431991fea5eaf959d1bb8425c83" kindref="member">fdisplaynbr_hexa_hashtag</ref>(va_list<sp/>argv);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="include_2formatstring_8h_1a4303b79e90cde5fd473e12899e6f83db" kindref="member">fdisplaynbr_octal</ref>(va_list<sp/>argv);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="include_2formatstring_8h_1a9678a1cd650015bcf953f5924e1ea362" kindref="member">fdisplaynbr_octal_hashtag</ref>(va_list<sp/>argv);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="include_2formatstring_8h_1acd26263c8c06ea09b5d22cc84150eb87" kindref="member">fdisplaynbr_long</ref>(va_list<sp/>argv);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="include_2formatstring_8h_1ac9045c01823ed91b0837ebc9b13af9a2" kindref="member">fdisplaypercent</ref>(__attribute__((unused))va_list<sp/>argv);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="include_2formatstring_8h_1a6ff3b70cadd15c01a5a11640f0666b86" kindref="member">fdisplaypointer</ref>(va_list<sp/>argv);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="include_2formatstring_8h_1acf4fe44a073b5962d505a98c7e941008" kindref="member">fdisplaystr_unprintable</ref>(va_list<sp/>argv);</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="include_2formatstring_8h_1a58840f6b2b1afbe706871afc1aff9f75" kindref="member">fdisplayoctal</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" kindref="member">nb</ref>);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="include_2formatstring_8h_1a5432efb36b44010f8bd84ef49de4cac5" kindref="member">fus</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="namespacetest_1aa4c2a5552e9bc49b1816ff532f558c74" kindref="member">a</ref>,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="namespacetest_1a21ad0bd836b90d08f4cf640b4c298e7c" kindref="member">b</ref>);</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="include_2formatstring_8h_1a466cc39f2b821d00978d7e3b321366dd" kindref="member">fdisplaystr</ref>(va_list<sp/>argv);</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="include_2formatstring_8h_1a39b754de814ecb66a412e3474e147c01" kindref="member">fdisplaynbr</ref>(va_list<sp/>argv);</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="include_2formatstring_8h_1a6f2c69610dc237549da5171b58e348d6" kindref="member">format</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*str,<sp/>...);</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="lib/formatstring/formatstring.h"/>
+  </compounddef>
+</doxygen>

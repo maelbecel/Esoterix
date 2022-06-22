@@ -1,0 +1,262 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="formatstring_2displaynbr_8c" kind="file" language="C++">
+    <compoundname>displaynbr.c</compoundname>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">stdarg.h</includes>
+    <includes refid="lib_2formatstring_2formatstring_8h" local="yes">formatstring.h</includes>
+    <incdepgraph>
+      <node id="3">
+        <label>stdarg.h</label>
+      </node>
+      <node id="4">
+        <label>formatstring.h</label>
+        <link refid="lib_2formatstring_2formatstring_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>unistd.h</label>
+      </node>
+      <node id="1">
+        <label>lib/formatstring/displaynbr.c</label>
+        <link refid="formatstring_2displaynbr_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="formatstring_2displaynbr_8c_1a10086156486a7c4a6b5830ffa42419fb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>static char* fuschar</definition>
+        <argsstring>(char *res, char c)</argsstring>
+        <name>fuschar</name>
+        <param>
+          <type>char *</type>
+          <declname>res</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/formatstring/displaynbr.c" line="12" column="13" bodyfile="lib/formatstring/displaynbr.c" bodystart="12" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="formatstring_2displaynbr_8c_1a7fc1f8781636ccc8a5aa0a882cc30482" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>static char* my_put_nbr</definition>
+        <argsstring>(int nb)</argsstring>
+        <name>my_put_nbr</name>
+        <param>
+          <type>int</type>
+          <declname>nb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/formatstring/displaynbr.c" line="21" column="13" bodyfile="lib/formatstring/displaynbr.c" bodystart="21" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="formatstring_2displaynbr_8c_1a39b754de814ecb66a412e3474e147c01" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* fdisplaynbr</definition>
+        <argsstring>(va_list argv)</argsstring>
+        <name>fdisplaynbr</name>
+        <param>
+          <type>va_list</type>
+          <declname>argv</declname>
+        </param>
+        <briefdescription>
+<para>Format nbr representation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>va_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>String of the nbr </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/formatstring/displaynbr.c" line="40" column="6" bodyfile="lib/formatstring/displaynbr.c" bodystart="40" bodyend="58"/>
+        <references refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" compoundref="build_8py" startline="19">build.nb</references>
+      </memberdef>
+      <memberdef kind="function" id="formatstring_2displaynbr_8c_1a42b5881cefae5f9d3df8058880511f02" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* fmy_put_nbr_long</definition>
+        <argsstring>(long int nb)</argsstring>
+        <name>fmy_put_nbr_long</name>
+        <param>
+          <type>long int</type>
+          <declname>nb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/formatstring/displaynbr.c" line="60" column="6" bodyfile="lib/formatstring/displaynbr.c" bodystart="60" bodyend="77"/>
+        <references refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" compoundref="build_8py" startline="19">build.nb</references>
+      </memberdef>
+      <memberdef kind="function" id="formatstring_2displaynbr_8c_1acd26263c8c06ea09b5d22cc84150eb87" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* fdisplaynbr_long</definition>
+        <argsstring>(va_list argv)</argsstring>
+        <name>fdisplaynbr_long</name>
+        <param>
+          <type>va_list</type>
+          <declname>argv</declname>
+        </param>
+        <briefdescription>
+<para>Format nb representation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>va_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>String of the nb </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/formatstring/displaynbr.c" line="79" column="6" bodyfile="lib/formatstring/displaynbr.c" bodystart="79" bodyend="97"/>
+        <references refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" compoundref="build_8py" startline="19">build.nb</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">**<sp/>EPITECH<sp/>PROJECT,<sp/>2021</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">**<sp/>displaychar.c</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">**<sp/>File<sp/>description:</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">**<sp/>display<sp/>char</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdarg.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lib_2formatstring_2formatstring_8h" kindref="compound">formatstring.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*fuschar(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*res,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>c)</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>buf[2];</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>buf[0]<sp/>=<sp/>c;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>buf[1]<sp/>=<sp/></highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="include_2formatstring_8h_1a5432efb36b44010f8bd84ef49de4cac5" kindref="member">fus</ref>(res,<sp/>buf);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="include_2my_8h_1af65d3a06247706e9e479694122c512cf" kindref="member">my_put_nbr</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" kindref="member">nb</ref>)</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*res<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" kindref="member">nb</ref><sp/>&lt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>res<sp/>=<sp/>fuschar(res,<sp/></highlight><highlight class="charliteral">&apos;-&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" kindref="member">nb</ref><sp/>=<sp/>-<ref refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" kindref="member">nb</ref>;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" kindref="member">nb</ref><sp/>&gt;<sp/>9)<sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i<sp/>=<sp/><ref refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" kindref="member">nb</ref><sp/>%<sp/>10;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" kindref="member">nb</ref><sp/>/=<sp/>10;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>res<sp/>=<sp/><ref refid="include_2formatstring_8h_1a5432efb36b44010f8bd84ef49de4cac5" kindref="member">fus</ref>(res,<sp/><ref refid="include_2my_8h_1af65d3a06247706e9e479694122c512cf" kindref="member">my_put_nbr</ref>(<ref refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" kindref="member">nb</ref>));</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>res<sp/>=<sp/>fuschar(res,<sp/>i<sp/>+<sp/>48);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>res<sp/>=<sp/>fuschar(res,<sp/><ref refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" kindref="member">nb</ref><sp/>+<sp/>48);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>res;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="lib_2formatstring_2formatstring_8h_1a39b754de814ecb66a412e3474e147c01" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="formatstring_2displaynbr_8c_1a39b754de814ecb66a412e3474e147c01" kindref="member">fdisplaynbr</ref>(va_list<sp/>argv)</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" kindref="member">nb</ref><sp/>=<sp/>va_arg(argv,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*res<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" kindref="member">nb</ref><sp/>&lt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>res<sp/>=<sp/>fuschar(res,<sp/></highlight><highlight class="charliteral">&apos;-&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" kindref="member">nb</ref><sp/>=<sp/>-<ref refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" kindref="member">nb</ref>;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" kindref="member">nb</ref><sp/>&gt;<sp/>9)<sp/>{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i<sp/>=<sp/><ref refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" kindref="member">nb</ref><sp/>%<sp/>10;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" kindref="member">nb</ref><sp/>/=<sp/>10;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>res<sp/>=<sp/><ref refid="include_2formatstring_8h_1a5432efb36b44010f8bd84ef49de4cac5" kindref="member">fus</ref>(res,<sp/><ref refid="include_2my_8h_1af65d3a06247706e9e479694122c512cf" kindref="member">my_put_nbr</ref>(<ref refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" kindref="member">nb</ref>));</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>res<sp/>=<sp/>fuschar(res,<sp/>i<sp/>+<sp/>48);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>res<sp/>=<sp/>fuschar(res,<sp/><ref refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" kindref="member">nb</ref><sp/>+<sp/>48);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>res;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="formatstring_2displaynbr_8c_1a42b5881cefae5f9d3df8058880511f02" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="formatstring_2displaynbr_8c_1a42b5881cefae5f9d3df8058880511f02" kindref="member">fmy_put_nbr_long</ref>(</highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" kindref="member">nb</ref>)</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*res<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" kindref="member">nb</ref><sp/>&lt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>res<sp/>=<sp/>fuschar(res,<sp/></highlight><highlight class="charliteral">&apos;-&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" kindref="member">nb</ref><sp/>=<sp/>-<ref refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" kindref="member">nb</ref>;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" kindref="member">nb</ref><sp/>&gt;<sp/>9)<sp/>{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i<sp/>=<sp/><ref refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" kindref="member">nb</ref><sp/>%<sp/>10;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" kindref="member">nb</ref><sp/>/=<sp/>10;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>res<sp/>=<sp/><ref refid="include_2formatstring_8h_1a5432efb36b44010f8bd84ef49de4cac5" kindref="member">fus</ref>(res,<sp/><ref refid="include_2my_8h_1af65d3a06247706e9e479694122c512cf" kindref="member">my_put_nbr</ref>(<ref refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" kindref="member">nb</ref>));</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>res<sp/>=<sp/>fuschar(res,<sp/>i<sp/>+<sp/>48);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>res<sp/>=<sp/>fuschar(res,<sp/><ref refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" kindref="member">nb</ref><sp/>+<sp/>48);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>res;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="lib_2formatstring_2formatstring_8h_1acd26263c8c06ea09b5d22cc84150eb87" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="formatstring_2displaynbr_8c_1acd26263c8c06ea09b5d22cc84150eb87" kindref="member">fdisplaynbr_long</ref>(va_list<sp/>argv)</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" kindref="member">nb</ref><sp/>=<sp/>va_arg(argv,<sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*res<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" kindref="member">nb</ref><sp/>&lt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>res<sp/>=<sp/>fuschar(res,<sp/></highlight><highlight class="charliteral">&apos;-&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" kindref="member">nb</ref><sp/>=<sp/>-<ref refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" kindref="member">nb</ref>;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" kindref="member">nb</ref><sp/>&gt;<sp/>9)<sp/>{</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i<sp/>=<sp/><ref refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" kindref="member">nb</ref><sp/>%<sp/>10;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" kindref="member">nb</ref><sp/>/=<sp/>10;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>res<sp/>=<sp/><ref refid="include_2formatstring_8h_1a5432efb36b44010f8bd84ef49de4cac5" kindref="member">fus</ref>(res,<sp/><ref refid="include_2my_8h_1af65d3a06247706e9e479694122c512cf" kindref="member">my_put_nbr</ref>(<ref refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" kindref="member">nb</ref>));</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>res<sp/>=<sp/>fuschar(res,<sp/>i<sp/>+<sp/>48);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>res<sp/>=<sp/>fuschar(res,<sp/><ref refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" kindref="member">nb</ref><sp/>+<sp/>48);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>res;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="lib/formatstring/displaynbr.c"/>
+  </compounddef>
+</doxygen>

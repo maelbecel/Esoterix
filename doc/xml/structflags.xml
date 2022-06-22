@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structflags" kind="struct" language="C++" prot="public">
+    <compoundname>flags</compoundname>
+    <includes refid="include_2printf_8h" local="no">printf.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structflags_1a115095187e7b25e8c8ce02fbd6551b3b" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* func)(va_list)</definition>
+        <argsstring>)(va_list)</argsstring>
+        <name>func</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/printf.h" line="184" column="9" bodyfile="include/printf.h" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structflags_1a11764cc96bb263d1f257bcc01205a787" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char flag</definition>
+        <argsstring></argsstring>
+        <name>flag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/printf.h" line="185" column="14" bodyfile="include/printf.h" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Struct for a flag,. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Contains a pointer on function for the flag and the flag </para>
+    </detaileddescription>
+    <location file="include/printf.h" line="183" column="16" bodyfile="include/printf.h" bodystart="183" bodyend="186"/>
+    <listofallmembers>
+      <member refid="structflags_1a11764cc96bb263d1f257bcc01205a787" prot="public" virt="non-virtual"><scope>flags</scope><name>flag</name></member>
+      <member refid="structflags_1a115095187e7b25e8c8ce02fbd6551b3b" prot="public" virt="non-virtual"><scope>flags</scope><name>func</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

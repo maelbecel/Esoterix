@@ -1,0 +1,99 @@
+.TH "include/python.h" 3 "Thu Jun 23 2022" "Version 1.0" "Esoterix" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+include/python.h
+.SH SYNOPSIS
+.br
+.PP
+.SS "Data Structures"
+
+.in +1c
+.ti -1c
+.RI "struct \fB__py__symbol_keyword_s\fP"
+.br
+.RI "Struct to define key words and symbol\&. "
+.in -1c
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef struct \fB__py__symbol_keyword_s\fP \fB__py__symbol_keyword_t\fP"
+.br
+.RI "Typedefs\&. "
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "char ** \fB__py__get_func\fP (char **functions)"
+.br
+.RI "Get function name\&. "
+.ti -1c
+.RI "char * \fB__py__fcnt_display\fP (char **array)"
+.br
+.RI "Get function printing string\&. "
+.ti -1c
+.RI "char * \fB__py__var_from_value\fP (int nb, char *values)"
+.br
+.ti -1c
+.RI "char * \fB__py__values_from_var\fP (int nb, char *values)"
+.br
+.in -1c
+.SH "Typedef Documentation"
+.PP 
+.SS "typedef struct \fB__py__symbol_keyword_s\fP \fB__py__symbol_keyword_t\fP"
+
+.PP
+Typedefs\&. 
+.PP
+Definition at line 14 of file python\&.h\&.
+.SH "Function Documentation"
+.PP 
+.SS "char* __py__fcnt_display (char ** array)"
+
+.PP
+Get function printing string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIarray\fP all name to check
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+array of function printing string 
+.RE
+.PP
+
+.PP
+Definition at line 33 of file get_functions\&.c\&.
+.SS "char** __py__get_func (char ** functions)"
+
+.PP
+Get function name\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIfunctions\fP all name to check
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+array of function name 
+.RE
+.PP
+
+.PP
+Definition at line 19 of file get_functions\&.c\&.
+.SS "char* __py__values_from_var (int nb, char * values)"
+
+.PP
+Definition at line 21 of file values\&.c\&.
+.SS "char* __py__var_from_value (int nb, char * values)"
+
+.PP
+Definition at line 11 of file values\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Esoterix from the source code\&.

@@ -1,0 +1,76 @@
+\hypertarget{formatstring_2displaystr_8c}{}\doxysection{lib/formatstring/displaystr.c File Reference}
+\label{formatstring_2displaystr_8c}\index{lib/formatstring/displaystr.c@{lib/formatstring/displaystr.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdarg.\+h$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}formatstring.\+h\char`\"{}}\newline
+Include dependency graph for displaystr.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=311pt]{formatstring_2displaystr_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{formatstring_2displaystr_8c_a3b3960588932459570799afa357e32b5}{my\+\_\+strlen}} (char const $\ast$str)
+\begin{DoxyCompactList}\small\item\em Get the lenth of a string. \end{DoxyCompactList}\item 
+char $\ast$ \mbox{\hyperlink{formatstring_2displaystr_8c_a466cc39f2b821d00978d7e3b321366dd}{fdisplaystr}} (va\+\_\+list argv)
+\begin{DoxyCompactList}\small\item\em Format string representation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{formatstring_2displaystr_8c_a466cc39f2b821d00978d7e3b321366dd}\label{formatstring_2displaystr_8c_a466cc39f2b821d00978d7e3b321366dd}} 
+\index{displaystr.c@{displaystr.c}!fdisplaystr@{fdisplaystr}}
+\index{fdisplaystr@{fdisplaystr}!displaystr.c@{displaystr.c}}
+\doxysubsubsection{\texorpdfstring{fdisplaystr()}{fdisplaystr()}}
+{\footnotesize\ttfamily char$\ast$ fdisplaystr (\begin{DoxyParamCaption}\item[{va\+\_\+list}]{argv }\end{DoxyParamCaption})}
+
+
+
+Format string representation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em va\+\_\+list} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+String of the string 
+\end{DoxyReturn}
+
+
+Definition at line 15 of file displaystr.\+c.
+
+\mbox{\Hypertarget{formatstring_2displaystr_8c_a3b3960588932459570799afa357e32b5}\label{formatstring_2displaystr_8c_a3b3960588932459570799afa357e32b5}} 
+\index{displaystr.c@{displaystr.c}!my\_strlen@{my\_strlen}}
+\index{my\_strlen@{my\_strlen}!displaystr.c@{displaystr.c}}
+\doxysubsubsection{\texorpdfstring{my\_strlen()}{my\_strlen()}}
+{\footnotesize\ttfamily int my\+\_\+strlen (\begin{DoxyParamCaption}\item[{char const $\ast$}]{str }\end{DoxyParamCaption})}
+
+
+
+Get the lenth of a string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & string to check\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Length of the string 
+\end{DoxyReturn}
+
+
+Definition at line 10 of file my\+\_\+strlen.\+c.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{formatstring_2displaystr_8c_a3b3960588932459570799afa357e32b5_icgraph}
+\end{center}
+\end{figure}

@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="my__show__word__array_8c" kind="file" language="C++">
+    <compoundname>my_show_word_array.c</compoundname>
+    <includes local="no">stdlib.h</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>stdlib.h</label>
+      </node>
+      <node id="1">
+        <label>lib/my/my_show_word_array.c</label>
+        <link refid="my__show__word__array_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="my__show__word__array_8c_1acfc5d69edef049c3fe6c3a4a724654d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int my_putstr</definition>
+        <argsstring>(char const *str)</argsstring>
+        <name>my_putstr</name>
+        <param>
+          <type>char const *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>Write a string in the standard output. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string to write</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/my/my_show_word_array.c" line="10" column="5" bodyfile="lib/my/my_putstr.c" bodystart="11" bodyend="15" declfile="lib/my/my_show_word_array.c" declline="10" declcolumn="5"/>
+        <references refid="include_2my_8h_1a3b3960588932459570799afa357e32b5" compoundref="my__strlen_8c" startline="10" endline="17">my_strlen</references>
+        <referencedby refid="my__show__word__array_8c_1a8a25778cf44c7d7d2c10cfea2059caea" compoundref="my__show__word__array_8c" startline="12" endline="21">my_show_word_array</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="my__show__word__array_8c_1a8a25778cf44c7d7d2c10cfea2059caea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int my_show_word_array</definition>
+        <argsstring>(char *const *tab)</argsstring>
+        <name>my_show_word_array</name>
+        <param>
+          <type>char *const *</type>
+          <declname>tab</declname>
+        </param>
+        <briefdescription>
+<para>Write a string array in the standard output. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tab</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array to write</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/my/my_show_word_array.c" line="12" column="5" bodyfile="lib/my/my_show_word_array.c" bodystart="12" bodyend="21"/>
+        <references refid="my__show__word__array_8c_1acfc5d69edef049c3fe6c3a4a724654d2" compoundref="my__putstr_8c" startline="11" endline="15">my_putstr</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">**<sp/>EPITECH<sp/>PROJECT,<sp/>2021</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">**<sp/>star.c</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">**<sp/>File<sp/>description:</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">**<sp/>star.c</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="my__show__word__array_8c_1acfc5d69edef049c3fe6c3a4a724654d2" kindref="member">my_putstr</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*str);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="my__show__word__array_8c_1a8a25778cf44c7d7d2c10cfea2059caea" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="my__show__word__array_8c_1a8a25778cf44c7d7d2c10cfea2059caea" kindref="member">my_show_word_array</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*tab)</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(tab[i]<sp/>!=<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="my__show__word__array_8c_1acfc5d69edef049c3fe6c3a4a724654d2" kindref="member">my_putstr</ref>(tab[i]);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i++;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="lib/my/my_show_word_array.c"/>
+  </compounddef>
+</doxygen>

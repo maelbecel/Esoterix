@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="my__strdup_8c" kind="file" language="C++">
+    <compoundname>my_strdup.c</compoundname>
+    <includes local="no">stdlib.h</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>stdlib.h</label>
+      </node>
+      <node id="1">
+        <label>lib/my/my_strdup.c</label>
+        <link refid="my__strdup_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="my__strdup_8c_1a3b3960588932459570799afa357e32b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int my_strlen</definition>
+        <argsstring>(char const *str)</argsstring>
+        <name>my_strlen</name>
+        <param>
+          <type>char const *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>Get the lenth of a string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string to check</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Length of the string </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/my/my_strdup.c" line="10" column="5" bodyfile="lib/my/my_strlen.c" bodystart="10" bodyend="17" declfile="lib/my/my_strdup.c" declline="10" declcolumn="5"/>
+        <referencedby refid="my__strdup_8c_1a1a42d9b749358a7c132f87a9502a948d" compoundref="my__strdup_8c" startline="14" endline="22">my_strdup</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="my__strdup_8c_1ac31f254dabff7bbbd73c8979763a66fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* my_strcpy</definition>
+        <argsstring>(char *dest, char const *src)</argsstring>
+        <name>my_strcpy</name>
+        <param>
+          <type>char *</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type>char const *</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/my/my_strdup.c" line="12" column="6" bodyfile="lib/my/my_strcpy.c" bodystart="10" bodyend="18" declfile="lib/my/my_strdup.c" declline="12" declcolumn="6"/>
+        <referencedby refid="my__strdup_8c_1a1a42d9b749358a7c132f87a9502a948d" compoundref="my__strdup_8c" startline="14" endline="22">my_strdup</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="my__strdup_8c_1a1a42d9b749358a7c132f87a9502a948d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* my_strdup</definition>
+        <argsstring>(char const *str)</argsstring>
+        <name>my_strdup</name>
+        <param>
+          <type>char const *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>Make a copy of a string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Copy the string</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>String copy </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/my/my_strdup.c" line="14" column="6" bodyfile="lib/my/my_strdup.c" bodystart="14" bodyend="22"/>
+        <references refid="my__strdup_8c_1ac31f254dabff7bbbd73c8979763a66fd" compoundref="my__strcpy_8c" startline="10" endline="18">my_strcpy</references>
+        <references refid="my__strdup_8c_1a3b3960588932459570799afa357e32b5" compoundref="my__strlen_8c" startline="10" endline="17">my_strlen</references>
+        <referencedby refid="get__functions_8c_1a331ee9f33563f4477d7dd800d6f57914" compoundref="get__functions_8c" startline="19" endline="31">__py__get_func</referencedby>
+        <referencedby refid="values_8c_1aa6106819fa3eb8f92456adc88d464633" compoundref="values_8c" startline="21" endline="29">__py__values_from_var</referencedby>
+        <referencedby refid="values_8c_1a531444dbe3f3fb427490607c2389630f" compoundref="values_8c" startline="11" endline="19">__py__var_from_value</referencedby>
+        <referencedby refid="python__parser_8c_1a2ab11f553fcf96faef056ef3f81ca211" compoundref="python__parser_8c" startline="58" endline="73">__python__</referencedby>
+        <referencedby refid="python__parser_8c_1a65513290015f4a326d72e14b8f885846" compoundref="python__parser_8c" startline="42" endline="56">getvar</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">**<sp/>EPITECH<sp/>PROJECT,<sp/>2021</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">**<sp/>star.c</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">**<sp/>File<sp/>description:</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">**<sp/>star.c</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="my__strdup_8c_1a3b3960588932459570799afa357e32b5" kindref="member">my_strlen</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*str);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="my__strdup_8c_1ac31f254dabff7bbbd73c8979763a66fd" kindref="member">my_strcpy</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*dest,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*src);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="my__strdup_8c_1a1a42d9b749358a7c132f87a9502a948d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="my__strdup_8c_1a1a42d9b749358a7c132f87a9502a948d" kindref="member">my_strdup</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*str)</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len<sp/>=<sp/><ref refid="my__strdup_8c_1a3b3960588932459570799afa357e32b5" kindref="member">my_strlen</ref>(str);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*new_str<sp/>=<sp/>malloc(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">)<sp/>*<sp/>(len<sp/>+<sp/>1));</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!new_str)</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="my__strdup_8c_1ac31f254dabff7bbbd73c8979763a66fd" kindref="member">my_strcpy</ref>(new_str,<sp/>str);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>new_str;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="lib/my/my_strdup.c"/>
+  </compounddef>
+</doxygen>

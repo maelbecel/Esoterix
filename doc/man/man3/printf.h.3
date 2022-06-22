@@ -1,0 +1,382 @@
+.TH "lib/myprintf/printf.h" 3 "Thu Jun 23 2022" "Version 1.0" "Esoterix" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+lib/myprintf/printf.h
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <stdarg\&.h>\fP
+.br
+\fC#include <unistd\&.h>\fP
+.br
+
+.SS "Data Structures"
+
+.in +1c
+.ti -1c
+.RI "struct \fBflags\fP"
+.br
+.RI "Struct for a flag,\&. "
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "int \fBdisplaychar\fP (va_list argv)"
+.br
+.RI "Write a char in the standard output\&. "
+.ti -1c
+.RI "int \fBdisplaystr\fP (va_list argv)"
+.br
+.RI "Write a string in the standard output\&. "
+.ti -1c
+.RI "int \fBdisplaynbr\fP (va_list argv)"
+.br
+.RI "Write an int in the standard output\&. "
+.ti -1c
+.RI "int \fBdisplaynbr_long\fP (va_list argv)"
+.br
+.RI "Write a long int in the standard output\&. "
+.ti -1c
+.RI "int \fBdisplaybinary\fP (va_list argv)"
+.br
+.RI "Write an int in binary format in the standard output\&. "
+.ti -1c
+.RI "int \fBdisplaypercent\fP (va_list argv)"
+.br
+.RI "Write a '' in the standard output\&. "
+.ti -1c
+.RI "int \fBdisplaypointer\fP (va_list argv)"
+.br
+.RI "Write a pointer in the standard output\&. "
+.ti -1c
+.RI "int \fBdisplaynbr_hexa\fP (va_list argv)"
+.br
+.RI "Write an int in hexadecimal format in the standard output\&. "
+.ti -1c
+.RI "int \fBdisplaynbr_hexa_capital\fP (va_list argv)"
+.br
+.RI "Write an int in upper case hexadecimal format in the standard output\&. "
+.ti -1c
+.RI "int \fBdisplaystr_unprintable\fP (va_list argv)"
+.br
+.RI "Write a string with unprintable characters in the standard output\&. "
+.ti -1c
+.RI "int \fBdisplaynbr_dec\fP (va_list argv)"
+.br
+.RI "Write an int in the standard output\&. "
+.ti -1c
+.RI "int \fBdisplaynbr_octal\fP (va_list argv)"
+.br
+.RI "Write an int in octal base in the standard output\&. "
+.ti -1c
+.RI "int \fBdisplaynbr_octal_hashtag\fP (va_list argv)"
+.br
+.RI "Write an int in octal base in the standard output\&. "
+.ti -1c
+.RI "int \fBdisplaynbr_hexa_hashtag\fP (va_list argv)"
+.br
+.RI "Write an int in hexadecimal format in the standard output\&. "
+.ti -1c
+.RI "int \fBdisplaynbr_hexa_capital_hashtag\fP (va_list argv)"
+.br
+.RI "Write an int in upper case hexadecimal format in the standard output\&. "
+.ti -1c
+.RI "int \fBmy_printf\fP (char const *str,\&.\&.\&.)"
+.br
+.RI "Write a string with arguments in the standard output\&. "
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "int displaybinary (va_list argv)"
+
+.PP
+Write an int in binary format in the standard output\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIargv\fP int to display
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+0 
+.RE
+.PP
+
+.PP
+Definition at line 18 of file displaybinary\&.c\&.
+.SS "int displaychar (va_list argv)"
+
+.PP
+Write a char in the standard output\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIargv\fP char to display
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+0 
+.RE
+.PP
+
+.PP
+Definition at line 17 of file displaychar\&.c\&.
+.SS "int displaynbr (va_list argv)"
+
+.PP
+Write an int in the standard output\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIargv\fP int to display
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+0 
+.RE
+.PP
+
+.PP
+Definition at line 34 of file displaynbr\&.c\&.
+.SS "int displaynbr_dec (va_list argv)"
+
+.PP
+Write an int in the standard output\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIargv\fP int to display
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+0 
+.RE
+.PP
+
+.PP
+Definition at line 47 of file displaynbr_dec\&.c\&.
+.SS "int displaynbr_hexa (va_list argv)"
+
+.PP
+Write an int in hexadecimal format in the standard output\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIargv\fP int to display
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+0 
+.RE
+.PP
+
+.PP
+Definition at line 40 of file displaynbr_hexa\&.c\&.
+.SS "int displaynbr_hexa_capital (va_list argv)"
+
+.PP
+Write an int in upper case hexadecimal format in the standard output\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIargv\fP int to display
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+0 
+.RE
+.PP
+
+.PP
+Definition at line 41 of file displaynbr_hexa_capital\&.c\&.
+.SS "int displaynbr_hexa_capital_hashtag (va_list argv)"
+
+.PP
+Write an int in upper case hexadecimal format in the standard output\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIargv\fP int to display
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+0 
+.RE
+.PP
+
+.PP
+Definition at line 48 of file displaynbr_hexa_capital\&.c\&.
+.SS "int displaynbr_hexa_hashtag (va_list argv)"
+
+.PP
+Write an int in hexadecimal format in the standard output\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIargv\fP int to display
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+0 
+.RE
+.PP
+
+.PP
+Definition at line 47 of file displaynbr_hexa\&.c\&.
+.SS "int displaynbr_long (va_list argv)"
+
+.PP
+Write a long int in the standard output\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIargv\fP long int to display
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+0 
+.RE
+.PP
+
+.PP
+Definition at line 70 of file displaynbr\&.c\&.
+.SS "int displaynbr_octal (va_list argv)"
+
+.PP
+Write an int in octal base in the standard output\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIargv\fP int to display
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+0 
+.RE
+.PP
+
+.PP
+Definition at line 57 of file displaynbr_octal\&.c\&.
+.SS "int displaynbr_octal_hashtag (va_list argv)"
+
+.PP
+Write an int in octal base in the standard output\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIargv\fP int to display
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+0 
+.RE
+.PP
+
+.PP
+Definition at line 64 of file displaynbr_octal\&.c\&.
+.SS "int displaypercent (va_list argv)"
+
+.PP
+Write a '' in the standard output\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIargv\fP useless
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+0 
+.RE
+.PP
+
+.SS "int displaypointer (va_list argv)"
+
+.PP
+Write a pointer in the standard output\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIargv\fP string to display
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+0 
+.RE
+.PP
+
+.PP
+Definition at line 40 of file displaypointer\&.c\&.
+.SS "int displaystr (va_list argv)"
+
+.PP
+Write a string in the standard output\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIargv\fP string to display
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+0 
+.RE
+.PP
+
+.PP
+Definition at line 22 of file displaystr\&.c\&.
+.SS "int displaystr_unprintable (va_list argv)"
+
+.PP
+Write a string with unprintable characters in the standard output\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIargv\fP string to display
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+0 
+.RE
+.PP
+
+.PP
+Definition at line 52 of file displaystr_unprintable\&.c\&.
+.SS "int my_printf (char const * str,  \&.\&.\&.)"
+
+.PP
+Write a string with arguments in the standard output\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIargv\fP string to display 
+.br
+\fI\&.\&.\&.\fP params for the string
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+0 
+.RE
+.PP
+
+.PP
+Definition at line 64 of file my_printf\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Esoterix from the source code\&.

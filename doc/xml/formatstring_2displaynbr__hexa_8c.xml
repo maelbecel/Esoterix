@@ -1,0 +1,187 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="formatstring_2displaynbr__hexa_8c" kind="file" language="C++">
+    <compoundname>displaynbr_hexa.c</compoundname>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">stdarg.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes refid="lib_2formatstring_2formatstring_8h" local="yes">formatstring.h</includes>
+    <incdepgraph>
+      <node id="3">
+        <label>stdarg.h</label>
+      </node>
+      <node id="1">
+        <label>lib/formatstring/displaynbr_hexa.c</label>
+        <link refid="formatstring_2displaynbr__hexa_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>stdlib.h</label>
+      </node>
+      <node id="5">
+        <label>formatstring.h</label>
+        <link refid="lib_2formatstring_2formatstring_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>unistd.h</label>
+      </node>
+      <node id="2">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="formatstring_2displaynbr__hexa_8c_1a894e47c3589075e2209185fb3a680019" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* fmy_putinhexa</definition>
+        <argsstring>(int nb)</argsstring>
+        <name>fmy_putinhexa</name>
+        <param>
+          <type>int</type>
+          <declname>nb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/formatstring/displaynbr_hexa.c" line="13" column="6" bodyfile="lib/formatstring/displaynbr_hexa.c" bodystart="13" bodyend="35"/>
+        <references refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" compoundref="build_8py" startline="19">build.nb</references>
+        <referencedby refid="lib_2formatstring_2formatstring_8h_1a8344c554de69d67d5014e8ae42ad4fad" compoundref="formatstring_2displaynbr__hexa_8c" startline="37" endline="42">fdisplaynbr_hexa</referencedby>
+        <referencedby refid="lib_2formatstring_2formatstring_8h_1a3c360431991fea5eaf959d1bb8425c83" compoundref="formatstring_2displaynbr__hexa_8c" startline="44" endline="49">fdisplaynbr_hexa_hashtag</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="formatstring_2displaynbr__hexa_8c_1a8344c554de69d67d5014e8ae42ad4fad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* fdisplaynbr_hexa</definition>
+        <argsstring>(va_list argv)</argsstring>
+        <name>fdisplaynbr_hexa</name>
+        <param>
+          <type>va_list</type>
+          <declname>argv</declname>
+        </param>
+        <briefdescription>
+<para>Format hexadecimal representation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>va_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>String of the hexadecimal </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/formatstring/displaynbr_hexa.c" line="37" column="6" bodyfile="lib/formatstring/displaynbr_hexa.c" bodystart="37" bodyend="42"/>
+        <references refid="formatstring_2displaynbr__hexa_8c_1a894e47c3589075e2209185fb3a680019" compoundref="formatstring_2displaynbr__hexa_8c" startline="13" endline="35">fmy_putinhexa</references>
+        <references refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" compoundref="build_8py" startline="19">build.nb</references>
+      </memberdef>
+      <memberdef kind="function" id="formatstring_2displaynbr__hexa_8c_1a3c360431991fea5eaf959d1bb8425c83" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* fdisplaynbr_hexa_hashtag</definition>
+        <argsstring>(va_list argv)</argsstring>
+        <name>fdisplaynbr_hexa_hashtag</name>
+        <param>
+          <type>va_list</type>
+          <declname>argv</declname>
+        </param>
+        <briefdescription>
+<para>Format hexadecimal representation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>va_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>String of the hexadecimal </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/formatstring/displaynbr_hexa.c" line="44" column="6" bodyfile="lib/formatstring/displaynbr_hexa.c" bodystart="44" bodyend="49"/>
+        <references refid="formatstring_2displaynbr__hexa_8c_1a894e47c3589075e2209185fb3a680019" compoundref="formatstring_2displaynbr__hexa_8c" startline="13" endline="35">fmy_putinhexa</references>
+        <references refid="include_2formatstring_8h_1a5432efb36b44010f8bd84ef49de4cac5" compoundref="formatstring_8c" startline="46" endline="59">fus</references>
+        <references refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" compoundref="build_8py" startline="19">build.nb</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">**<sp/>EPITECH<sp/>PROJECT,<sp/>2021</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">**<sp/>displaynbr_hexa.c</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">**<sp/>File<sp/>description:</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">**<sp/>display<sp/>number<sp/>in<sp/>hexa<sp/>base</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdarg.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lib_2formatstring_2formatstring_8h" kindref="compound">formatstring.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="formatstring_2displaynbr__hexa_8c_1a894e47c3589075e2209185fb3a680019" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="formatstring_2displaynbr__hexa_8c_1a894e47c3589075e2209185fb3a680019" kindref="member">fmy_putinhexa</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" kindref="member">nb</ref>)</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>quotient<sp/>=<sp/><ref refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" kindref="member">nb</ref>;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>r;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*base<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;0123456789abcdef&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*res<sp/>=<sp/>malloc(16<sp/>*<sp/>10000);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*ret<sp/>=<sp/>malloc(16<sp/>*<sp/>10000);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!res<sp/>||<sp/>!ret)</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(quotient<sp/>!=<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>r<sp/>=<sp/>quotient<sp/>%<sp/>16;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>res[j]<sp/>=<sp/>base[r];</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>quotient<sp/>/=<sp/>16;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>j++;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>j;<sp/>i<sp/>&gt;=<sp/>0;<sp/>i--)</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ret[x++]<sp/>=<sp/>res[i];</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>free(res);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ret;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="lib_2formatstring_2formatstring_8h_1a8344c554de69d67d5014e8ae42ad4fad" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="formatstring_2displaynbr__hexa_8c_1a8344c554de69d67d5014e8ae42ad4fad" kindref="member">fdisplaynbr_hexa</ref>(va_list<sp/>argv)</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" kindref="member">nb</ref><sp/>=<sp/>va_arg(argv,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="formatstring_2displaynbr__hexa_8c_1a894e47c3589075e2209185fb3a680019" kindref="member">fmy_putinhexa</ref>(<ref refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" kindref="member">nb</ref>);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="lib_2formatstring_2formatstring_8h_1a3c360431991fea5eaf959d1bb8425c83" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="formatstring_2displaynbr__hexa_8c_1a3c360431991fea5eaf959d1bb8425c83" kindref="member">fdisplaynbr_hexa_hashtag</ref>(va_list<sp/>argv)</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" kindref="member">nb</ref><sp/>=<sp/>va_arg(argv,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="include_2formatstring_8h_1a5432efb36b44010f8bd84ef49de4cac5" kindref="member">fus</ref>(</highlight><highlight class="stringliteral">&quot;0x&quot;</highlight><highlight class="normal">,<sp/><ref refid="formatstring_2displaynbr__hexa_8c_1a894e47c3589075e2209185fb3a680019" kindref="member">fmy_putinhexa</ref>(<ref refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" kindref="member">nb</ref>));</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="lib/formatstring/displaynbr_hexa.c"/>
+  </compounddef>
+</doxygen>

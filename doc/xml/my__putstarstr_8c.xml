@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="my__putstarstr_8c" kind="file" language="C++">
+    <compoundname>my_putstarstr.c</compoundname>
+    <includes local="no">stdlib.h</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>stdlib.h</label>
+      </node>
+      <node id="1">
+        <label>lib/my/my_putstarstr.c</label>
+        <link refid="my__putstarstr_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="my__putstarstr_8c_1ac4de74d04dc6e263345755eb62676802" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void my_putchar</definition>
+        <argsstring>(char c)</argsstring>
+        <name>my_putchar</name>
+        <param>
+          <type>char</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/my/my_putstarstr.c" line="10" column="6" declfile="lib/my/my_putstarstr.c" declline="10" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="my__putstarstr_8c_1a31d767d22a227577713eb637496fbd08" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void my_putstr</definition>
+        <argsstring>(char *c)</argsstring>
+        <name>my_putstr</name>
+        <param>
+          <type>char *</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/my/my_putstarstr.c" line="12" column="6" declfile="lib/my/my_putstarstr.c" declline="12" declcolumn="6"/>
+        <referencedby refid="my__putstarstr_8c_1a198df4edfe38179c2ae7500623d8ed29" compoundref="my__putstarstr_8c" startline="14" endline="20">my_putstarstr</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="my__putstarstr_8c_1a198df4edfe38179c2ae7500623d8ed29" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void my_putstarstr</definition>
+        <argsstring>(char **str, int nb_rows, char *separator)</argsstring>
+        <name>my_putstarstr</name>
+        <param>
+          <type>char **</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nb_rows</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>separator</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/my/my_putstarstr.c" line="14" column="6" bodyfile="lib/my/my_putstarstr.c" bodystart="14" bodyend="20"/>
+        <references refid="my__putstarstr_8c_1a31d767d22a227577713eb637496fbd08">my_putstr</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">**<sp/>EPITECH<sp/>PROJECT,<sp/>2021</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">**<sp/>my_swap.c</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">**<sp/>File<sp/>description:</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">**<sp/>my<sp/>swap</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="my__putstarstr_8c_1ac4de74d04dc6e263345755eb62676802" kindref="member">my_putchar</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>c);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="my__putstarstr_8c_1a31d767d22a227577713eb637496fbd08" kindref="member">my_putstr</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*c);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="my__putstarstr_8c_1a198df4edfe38179c2ae7500623d8ed29" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="my__putstarstr_8c_1a198df4edfe38179c2ae7500623d8ed29" kindref="member">my_putstarstr</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**str,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nb_rows,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*separator)</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>nb_rows;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="my__putstarstr_8c_1a31d767d22a227577713eb637496fbd08" kindref="member">my_putstr</ref>(str[i]);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="my__putstarstr_8c_1a31d767d22a227577713eb637496fbd08" kindref="member">my_putstr</ref>(separator);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="lib/my/my_putstarstr.c"/>
+  </compounddef>
+</doxygen>

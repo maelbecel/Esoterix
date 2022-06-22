@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="my__compute__power__rec_8c" kind="file" language="C++">
+    <compoundname>my_compute_power_rec.c</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="my__compute__power__rec_8c_1a55e9afb4388f0e52a9e19fb00c273ef6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int power</definition>
+        <argsstring>(int res, int nb, int p)</argsstring>
+        <name>power</name>
+        <param>
+          <type>int</type>
+          <declname>res</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nb</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/my/my_compute_power_rec.c" line="8" column="5" bodyfile="lib/my/my_compute_power_rec.c" bodystart="8" bodyend="15"/>
+        <references refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" compoundref="build_8py" startline="19">build.nb</references>
+        <referencedby refid="my__compute__power__rec_8c_1addc5a84e26d14434d57806496ed43f50" compoundref="my__compute__power__rec_8c" startline="17" endline="26">my_compute_power_rec</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="my__compute__power__rec_8c_1addc5a84e26d14434d57806496ed43f50" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int my_compute_power_rec</definition>
+        <argsstring>(int nb, int p)</argsstring>
+        <name>my_compute_power_rec</name>
+        <param>
+          <type>int</type>
+          <declname>nb</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>power</declname>
+          <defname>p</defname>
+        </param>
+        <briefdescription>
+<para>Get a number at a given power recursively. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>power</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>power</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number at power given </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/my/my_compute_power_rec.c" line="17" column="5" bodyfile="lib/my/my_compute_power_rec.c" bodystart="17" bodyend="26"/>
+        <references refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" compoundref="build_8py" startline="19">build.nb</references>
+        <references refid="my__compute__power__rec_8c_1a55e9afb4388f0e52a9e19fb00c273ef6" compoundref="my__compute__power__rec_8c" startline="8" endline="15">power</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">**<sp/>EPITECH<sp/>PROJECT,<sp/>2021</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">**<sp/>star.c</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">**<sp/>File<sp/>description:</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">**<sp/>star.c</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="my__compute__power__rec_8c_1a55e9afb4388f0e52a9e19fb00c273ef6" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="my__compute__power__rec_8c_1a55e9afb4388f0e52a9e19fb00c273ef6" kindref="member">power</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>res,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" kindref="member">nb</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>p)</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(p<sp/>&gt;<sp/>1)</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="my__compute__power__rec_8c_1a55e9afb4388f0e52a9e19fb00c273ef6" kindref="member">power</ref>(res<sp/>*<sp/><ref refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" kindref="member">nb</ref>,<sp/><ref refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" kindref="member">nb</ref>,<sp/>p<sp/>-<sp/>1);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>res;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>res;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="my__compute__power__rec_8c_1addc5a84e26d14434d57806496ed43f50" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="my__compute__power__rec_8c_1addc5a84e26d14434d57806496ed43f50" kindref="member">my_compute_power_rec</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" kindref="member">nb</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>p)</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>res<sp/>=<sp/><ref refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" kindref="member">nb</ref>;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(p<sp/>==<sp/>0)</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(p<sp/>&lt;<sp/>0)</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="my__compute__power__rec_8c_1a55e9afb4388f0e52a9e19fb00c273ef6" kindref="member">power</ref>(res,<sp/><ref refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" kindref="member">nb</ref>,<sp/>p));</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="lib/my/my_compute_power_rec.c"/>
+  </compounddef>
+</doxygen>

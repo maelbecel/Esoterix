@@ -1,0 +1,73 @@
+.TH "src/encrypt/python/get_functions.c" 3 "Thu Jun 23 2022" "Version 1.0" "Esoterix" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+src/encrypt/python/get_functions.c
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'esoterix\&.h'\fP
+.br
+\fC#include 'python\&.h'\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "int \fBchr_in_array\fP (char c, char *array)"
+.br
+.ti -1c
+.RI "char ** \fB__py__get_func\fP (char **functions)"
+.br
+.RI "Get function name\&. "
+.ti -1c
+.RI "char * \fB__py__fcnt_display\fP (char **array)"
+.br
+.RI "Get function printing string\&. "
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "char* __py__fcnt_display (char ** array)"
+
+.PP
+Get function printing string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIarray\fP all name to check
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+array of function printing string 
+.RE
+.PP
+
+.PP
+Definition at line 33 of file get_functions\&.c\&.
+.SS "char** __py__get_func (char ** functions)"
+
+.PP
+Get function name\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIfunctions\fP all name to check
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+array of function name 
+.RE
+.PP
+
+.PP
+Definition at line 19 of file get_functions\&.c\&.
+.SS "int chr_in_array (char c, char * array)"
+
+.PP
+Definition at line 11 of file get_functions\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Esoterix from the source code\&.

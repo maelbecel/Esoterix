@@ -1,0 +1,1486 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="include_2my_8h" kind="file" language="C++">
+    <compoundname>my.h</compoundname>
+    <includedby refid="esoterix_8h" local="yes">include/esoterix.h</includedby>
+    <invincdepgraph>
+      <node id="3">
+        <label>src/array.c</label>
+        <link refid="array_8c"/>
+      </node>
+      <node id="6">
+        <label>src/encrypt/python/python_parser.c</label>
+        <link refid="python__parser_8c"/>
+      </node>
+      <node id="8">
+        <label>src/main.c</label>
+        <link refid="main_8c"/>
+      </node>
+      <node id="7">
+        <label>src/encrypt/python/values.c</label>
+        <link refid="values_8c"/>
+      </node>
+      <node id="4">
+        <label>src/buff_from_file.c</label>
+        <link refid="buff__from__file_8c"/>
+      </node>
+      <node id="2">
+        <label>include/esoterix.h</label>
+        <link refid="esoterix_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>src/encrypt/python/get_functions.c</label>
+        <link refid="get__functions_8c"/>
+      </node>
+      <node id="1">
+        <label>include/my.h</label>
+        <link refid="include_2my_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="include_2my_8h_1addf5ec070e9499d36b7f2009ce736076" prot="public" static="no">
+        <name>UNUSED</name>
+        <initializer>__attribute__((unused))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/my.h" line="15" column="13" bodyfile="include/my.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="include_2my_8h_1ac4de74d04dc6e263345755eb62676802" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void my_putchar</definition>
+        <argsstring>(char c)</argsstring>
+        <name>my_putchar</name>
+        <param>
+          <type>char</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Write a char in the standard output. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>char to write </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/my.h" line="23" column="10" declfile="include/my.h" declline="23" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="include_2my_8h_1a2acc91a6a4eba94d5a3811fcb1d12b1c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void my_sort_int_array</definition>
+        <argsstring>(int *tab, int size)</argsstring>
+        <name>my_sort_int_array</name>
+        <param>
+          <type>int *</type>
+          <declname>tab</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Write an int array in the standard output. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tab</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of the int array </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/my.h" line="32" column="10" bodyfile="lib/my/my_sort_int_array.c" bodystart="28" bodyend="39" declfile="include/my.h" declline="32" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="include_2my_8h_1a2cd02d2d23c5c4edd026ad1fd3dafc8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void my_swap</definition>
+        <argsstring>(int *a, int *b)</argsstring>
+        <name>my_swap</name>
+        <param>
+          <type>int *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+<para>Swap to int. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>first int </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>second int </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/my.h" line="41" column="10" bodyfile="lib/my/my_swap.c" bodystart="8" bodyend="15" declfile="include/my.h" declline="41" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="include_2my_8h_1ad36cc7e65c30e675f65b778abfaa16e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int my_isneg</definition>
+        <argsstring>(int nb)</argsstring>
+        <name>my_isneg</name>
+        <param>
+          <type>int</type>
+          <declname>nb</declname>
+        </param>
+        <briefdescription>
+<para>Check if a number is negative. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number to check</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/my.h" line="51" column="9" bodyfile="lib/my/my_isneg.c" bodystart="10" bodyend="18" declfile="include/my.h" declline="51" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="include_2my_8h_1af65d3a06247706e9e479694122c512cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int my_put_nbr</definition>
+        <argsstring>(int nb)</argsstring>
+        <name>my_put_nbr</name>
+        <param>
+          <type>int</type>
+          <declname>nb</declname>
+        </param>
+        <briefdescription>
+<para>Write a number in the standard output. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number to write</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/my.h" line="61" column="9" declfile="include/my.h" declline="61" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="include_2my_8h_1acfc5d69edef049c3fe6c3a4a724654d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int my_putstr</definition>
+        <argsstring>(char const *str)</argsstring>
+        <name>my_putstr</name>
+        <param>
+          <type>char const *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>Write a string in the standard output. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string to write</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/my.h" line="71" column="9" bodyfile="lib/my/my_putstr.c" bodystart="11" bodyend="15" declfile="include/my.h" declline="71" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="include_2my_8h_1a3b3960588932459570799afa357e32b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int my_strlen</definition>
+        <argsstring>(char const *str)</argsstring>
+        <name>my_strlen</name>
+        <param>
+          <type>char const *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>Get the lenth of a string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string to check</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Length of the string </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/my.h" line="81" column="9" bodyfile="lib/my/my_strlen.c" bodystart="10" bodyend="17" declfile="include/my.h" declline="81" declcolumn="9"/>
+        <referencedby refid="get__functions_8c_1a331ee9f33563f4477d7dd800d6f57914" compoundref="get__functions_8c" startline="19" endline="31">__py__get_func</referencedby>
+        <referencedby refid="my__show__word__array_8c_1acfc5d69edef049c3fe6c3a4a724654d2" compoundref="my__putstr_8c" startline="11" endline="15">my_putstr</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="include_2my_8h_1a82df5be1f3ffc9a6c980fa963a3d2800" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int my_getnbr</definition>
+        <argsstring>(char const *str)</argsstring>
+        <name>my_getnbr</name>
+        <param>
+          <type>char const *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>Get a number from a string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string to check</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number from the string </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/my.h" line="91" column="9" bodyfile="lib/my/my_getnbr.c" bodystart="8" bodyend="30" declfile="include/my.h" declline="91" declcolumn="9"/>
+        <referencedby refid="values_8c_1aa6106819fa3eb8f92456adc88d464633" compoundref="values_8c" startline="21" endline="29">__py__values_from_var</referencedby>
+        <referencedby refid="values_8c_1a531444dbe3f3fb427490607c2389630f" compoundref="values_8c" startline="11" endline="19">__py__var_from_value</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="include_2my_8h_1a115e114e8365bdb7f48412cb61172bee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int my_compute_power_rec</definition>
+        <argsstring>(int nb, int power)</argsstring>
+        <name>my_compute_power_rec</name>
+        <param>
+          <type>int</type>
+          <declname>nb</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>power</declname>
+        </param>
+        <briefdescription>
+<para>Get a number at a given power recursively. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>power</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>power</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number at power given </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/my.h" line="102" column="9" bodyfile="lib/my/my_compute_power_rec.c" bodystart="17" bodyend="26" declfile="include/my.h" declline="102" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="include_2my_8h_1a044bbc3392f74a1edd29b441d63c4650" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int my_intlen</definition>
+        <argsstring>(int x)</argsstring>
+        <name>my_intlen</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Get lenth of an int. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number to check</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Length of the int </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/my.h" line="112" column="9" bodyfile="lib/my/my_intlen.c" bodystart="8" bodyend="15" declfile="include/my.h" declline="112" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="include_2my_8h_1a27528de476912bb8329e1f994c00b65a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int my_compute_square_root</definition>
+        <argsstring>(int nb)</argsstring>
+        <name>my_compute_square_root</name>
+        <param>
+          <type>int</type>
+          <declname>nb</declname>
+        </param>
+        <briefdescription>
+<para>Get the square root of an int. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number to check</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Square root of the argument </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/my.h" line="122" column="9" bodyfile="lib/my/my_compute_square_root.c" bodystart="8" bodyend="21" declfile="include/my.h" declline="122" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="include_2my_8h_1a38c95ce0750bfe61850a3f77d4993a9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int my_is_prime</definition>
+        <argsstring>(int nb)</argsstring>
+        <name>my_is_prime</name>
+        <param>
+          <type>int</type>
+          <declname>nb</declname>
+        </param>
+        <briefdescription>
+<para>Check if a number is prime. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number to check</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>1 if is prime, 0 otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/my.h" line="132" column="9" bodyfile="lib/my/my_is_prime.c" bodystart="8" bodyend="20" declfile="include/my.h" declline="132" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="include_2my_8h_1afb55abfd94a9e5b4a431696e7151d725" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int my_find_prime_sup</definition>
+        <argsstring>(int nb)</argsstring>
+        <name>my_find_prime_sup</name>
+        <param>
+          <type>int</type>
+          <declname>nb</declname>
+        </param>
+        <briefdescription>
+<para>Get the first superior prime number. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number to check</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>First prime number superior to the argument </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/my.h" line="142" column="9" bodyfile="lib/my/my_find_prime_sup.c" bodystart="10" bodyend="17" declfile="include/my.h" declline="142" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="include_2my_8h_1a12d4044e7c0ab78ca1f186e0abdb08c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int my_strcmp</definition>
+        <argsstring>(char const *s1, char const *s2)</argsstring>
+        <name>my_strcmp</name>
+        <param>
+          <type>char const *</type>
+          <declname>s1</declname>
+        </param>
+        <param>
+          <type>char const *</type>
+          <declname>s2</declname>
+        </param>
+        <briefdescription>
+<para>Compare two string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string to check </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>s2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string to check</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if equal, difference between otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/my.h" line="153" column="9" bodyfile="lib/my/my_strcmp.c" bodystart="12" bodyend="21" declfile="include/my.h" declline="153" declcolumn="9"/>
+        <referencedby refid="array_8c_1a5e4216c3a9c693ea1e816c062b2f4382" compoundref="array_8c" startline="10" endline="19">is_in</referencedby>
+        <referencedby refid="main_8c_1ab6ab5095713a29ce48356b13afcb3a42" compoundref="main_8c" startline="33" endline="45">main</referencedby>
+        <referencedby refid="array_8c_1a72059dc959d6669f93addf413d969ff7" compoundref="array_8c" startline="33" endline="46">remove</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="include_2my_8h_1a4d74d542203cda4321599a3298ea42e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int my_strncmp</definition>
+        <argsstring>(char const *s1, char const *s2, int n)</argsstring>
+        <name>my_strncmp</name>
+        <param>
+          <type>char const *</type>
+          <declname>s1</declname>
+        </param>
+        <param>
+          <type>char const *</type>
+          <declname>s2</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>Compare firsts characters of two string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string to check </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>s2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string to check </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of characters to compare</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if equal, difference between otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/my.h" line="165" column="9" bodyfile="lib/my/my_strncmp.c" bodystart="8" bodyend="24" declfile="include/my.h" declline="165" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="include_2my_8h_1a0b01950009cdeb52bc08d8c85a2a7710" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int my_str_islower</definition>
+        <argsstring>(char const *str)</argsstring>
+        <name>my_str_islower</name>
+        <param>
+          <type>char const *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>Check if a string contain only lower characters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string to check</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if contains only lower characters, 1 otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/my.h" line="175" column="9" bodyfile="lib/my/my_str_islower.c" bodystart="10" bodyend="22" declfile="include/my.h" declline="175" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="include_2my_8h_1a5e411f7f2abdd1a80958c9128405c7de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int my_str_isnum</definition>
+        <argsstring>(char const *str)</argsstring>
+        <name>my_str_isnum</name>
+        <param>
+          <type>char const *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>Check if a string contain only numbers. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string to check</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if contains only numbers, 1 otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/my.h" line="185" column="9" bodyfile="lib/my/my_str_isnum.c" bodystart="10" bodyend="23" declfile="include/my.h" declline="185" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="include_2my_8h_1a4efd520eca620458374f6c8d6baa0c74" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int my_str_isprintable</definition>
+        <argsstring>(char const *str)</argsstring>
+        <name>my_str_isprintable</name>
+        <param>
+          <type>char const *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>Check if a string contain only printable characters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string to check</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if contains only printable characters, 1 otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/my.h" line="195" column="9" bodyfile="lib/my/my_str_isprintable.c" bodystart="12" bodyend="24" declfile="include/my.h" declline="195" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="include_2my_8h_1a6d430d2a8d88e94bdb7e9efdae80b8f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int my_str_isupper</definition>
+        <argsstring>(char const *str)</argsstring>
+        <name>my_str_isupper</name>
+        <param>
+          <type>char const *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>Check if a string contain only upper characters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string to check</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if contains only upper characters, 1 otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/my.h" line="205" column="9" bodyfile="lib/my/my_str_isupper.c" bodystart="10" bodyend="22" declfile="include/my.h" declline="205" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="include_2my_8h_1a630fb53af4daf3fa5e0d7af88597341f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int my_showmem</definition>
+        <argsstring>(char const *str, int size)</argsstring>
+        <name>my_showmem</name>
+        <param>
+          <type>char const *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Show memory allocations. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string to check </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of place to check</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/my.h" line="216" column="9" declfile="include/my.h" declline="216" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="include_2my_8h_1ac64e0fcafac7473b9646ce3635dd1b41" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int my_showstr</definition>
+        <argsstring>(char const *str)</argsstring>
+        <name>my_showstr</name>
+        <param>
+          <type>char const *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>Write a string in the standard output. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string to write</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/my.h" line="226" column="9" declfile="include/my.h" declline="226" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="include_2my_8h_1ae65cf26359bf1ef1cf3ef15e0bdffe96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int my_str_isalpha</definition>
+        <argsstring>(char const *str)</argsstring>
+        <name>my_str_isalpha</name>
+        <param>
+          <type>char const *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>Check if a string contain only alphanumeric characters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string to check</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if contains only alphanumeric characters, 1 otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/my.h" line="236" column="9" bodyfile="lib/my/my_str_isalpha.c" bodystart="10" bodyend="23" declfile="include/my.h" declline="236" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="include_2my_8h_1a8a25778cf44c7d7d2c10cfea2059caea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int my_show_word_array</definition>
+        <argsstring>(char *const *tab)</argsstring>
+        <name>my_show_word_array</name>
+        <param>
+          <type>char *const *</type>
+          <declname>tab</declname>
+        </param>
+        <briefdescription>
+<para>Write a string array in the standard output. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tab</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array to write</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/my.h" line="246" column="9" bodyfile="lib/my/my_show_word_array.c" bodystart="12" bodyend="21" declfile="include/my.h" declline="246" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="include_2my_8h_1ad0742a034086f291ec1184d327fa79fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int my_strarraylen</definition>
+        <argsstring>(char **str)</argsstring>
+        <name>my_strarraylen</name>
+        <param>
+          <type>char **</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>Get the size of a string array. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array to check</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Length of the array given in argument </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/my.h" line="256" column="9" declfile="include/my.h" declline="256" declcolumn="9"/>
+        <referencedby refid="values_8c_1aa6106819fa3eb8f92456adc88d464633" compoundref="values_8c" startline="21" endline="29">__py__values_from_var</referencedby>
+        <referencedby refid="values_8c_1a531444dbe3f3fb427490607c2389630f" compoundref="values_8c" startline="11" endline="19">__py__var_from_value</referencedby>
+        <referencedby refid="array_8c_1a7d8817d87c0f38087af49a654edbc308" compoundref="array_8c" startline="21" endline="31">append</referencedby>
+        <referencedby refid="main_8c_1ab6ab5095713a29ce48356b13afcb3a42" compoundref="main_8c" startline="33" endline="45">main</referencedby>
+        <referencedby refid="array_8c_1aa1aace4d21f5c36fa589395b365d969d" compoundref="array_8c" startline="57" endline="67">no_double</referencedby>
+        <referencedby refid="array_8c_1a72059dc959d6669f93addf413d969ff7" compoundref="array_8c" startline="33" endline="46">remove</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="include_2my_8h_1ac1110055a28225a0cd3da939aa87f927" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* my_strcpy</definition>
+        <argsstring>(char const *src)</argsstring>
+        <name>my_strcpy</name>
+        <param>
+          <type>char const *</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+<para>Copy a string into an other string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>source string</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Destination string with copied source string </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/my.h" line="266" column="10" declfile="include/my.h" declline="266" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="include_2my_8h_1ae51c6b6c91d29e82f72be5b73ffb4315" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* my_strncpy</definition>
+        <argsstring>(char *dest, char const *src, int n)</argsstring>
+        <name>my_strncpy</name>
+        <param>
+          <type>char *</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type>char const *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>Copy firsts characters of a string into an other string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dest</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>destination string </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>source string </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of characters to copy</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Destination string with copied source string </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/my.h" line="278" column="10" bodyfile="lib/my/my_strncpy.c" bodystart="8" bodyend="17" declfile="include/my.h" declline="278" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="include_2my_8h_1ac0444a4f11db36138c4fcbd3e8dfd98c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* my_revstr</definition>
+        <argsstring>(char *str)</argsstring>
+        <name>my_revstr</name>
+        <param>
+          <type>char *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>Reverse a string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string to reverse</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>String reverse </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/my.h" line="288" column="10" bodyfile="lib/my/my_revstr.c" bodystart="12" bodyend="26" declfile="include/my.h" declline="288" declcolumn="10"/>
+        <referencedby refid="lib_2my_2my_8h_1a55367464b1d36b5b782b13cffb701e65" compoundref="inttochar_8c" startline="11" endline="33">inttochar</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="include_2my_8h_1a97396eb13250cce5cf8513f5e6a7dbf1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* my_strstr</definition>
+        <argsstring>(char *str, char const *to_find)</argsstring>
+        <name>my_strstr</name>
+        <param>
+          <type>char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>char const *</type>
+          <declname>to_find</declname>
+        </param>
+        <briefdescription>
+<para>Find a string into an other string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>base string </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>to_find</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string to find</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>NULL if not found, string from to_find otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/my.h" line="299" column="10" bodyfile="lib/my/my_strstr.c" bodystart="12" bodyend="28" declfile="include/my.h" declline="299" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="include_2my_8h_1afbc12c776e8ed6d3b9310b7bf908939f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* my_strupcase</definition>
+        <argsstring>(char *str)</argsstring>
+        <name>my_strupcase</name>
+        <param>
+          <type>char *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>Set a string to upper case. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>base string</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>String set to upper case </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/my.h" line="309" column="10" bodyfile="lib/my/my_strupcase.c" bodystart="8" bodyend="18" declfile="include/my.h" declline="309" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="include_2my_8h_1adf870b335d19809be6d4e537b334fc6f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* my_strlowcase</definition>
+        <argsstring>(char *str)</argsstring>
+        <name>my_strlowcase</name>
+        <param>
+          <type>char *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>Set a string to lower case. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>base string</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>String set to lower case </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/my.h" line="319" column="10" bodyfile="lib/my/my_strlowcase.c" bodystart="8" bodyend="18" declfile="include/my.h" declline="319" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="include_2my_8h_1a6352e466b5441f01dc2ea66f0e005a8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* my_strcapitalize</definition>
+        <argsstring>(char *str)</argsstring>
+        <name>my_strcapitalize</name>
+        <param>
+          <type>char *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>Set a string to upper case. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>base string</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>String set to upper case </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/my.h" line="329" column="10" bodyfile="lib/my/my_strcapitalize.c" bodystart="12" bodyend="27" declfile="include/my.h" declline="329" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="include_2my_8h_1a9992bba763aab423f854c0de195c2bef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* my_strcat</definition>
+        <argsstring>(char *dest, char const *src)</argsstring>
+        <name>my_strcat</name>
+        <param>
+          <type>char *</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type>char const *</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+<para>Concat a string into an other string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dest</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>destination string </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>source string</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Destination string with copied source string </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/my.h" line="340" column="10" bodyfile="lib/my/my_strcat.c" bodystart="10" bodyend="24" declfile="include/my.h" declline="340" declcolumn="10"/>
+        <referencedby refid="lib_2my_2my_8h_1aa786ac9ee00076459ce23bc37bdf2430" compoundref="concat_8c" startline="13" endline="25">concat</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="include_2my_8h_1ae99df9aa229a6a662e6335e9350b73ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* my_strncat</definition>
+        <argsstring>(char *dest, char const *src, int nb)</argsstring>
+        <name>my_strncat</name>
+        <param>
+          <type>char *</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type>char const *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nb</declname>
+        </param>
+        <briefdescription>
+<para>Concat a string into an other string on n characters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dest</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>destination string </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>source string </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nb of characters to check</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Destination string with copied source string on n characters </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/my.h" line="352" column="10" bodyfile="lib/my/my_strncat.c" bodystart="10" bodyend="24" declfile="include/my.h" declline="352" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="include_2my_8h_1a1a42d9b749358a7c132f87a9502a948d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* my_strdup</definition>
+        <argsstring>(char const *str)</argsstring>
+        <name>my_strdup</name>
+        <param>
+          <type>char const *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>Make a copy of a string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Copy the string</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>String copy </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/my.h" line="362" column="10" bodyfile="lib/my/my_strdup.c" bodystart="14" bodyend="22" declfile="include/my.h" declline="362" declcolumn="10"/>
+        <referencedby refid="get__functions_8c_1a331ee9f33563f4477d7dd800d6f57914" compoundref="get__functions_8c" startline="19" endline="31">__py__get_func</referencedby>
+        <referencedby refid="values_8c_1aa6106819fa3eb8f92456adc88d464633" compoundref="values_8c" startline="21" endline="29">__py__values_from_var</referencedby>
+        <referencedby refid="values_8c_1a531444dbe3f3fb427490607c2389630f" compoundref="values_8c" startline="11" endline="19">__py__var_from_value</referencedby>
+        <referencedby refid="python__parser_8c_1a2ab11f553fcf96faef056ef3f81ca211" compoundref="python__parser_8c" startline="58" endline="73">__python__</referencedby>
+        <referencedby refid="python__parser_8c_1a65513290015f4a326d72e14b8f885846" compoundref="python__parser_8c" startline="42" endline="56">getvar</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="include_2my_8h_1aa786ac9ee00076459ce23bc37bdf2430" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* concat</definition>
+        <argsstring>(char *before, char *mid, char *after)</argsstring>
+        <name>concat</name>
+        <param>
+          <type>char *</type>
+          <declname>before</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>mid</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>after</declname>
+        </param>
+        <briefdescription>
+<para>Concat three strings. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>before</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>first string to concat </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>second string to concat </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>after</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>third string to concat</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Concatenated string </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/my.h" line="374" column="10" bodyfile="lib/my/concat.c" bodystart="13" bodyend="25" declfile="include/my.h" declline="374" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="include_2my_8h_1a55367464b1d36b5b782b13cffb701e65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* inttochar</definition>
+        <argsstring>(int nb)</argsstring>
+        <name>inttochar</name>
+        <param>
+          <type>int</type>
+          <declname>nb</declname>
+        </param>
+        <briefdescription>
+<para>Change a number into a strings. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number to change</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>String of the number </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/my.h" line="384" column="10" bodyfile="lib/my/inttochar.c" bodystart="11" bodyend="33" declfile="include/my.h" declline="384" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="include_2my_8h_1a75b8d8c9b6d5ebfc4d74dfa8eef65c4e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char **</type>
+        <definition>char** my_str_to_word_array</definition>
+        <argsstring>(char *str, char *sep)</argsstring>
+        <name>my_str_to_word_array</name>
+        <param>
+          <type>char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>sep</declname>
+        </param>
+        <briefdescription>
+<para>Turn a string into an array. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string to transform </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sep</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>separator to transform</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Array of string </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/my.h" line="395" column="10" bodyfile="lib/my/my_str_to_word_array.c" bodystart="54" bodyend="70" declfile="include/my.h" declline="395" declcolumn="10"/>
+        <referencedby refid="values_8c_1aa6106819fa3eb8f92456adc88d464633" compoundref="values_8c" startline="21" endline="29">__py__values_from_var</referencedby>
+        <referencedby refid="values_8c_1a531444dbe3f3fb427490607c2389630f" compoundref="values_8c" startline="11" endline="19">__py__var_from_value</referencedby>
+        <referencedby refid="python__parser_8c_1a2ab11f553fcf96faef056ef3f81ca211" compoundref="python__parser_8c" startline="58" endline="73">__python__</referencedby>
+        <referencedby refid="python__parser_8c_1a65513290015f4a326d72e14b8f885846" compoundref="python__parser_8c" startline="42" endline="56">getvar</referencedby>
+        <referencedby refid="main_8c_1ab6ab5095713a29ce48356b13afcb3a42" compoundref="main_8c" startline="33" endline="45">main</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">**<sp/>EPITECH<sp/>PROJECT,<sp/>2022</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">**<sp/>star.c</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">**<sp/>File<sp/>description:</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">**<sp/>star.c</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>MY_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>MY_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="include_2my_8h_1addf5ec070e9499d36b7f2009ce736076" refkind="member"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>UNUSED<sp/>__attribute__((unused))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="include_2my_8h_1ac4de74d04dc6e263345755eb62676802" kindref="member">my_putchar</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>c);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="include_2my_8h_1a2acc91a6a4eba94d5a3811fcb1d12b1c" kindref="member">my_sort_int_array</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*tab,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="include_2my_8h_1a2cd02d2d23c5c4edd026ad1fd3dafc8f" kindref="member">my_swap</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*<ref refid="namespacetest_1aa4c2a5552e9bc49b1816ff532f558c74" kindref="member">a</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*<ref refid="namespacetest_1a21ad0bd836b90d08f4cf640b4c298e7c" kindref="member">b</ref>);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="include_2my_8h_1ad36cc7e65c30e675f65b778abfaa16e9" kindref="member">my_isneg</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" kindref="member">nb</ref>);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="include_2my_8h_1af65d3a06247706e9e479694122c512cf" kindref="member">my_put_nbr</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" kindref="member">nb</ref>);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="include_2my_8h_1acfc5d69edef049c3fe6c3a4a724654d2" kindref="member">my_putstr</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*str);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="include_2my_8h_1a3b3960588932459570799afa357e32b5" kindref="member">my_strlen</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*str);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="include_2my_8h_1a82df5be1f3ffc9a6c980fa963a3d2800" kindref="member">my_getnbr</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*str);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="include_2my_8h_1a115e114e8365bdb7f48412cb61172bee" kindref="member">my_compute_power_rec</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" kindref="member">nb</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="my__compute__power__rec_8c_1a55e9afb4388f0e52a9e19fb00c273ef6" kindref="member">power</ref>);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="include_2my_8h_1a044bbc3392f74a1edd29b441d63c4650" kindref="member">my_intlen</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="include_2my_8h_1a27528de476912bb8329e1f994c00b65a" kindref="member">my_compute_square_root</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" kindref="member">nb</ref>);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="include_2my_8h_1a38c95ce0750bfe61850a3f77d4993a9d" kindref="member">my_is_prime</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" kindref="member">nb</ref>);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="include_2my_8h_1afb55abfd94a9e5b4a431696e7151d725" kindref="member">my_find_prime_sup</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" kindref="member">nb</ref>);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="include_2my_8h_1a12d4044e7c0ab78ca1f186e0abdb08c6" kindref="member">my_strcmp</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*s1,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*s2);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="include_2my_8h_1a4d74d542203cda4321599a3298ea42e7" kindref="member">my_strncmp</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*s1,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*s2,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n);</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="include_2my_8h_1a0b01950009cdeb52bc08d8c85a2a7710" kindref="member">my_str_islower</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*str);</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="include_2my_8h_1a5e411f7f2abdd1a80958c9128405c7de" kindref="member">my_str_isnum</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*str);</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="include_2my_8h_1a4efd520eca620458374f6c8d6baa0c74" kindref="member">my_str_isprintable</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*str);</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="include_2my_8h_1a6d430d2a8d88e94bdb7e9efdae80b8f8" kindref="member">my_str_isupper</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*str);</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="include_2my_8h_1a630fb53af4daf3fa5e0d7af88597341f" kindref="member">my_showmem</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*str,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="include_2my_8h_1ac64e0fcafac7473b9646ce3635dd1b41" kindref="member">my_showstr</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*str);</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="include_2my_8h_1ae65cf26359bf1ef1cf3ef15e0bdffe96" kindref="member">my_str_isalpha</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*str);</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="include_2my_8h_1a8a25778cf44c7d7d2c10cfea2059caea" kindref="member">my_show_word_array</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*tab);</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="include_2my_8h_1ad0742a034086f291ec1184d327fa79fc" kindref="member">my_strarraylen</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**str);</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="include_2my_8h_1ac1110055a28225a0cd3da939aa87f927" kindref="member">my_strcpy</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*src);</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"></highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="include_2my_8h_1ae51c6b6c91d29e82f72be5b73ffb4315" kindref="member">my_strncpy</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*dest,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*src,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n);</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"></highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="include_2my_8h_1ac0444a4f11db36138c4fcbd3e8dfd98c" kindref="member">my_revstr</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*str);</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"></highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="include_2my_8h_1a97396eb13250cce5cf8513f5e6a7dbf1" kindref="member">my_strstr</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*str,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*to_find);</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"></highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="include_2my_8h_1afbc12c776e8ed6d3b9310b7bf908939f" kindref="member">my_strupcase</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*str);</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"></highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="include_2my_8h_1adf870b335d19809be6d4e537b334fc6f" kindref="member">my_strlowcase</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*str);</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"></highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="include_2my_8h_1a6352e466b5441f01dc2ea66f0e005a8a" kindref="member">my_strcapitalize</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*str);</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"></highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="include_2my_8h_1a9992bba763aab423f854c0de195c2bef" kindref="member">my_strcat</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*dest,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*src);</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"></highlight></codeline>
+<codeline lineno="352"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="include_2my_8h_1ae99df9aa229a6a662e6335e9350b73ef" kindref="member">my_strncat</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*dest,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*src,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" kindref="member">nb</ref>);</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"></highlight></codeline>
+<codeline lineno="362"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="include_2my_8h_1a1a42d9b749358a7c132f87a9502a948d" kindref="member">my_strdup</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*str);</highlight></codeline>
+<codeline lineno="363"><highlight class="normal"></highlight></codeline>
+<codeline lineno="374"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="include_2my_8h_1aa786ac9ee00076459ce23bc37bdf2430" kindref="member">concat</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*before,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*mid,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*after);</highlight></codeline>
+<codeline lineno="375"><highlight class="normal"></highlight></codeline>
+<codeline lineno="378"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight></codeline>
+<codeline lineno="384"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="include_2my_8h_1a55367464b1d36b5b782b13cffb701e65" kindref="member">inttochar</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" kindref="member">nb</ref>);</highlight></codeline>
+<codeline lineno="385"><highlight class="normal"></highlight></codeline>
+<codeline lineno="395"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**<ref refid="include_2my_8h_1a75b8d8c9b6d5ebfc4d74dfa8eef65c4e" kindref="member">my_str_to_word_array</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*str,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*sep);</highlight></codeline>
+<codeline lineno="396"><highlight class="normal"></highlight></codeline>
+<codeline lineno="397"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="include/my.h"/>
+  </compounddef>
+</doxygen>

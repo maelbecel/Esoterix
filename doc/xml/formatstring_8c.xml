@@ -1,0 +1,356 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="formatstring_8c" kind="file" language="C++">
+    <compoundname>formatstring.c</compoundname>
+    <includes refid="lib_2formatstring_2formatstring_8h" local="yes">formatstring.h</includes>
+    <includes local="no">stdarg.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <incdepgraph>
+      <node id="3">
+        <label>stdarg.h</label>
+      </node>
+      <node id="5">
+        <label>stdlib.h</label>
+      </node>
+      <node id="1">
+        <label>lib/formatstring/formatstring.c</label>
+        <link refid="formatstring_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>formatstring.h</label>
+        <link refid="lib_2formatstring_2formatstring_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>unistd.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="formatstring_8c_1ad4f44a9dc69f9f452ac0814d8ee4726c" prot="public" static="yes" mutable="no">
+        <type>const struct <ref refid="structfflags" kindref="compound">fflags</ref></type>
+        <definition>const struct fflags Functions[]</definition>
+        <argsstring>[]</argsstring>
+        <name>Functions</name>
+        <initializer>= {
+    {&amp;<ref refid="lib_2formatstring_2formatstring_8h_1a04fb9590cfae84e0f3f68e96dd7c2869" kindref="member">fdisplaychar</ref>, &apos;c&apos;},
+    {&amp;<ref refid="lib_2formatstring_2formatstring_8h_1ac9045c01823ed91b0837ebc9b13af9a2" kindref="member">fdisplaypercent</ref>, &apos;%&apos;},
+    {&amp;<ref refid="lib_2formatstring_2formatstring_8h_1a39b754de814ecb66a412e3474e147c01" kindref="member">fdisplaynbr</ref>, &apos;i&apos;},
+    {&amp;<ref refid="lib_2formatstring_2formatstring_8h_1a39b754de814ecb66a412e3474e147c01" kindref="member">fdisplaynbr</ref>, &apos;d&apos;},
+    {&amp;<ref refid="lib_2formatstring_2formatstring_8h_1a39b754de814ecb66a412e3474e147c01" kindref="member">fdisplaynbr</ref>, &apos;h&apos;},
+    {&amp;<ref refid="lib_2formatstring_2formatstring_8h_1acd26263c8c06ea09b5d22cc84150eb87" kindref="member">fdisplaynbr_long</ref>, &apos;l&apos;},
+    {&amp;<ref refid="lib_2formatstring_2formatstring_8h_1a466cc39f2b821d00978d7e3b321366dd" kindref="member">fdisplaystr</ref>, &apos;s&apos;},
+    {&amp;<ref refid="lib_2formatstring_2formatstring_8h_1a9e9aec7c965581332d7de2360dbe460a" kindref="member">fdisplaybinary</ref>, &apos;b&apos;},
+    {&amp;<ref refid="lib_2formatstring_2formatstring_8h_1acf4fe44a073b5962d505a98c7e941008" kindref="member">fdisplaystr_unprintable</ref>, &apos;S&apos;},
+    {&amp;<ref refid="lib_2formatstring_2formatstring_8h_1a4303b79e90cde5fd473e12899e6f83db" kindref="member">fdisplaynbr_octal</ref>, &apos;o&apos;},
+    {&amp;<ref refid="lib_2formatstring_2formatstring_8h_1ae1476a39a946a2cb992280290bf9eb2a" kindref="member">fdisplaynbr_dec</ref>, &apos;u&apos;},
+    {&amp;<ref refid="lib_2formatstring_2formatstring_8h_1a8344c554de69d67d5014e8ae42ad4fad" kindref="member">fdisplaynbr_hexa</ref>, &apos;x&apos;},
+    {&amp;<ref refid="lib_2formatstring_2formatstring_8h_1adfb009226e03785c142d0f4c2132087f" kindref="member">fdisplaynbr_hexa_capital</ref>, &apos;X&apos;},
+    {&amp;<ref refid="lib_2formatstring_2formatstring_8h_1a6ff3b70cadd15c01a5a11640f0666b86" kindref="member">fdisplaypointer</ref>, &apos;p&apos;},
+    {NULL, -1},
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/formatstring/formatstring.c" line="1" column="0" bodyfile="lib/formatstring/formatstring.c" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="formatstring_8c_1a8904a9b68d9453c124478f84b5492630" prot="public" static="yes" mutable="no">
+        <type>const struct <ref refid="structfflags" kindref="compound">fflags</ref></type>
+        <definition>const struct fflags Hashtags[]</definition>
+        <argsstring>[]</argsstring>
+        <name>Hashtags</name>
+        <initializer>= {
+    {&amp;<ref refid="lib_2formatstring_2formatstring_8h_1a9678a1cd650015bcf953f5924e1ea362" kindref="member">fdisplaynbr_octal_hashtag</ref>, &apos;o&apos;},
+    {&amp;<ref refid="lib_2formatstring_2formatstring_8h_1a3c360431991fea5eaf959d1bb8425c83" kindref="member">fdisplaynbr_hexa_hashtag</ref>, &apos;x&apos;},
+    {&amp;<ref refid="lib_2formatstring_2formatstring_8h_1a767ec4b68c7c5d6ff9736c40c61ea46d" kindref="member">fdisplaynbr_hexa_capital_hashtag</ref>, &apos;X&apos;},
+    {NULL, -1},
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/formatstring/formatstring.c" line="1" column="0" bodyfile="lib/formatstring/formatstring.c" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="formatstring_8c_1aa731a6ebe04d5419d1d60f34f9a9457d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int my_strlen</definition>
+        <argsstring>(char const *str)</argsstring>
+        <name>my_strlen</name>
+        <param>
+          <type>char const *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/formatstring/formatstring.c" line="37" column="12" bodyfile="lib/formatstring/formatstring.c" bodystart="37" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="formatstring_8c_1a5432efb36b44010f8bd84ef49de4cac5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* fus</definition>
+        <argsstring>(char *a, char *b)</argsstring>
+        <name>fus</name>
+        <param>
+          <type>char *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+<para>Fusion of two strings. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>first string </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>second string</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>String of the fusion </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/formatstring/formatstring.c" line="46" column="6" bodyfile="lib/formatstring/formatstring.c" bodystart="46" bodyend="59"/>
+        <referencedby refid="lib_2formatstring_2formatstring_8h_1ae1476a39a946a2cb992280290bf9eb2a" compoundref="formatstring_2displaynbr__dec_8c" startline="54" endline="68">fdisplaynbr_dec</referencedby>
+        <referencedby refid="lib_2formatstring_2formatstring_8h_1a767ec4b68c7c5d6ff9736c40c61ea46d" compoundref="formatstring_2displaynbr__hexa__capital_8c" startline="44" endline="49">fdisplaynbr_hexa_capital_hashtag</referencedby>
+        <referencedby refid="lib_2formatstring_2formatstring_8h_1a3c360431991fea5eaf959d1bb8425c83" compoundref="formatstring_2displaynbr__hexa_8c" startline="44" endline="49">fdisplaynbr_hexa_hashtag</referencedby>
+        <referencedby refid="lib_2formatstring_2formatstring_8h_1a4303b79e90cde5fd473e12899e6f83db" compoundref="formatstring_2displaynbr__octal_8c" startline="62" endline="69">fdisplaynbr_octal</referencedby>
+        <referencedby refid="lib_2formatstring_2formatstring_8h_1a6ff3b70cadd15c01a5a11640f0666b86" compoundref="formatstring_2displaypointer_8c" startline="36" endline="42">fdisplaypointer</referencedby>
+        <referencedby refid="formatstring_2displaynbr__dec_8c_1a16748cdf7671e747b143f18eaa99b537" compoundref="formatstring_2displaynbr__dec_8c" startline="40" endline="52">fmy_put_nbr_dec</referencedby>
+        <referencedby refid="lib_2formatstring_2formatstring_8h_1a6f2c69610dc237549da5171b58e348d6" compoundref="formatstring_8c" startline="81" endline="103">format</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="formatstring_8c_1a806a602d77c3bf1d9d1e7a1e2f64fe3a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* fdisplayhashtag</definition>
+        <argsstring>(char c, va_list argv)</argsstring>
+        <name>fdisplayhashtag</name>
+        <param>
+          <type>char</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>va_list</type>
+          <declname>argv</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/formatstring/formatstring.c" line="61" column="6" bodyfile="lib/formatstring/formatstring.c" bodystart="61" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="formatstring_8c_1ac996d1a134b0ebf6f918a86c2ab05284" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* fdisplayflags</definition>
+        <argsstring>(char c, va_list argv)</argsstring>
+        <name>fdisplayflags</name>
+        <param>
+          <type>char</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>va_list</type>
+          <declname>argv</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/formatstring/formatstring.c" line="71" column="6" bodyfile="lib/formatstring/formatstring.c" bodystart="71" bodyend="79"/>
+        <referencedby refid="lib_2formatstring_2formatstring_8h_1a6f2c69610dc237549da5171b58e348d6" compoundref="formatstring_8c" startline="81" endline="103">format</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="formatstring_8c_1a6f2c69610dc237549da5171b58e348d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* format</definition>
+        <argsstring>(char const *str,...)</argsstring>
+        <name>format</name>
+        <param>
+          <type>char const *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+<para>Format string representation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string to format </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>...</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>list of arguments</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>String of the string </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/formatstring/formatstring.c" line="81" column="6" bodyfile="lib/formatstring/formatstring.c" bodystart="81" bodyend="103"/>
+        <references refid="formatstring_8c_1ac996d1a134b0ebf6f918a86c2ab05284" compoundref="formatstring_8c" startline="71" endline="79">fdisplayflags</references>
+        <references refid="formatstring_8c_1a5432efb36b44010f8bd84ef49de4cac5" compoundref="formatstring_8c" startline="46" endline="59">fus</references>
+        <referencedby refid="get__functions_8c_1a9c2e622c81bd3d6b4ebe0d1692faf266" compoundref="get__functions_8c" startline="33" endline="41">__py__fcnt_display</referencedby>
+        <referencedby refid="python__parser_8c_1a2ab11f553fcf96faef056ef3f81ca211" compoundref="python__parser_8c" startline="58" endline="73">__python__</referencedby>
+        <referencedby refid="python__parser_8c_1ac4df1ad18328e60dff2fa09161e75bc0" compoundref="python__parser_8c" startline="32" endline="40">var_from_array</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">**<sp/>EPITECH<sp/>PROJECT,<sp/>2021</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">**<sp/>my_printf.c</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">**<sp/>File<sp/>description:</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">**<sp/>my<sp/>printf</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lib_2formatstring_2formatstring_8h" kindref="compound">formatstring.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdarg.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structfflags" kindref="compound">fflags</ref><sp/>Functions[]<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>{&amp;<ref refid="include_2formatstring_8h_1a04fb9590cfae84e0f3f68e96dd7c2869" kindref="member">fdisplaychar</ref>,<sp/></highlight><highlight class="charliteral">&apos;c&apos;</highlight><highlight class="normal">},</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>{&amp;<ref refid="include_2formatstring_8h_1ac9045c01823ed91b0837ebc9b13af9a2" kindref="member">fdisplaypercent</ref>,<sp/></highlight><highlight class="charliteral">&apos;%&apos;</highlight><highlight class="normal">},</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>{&amp;<ref refid="include_2formatstring_8h_1a39b754de814ecb66a412e3474e147c01" kindref="member">fdisplaynbr</ref>,<sp/></highlight><highlight class="charliteral">&apos;i&apos;</highlight><highlight class="normal">},</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>{&amp;<ref refid="include_2formatstring_8h_1a39b754de814ecb66a412e3474e147c01" kindref="member">fdisplaynbr</ref>,<sp/></highlight><highlight class="charliteral">&apos;d&apos;</highlight><highlight class="normal">},</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>{&amp;<ref refid="include_2formatstring_8h_1a39b754de814ecb66a412e3474e147c01" kindref="member">fdisplaynbr</ref>,<sp/></highlight><highlight class="charliteral">&apos;h&apos;</highlight><highlight class="normal">},</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>{&amp;<ref refid="include_2formatstring_8h_1acd26263c8c06ea09b5d22cc84150eb87" kindref="member">fdisplaynbr_long</ref>,<sp/></highlight><highlight class="charliteral">&apos;l&apos;</highlight><highlight class="normal">},</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>{&amp;<ref refid="include_2formatstring_8h_1a466cc39f2b821d00978d7e3b321366dd" kindref="member">fdisplaystr</ref>,<sp/></highlight><highlight class="charliteral">&apos;s&apos;</highlight><highlight class="normal">},</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>{&amp;<ref refid="include_2formatstring_8h_1a9e9aec7c965581332d7de2360dbe460a" kindref="member">fdisplaybinary</ref>,<sp/></highlight><highlight class="charliteral">&apos;b&apos;</highlight><highlight class="normal">},</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>{&amp;<ref refid="include_2formatstring_8h_1acf4fe44a073b5962d505a98c7e941008" kindref="member">fdisplaystr_unprintable</ref>,<sp/></highlight><highlight class="charliteral">&apos;S&apos;</highlight><highlight class="normal">},</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>{&amp;<ref refid="include_2formatstring_8h_1a4303b79e90cde5fd473e12899e6f83db" kindref="member">fdisplaynbr_octal</ref>,<sp/></highlight><highlight class="charliteral">&apos;o&apos;</highlight><highlight class="normal">},</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>{&amp;<ref refid="include_2formatstring_8h_1ae1476a39a946a2cb992280290bf9eb2a" kindref="member">fdisplaynbr_dec</ref>,<sp/></highlight><highlight class="charliteral">&apos;u&apos;</highlight><highlight class="normal">},</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>{&amp;<ref refid="include_2formatstring_8h_1a8344c554de69d67d5014e8ae42ad4fad" kindref="member">fdisplaynbr_hexa</ref>,<sp/></highlight><highlight class="charliteral">&apos;x&apos;</highlight><highlight class="normal">},</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>{&amp;<ref refid="include_2formatstring_8h_1adfb009226e03785c142d0f4c2132087f" kindref="member">fdisplaynbr_hexa_capital</ref>,<sp/></highlight><highlight class="charliteral">&apos;X&apos;</highlight><highlight class="normal">},</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>{&amp;<ref refid="include_2formatstring_8h_1a6ff3b70cadd15c01a5a11640f0666b86" kindref="member">fdisplaypointer</ref>,<sp/></highlight><highlight class="charliteral">&apos;p&apos;</highlight><highlight class="normal">},</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>{NULL,<sp/>-1},</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structfflags" kindref="compound">fflags</ref><sp/>Hashtags[]<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>{&amp;<ref refid="include_2formatstring_8h_1a9678a1cd650015bcf953f5924e1ea362" kindref="member">fdisplaynbr_octal_hashtag</ref>,<sp/></highlight><highlight class="charliteral">&apos;o&apos;</highlight><highlight class="normal">},</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>{&amp;<ref refid="include_2formatstring_8h_1a3c360431991fea5eaf959d1bb8425c83" kindref="member">fdisplaynbr_hexa_hashtag</ref>,<sp/></highlight><highlight class="charliteral">&apos;x&apos;</highlight><highlight class="normal">},</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>{&amp;<ref refid="include_2formatstring_8h_1a767ec4b68c7c5d6ff9736c40c61ea46d" kindref="member">fdisplaynbr_hexa_capital_hashtag</ref>,<sp/></highlight><highlight class="charliteral">&apos;X&apos;</highlight><highlight class="normal">},</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>{NULL,<sp/>-1},</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="include_2my_8h_1a3b3960588932459570799afa357e32b5" kindref="member">my_strlen</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*str)</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(str[i]<sp/>!=<sp/></highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i++;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>i;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="lib_2formatstring_2formatstring_8h_1a5432efb36b44010f8bd84ef49de4cac5" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="formatstring_8c_1a5432efb36b44010f8bd84ef49de4cac5" kindref="member">fus</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="namespacetest_1aa4c2a5552e9bc49b1816ff532f558c74" kindref="member">a</ref>,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="namespacetest_1a21ad0bd836b90d08f4cf640b4c298e7c" kindref="member">b</ref>)</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*res<sp/>=<sp/>malloc(<ref refid="include_2my_8h_1a3b3960588932459570799afa357e32b5" kindref="member">my_strlen</ref>(<ref refid="namespacetest_1aa4c2a5552e9bc49b1816ff532f558c74" kindref="member">a</ref>)<sp/>+<sp/><ref refid="include_2my_8h_1a3b3960588932459570799afa357e32b5" kindref="member">my_strlen</ref>(<ref refid="namespacetest_1a21ad0bd836b90d08f4cf640b4c298e7c" kindref="member">b</ref>)<sp/>+<sp/>1);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!res)</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="include_2my_8h_1a3b3960588932459570799afa357e32b5" kindref="member">my_strlen</ref>(<ref refid="namespacetest_1aa4c2a5552e9bc49b1816ff532f558c74" kindref="member">a</ref>);<sp/>i++,<sp/>x++)</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>res[x]<sp/>=<sp/><ref refid="namespacetest_1aa4c2a5552e9bc49b1816ff532f558c74" kindref="member">a</ref>[i];</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="include_2my_8h_1a3b3960588932459570799afa357e32b5" kindref="member">my_strlen</ref>(<ref refid="namespacetest_1a21ad0bd836b90d08f4cf640b4c298e7c" kindref="member">b</ref>);<sp/>i++,<sp/>x++)</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>res[x]<sp/>=<sp/><ref refid="namespacetest_1a21ad0bd836b90d08f4cf640b4c298e7c" kindref="member">b</ref>[i];</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>res[x]<sp/>=<sp/></highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>res;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="formatstring_8c_1a806a602d77c3bf1d9d1e7a1e2f64fe3a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="formatstring_8c_1a806a602d77c3bf1d9d1e7a1e2f64fe3a" kindref="member">fdisplayhashtag</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>c,<sp/>va_list<sp/>argv)</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>Hashtags[i].<ref refid="structfflags_1a11764cc96bb263d1f257bcc01205a787" kindref="member">flag</ref><sp/>!=<sp/>-1;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(Hashtags[i].<ref refid="structfflags_1a11764cc96bb263d1f257bcc01205a787" kindref="member">flag</ref><sp/>==<sp/>c)<sp/>{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Hashtags[i].<ref refid="structfflags_1ae8d01315066f87721dbd3ad68e97478e" kindref="member">func</ref>(argv);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="formatstring_8c_1ac996d1a134b0ebf6f918a86c2ab05284" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="formatstring_8c_1ac996d1a134b0ebf6f918a86c2ab05284" kindref="member">fdisplayflags</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>c,<sp/>va_list<sp/>argv)</highlight></codeline>
+<codeline lineno="72"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>Functions[i].<ref refid="structfflags_1a11764cc96bb263d1f257bcc01205a787" kindref="member">flag</ref><sp/>!=<sp/>-1;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(Functions[i].<ref refid="structfflags_1a11764cc96bb263d1f257bcc01205a787" kindref="member">flag</ref><sp/>==<sp/>c)<sp/>{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Functions[i].<ref refid="structfflags_1ae8d01315066f87721dbd3ad68e97478e" kindref="member">func</ref>(argv);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="lib_2formatstring_2formatstring_8h_1a6f2c69610dc237549da5171b58e348d6" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="formatstring_8c_1a6f2c69610dc237549da5171b58e348d6" kindref="member">format</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*str,<sp/>...)</highlight></codeline>
+<codeline lineno="82"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>va_list<sp/>argv;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>va_start(argv,<sp/>str);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*res<sp/>=<sp/>malloc(2);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>buf[]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;\0\0&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*tmp;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>res[0]<sp/>=<sp/></highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(str[++i]<sp/>!=<sp/></highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(str[i]<sp/>==<sp/></highlight><highlight class="charliteral">&apos;%&apos;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tmp<sp/>=<sp/><ref refid="formatstring_8c_1a5432efb36b44010f8bd84ef49de4cac5" kindref="member">fus</ref>(res,<sp/><ref refid="formatstring_8c_1ac996d1a134b0ebf6f918a86c2ab05284" kindref="member">fdisplayflags</ref>(str[++i],<sp/>argv));</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>buf[0]<sp/>=<sp/>str[i];</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tmp<sp/>=<sp/><ref refid="formatstring_8c_1a5432efb36b44010f8bd84ef49de4cac5" kindref="member">fus</ref>(res,<sp/>buf);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>free(res);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>res<sp/>=<sp/>tmp;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>va_end(argv);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>tmp;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="lib/formatstring/formatstring.c"/>
+  </compounddef>
+</doxygen>

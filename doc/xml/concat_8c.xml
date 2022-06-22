@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="concat_8c" kind="file" language="C++">
+    <compoundname>concat.c</compoundname>
+    <includes local="no">stdlib.h</includes>
+    <includes refid="lib_2my_2my_8h" local="yes">my.h</includes>
+    <incdepgraph>
+      <node id="3">
+        <label>my.h</label>
+        <link refid="lib_2my_2my_8h"/>
+      </node>
+      <node id="1">
+        <label>lib/my/concat.c</label>
+        <link refid="concat_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>stdlib.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="concat_8c_1a3b3960588932459570799afa357e32b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int my_strlen</definition>
+        <argsstring>(char const *str)</argsstring>
+        <name>my_strlen</name>
+        <param>
+          <type>char const *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>Get the lenth of a string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string to check</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Length of the string </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/my/concat.c" line="11" column="5" bodyfile="lib/my/my_strlen.c" bodystart="10" bodyend="17" declfile="lib/my/concat.c" declline="11" declcolumn="5"/>
+        <referencedby refid="lib_2my_2my_8h_1aa786ac9ee00076459ce23bc37bdf2430" compoundref="concat_8c" startline="13" endline="25">concat</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="concat_8c_1aa786ac9ee00076459ce23bc37bdf2430" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* concat</definition>
+        <argsstring>(char *before, char *mid, char *after)</argsstring>
+        <name>concat</name>
+        <param>
+          <type>char *</type>
+          <declname>before</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>mid</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>after</declname>
+        </param>
+        <briefdescription>
+<para>Concat three strings. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>before</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>first string to concat </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>second string to concat </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>after</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>third string to concat</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Concatenated string </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/my/concat.c" line="13" column="6" bodyfile="lib/my/concat.c" bodystart="13" bodyend="25"/>
+        <references refid="include_2my_8h_1a9992bba763aab423f854c0de195c2bef" compoundref="my__strcat_8c" startline="10" endline="24">my_strcat</references>
+        <references refid="concat_8c_1a3b3960588932459570799afa357e32b5" compoundref="my__strlen_8c" startline="10" endline="17">my_strlen</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">**<sp/>EPITECH<sp/>PROJECT,<sp/>2021</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">**<sp/>concat.c</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">**<sp/>File<sp/>description:</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">**<sp/>concat<sp/>3<sp/>char<sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lib_2my_2my_8h" kindref="compound">my.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="concat_8c_1a3b3960588932459570799afa357e32b5" kindref="member">my_strlen</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*str);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="lib_2my_2my_8h_1aa786ac9ee00076459ce23bc37bdf2430" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="concat_8c_1aa786ac9ee00076459ce23bc37bdf2430" kindref="member">concat</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*before,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*mid,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*after)</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*res<sp/>=<sp/>malloc(<ref refid="concat_8c_1a3b3960588932459570799afa357e32b5" kindref="member">my_strlen</ref>(after)<sp/>+</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="concat_8c_1a3b3960588932459570799afa357e32b5" kindref="member">my_strlen</ref>(mid)<sp/>+</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="concat_8c_1a3b3960588932459570799afa357e32b5" kindref="member">my_strlen</ref>(before)<sp/>+<sp/>1);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!res)</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>res<sp/>=<sp/><ref refid="include_2my_8h_1a9992bba763aab423f854c0de195c2bef" kindref="member">my_strcat</ref>(res,<sp/>before);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>res<sp/>=<sp/><ref refid="include_2my_8h_1a9992bba763aab423f854c0de195c2bef" kindref="member">my_strcat</ref>(res,<sp/>mid);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>res<sp/>=<sp/><ref refid="include_2my_8h_1a9992bba763aab423f854c0de195c2bef" kindref="member">my_strcat</ref>(res,<sp/>after);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>res;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="lib/my/concat.c"/>
+  </compounddef>
+</doxygen>

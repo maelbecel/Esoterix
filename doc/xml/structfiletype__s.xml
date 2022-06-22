@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structfiletype__s" kind="struct" language="C++" prot="public">
+    <compoundname>filetype_s</compoundname>
+    <includes refid="esoterix_8h" local="no">esoterix.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structfiletype__s_1a047fd5e3abe6b4702ee66ec0b1f01404" prot="public" static="no" mutable="no">
+        <type><ref refid="esoterix_8h_1a17e6d9e16d5e07dd4ccb65bbbd23a5ae" kindref="member">fileref_t</ref></type>
+        <definition>fileref_t reference</definition>
+        <argsstring></argsstring>
+        <name>reference</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/esoterix.h" line="162" column="19" bodyfile="include/esoterix.h" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structfiletype__s_1aeac90097f29f7529968697163cea5c18" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* filename</definition>
+        <argsstring></argsstring>
+        <name>filename</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/esoterix.h" line="163" column="14" bodyfile="include/esoterix.h" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structfiletype__s_1a6b01db356a67f1504349c093d5da931e" prot="public" static="no" mutable="no">
+        <type>char *(*</type>
+        <definition>char*( * func(char *)</definition>
+        <argsstring>)(char *)</argsstring>
+        <name>func</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/esoterix.h" line="164" column="9" bodyfile="include/esoterix.h" bodystart="164" bodyend="-1"/>
+        <referencedby refid="main_8c_1ab6ab5095713a29ce48356b13afcb3a42" compoundref="main_8c" startline="33" endline="45">main</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Struct for a type. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Contain the reference to the type to compile, his abbreviations, and a pointer to the function </para>
+    </detaileddescription>
+    <location file="include/esoterix.h" line="161" column="21" bodyfile="include/esoterix.h" bodystart="161" bodyend="165"/>
+    <listofallmembers>
+      <member refid="structfiletype__s_1aeac90097f29f7529968697163cea5c18" prot="public" virt="non-virtual"><scope>filetype_s</scope><name>filename</name></member>
+      <member refid="structfiletype__s_1a6b01db356a67f1504349c093d5da931e" prot="public" virt="non-virtual"><scope>filetype_s</scope><name>func</name></member>
+      <member refid="structfiletype__s_1a047fd5e3abe6b4702ee66ec0b1f01404" prot="public" virt="non-virtual"><scope>filetype_s</scope><name>reference</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

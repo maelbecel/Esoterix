@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="my__swap_8c" kind="file" language="C++">
+    <compoundname>my_swap.c</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="my__swap_8c_1a2cd02d2d23c5c4edd026ad1fd3dafc8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void my_swap</definition>
+        <argsstring>(int *a, int *b)</argsstring>
+        <name>my_swap</name>
+        <param>
+          <type>int *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+<para>Swap to int. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>first int </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>second int </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/my/my_swap.c" line="8" column="6" bodyfile="lib/my/my_swap.c" bodystart="8" bodyend="15"/>
+        <references refid="namespacetest_1aa4c2a5552e9bc49b1816ff532f558c74" compoundref="test_8py" startline="1">test.a</references>
+        <references refid="namespacetest_1a21ad0bd836b90d08f4cf640b4c298e7c" compoundref="test_8py" startline="2">test.b</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">**<sp/>EPITECH<sp/>PROJECT,<sp/>2021</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">**<sp/>my_swap.c</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">**<sp/>File<sp/>description:</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">**<sp/>my<sp/>swap</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="my__swap_8c_1a2cd02d2d23c5c4edd026ad1fd3dafc8f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="my__swap_8c_1a2cd02d2d23c5c4edd026ad1fd3dafc8f" kindref="member">my_swap</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*<ref refid="namespacetest_1aa4c2a5552e9bc49b1816ff532f558c74" kindref="member">a</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*<ref refid="namespacetest_1a21ad0bd836b90d08f4cf640b4c298e7c" kindref="member">b</ref>)</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>c<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>c<sp/>=<sp/>*<ref refid="namespacetest_1aa4c2a5552e9bc49b1816ff532f558c74" kindref="member">a</ref>;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>*<ref refid="namespacetest_1aa4c2a5552e9bc49b1816ff532f558c74" kindref="member">a</ref><sp/>=<sp/>*<ref refid="namespacetest_1a21ad0bd836b90d08f4cf640b4c298e7c" kindref="member">b</ref>;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>*<ref refid="namespacetest_1a21ad0bd836b90d08f4cf640b4c298e7c" kindref="member">b</ref><sp/>=<sp/>c;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="lib/my/my_swap.c"/>
+  </compounddef>
+</doxygen>

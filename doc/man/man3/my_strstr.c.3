@@ -1,0 +1,66 @@
+.TH "lib/my/my_strstr.c" 3 "Thu Jun 23 2022" "Version 1.0" "Esoterix" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+lib/my/my_strstr.c
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <stdio\&.h>\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "int \fBmy_strlen\fP (char const *str)"
+.br
+.RI "Get the lenth of a string\&. "
+.ti -1c
+.RI "char * \fBmy_strstr\fP (char *str, char const *to_find)"
+.br
+.RI "Find a string into an other string\&. "
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "int my_strlen (char const * str)"
+
+.PP
+Get the lenth of a string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIstr\fP string to check
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Length of the string 
+.RE
+.PP
+
+.PP
+Definition at line 10 of file my_strlen\&.c\&.
+.SS "char* my_strstr (char * str, char const * to_find)"
+
+.PP
+Find a string into an other string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIstr\fP base string 
+.br
+\fIto_find\fP string to find
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+NULL if not found, string from to_find otherwise 
+.RE
+.PP
+
+.PP
+Definition at line 12 of file my_strstr\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Esoterix from the source code\&.

@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="my__putstr_8c" kind="file" language="C++">
+    <compoundname>my_putstr.c</compoundname>
+    <includes local="no">unistd.h</includes>
+    <includes refid="lib_2my_2my_8h" local="yes">my.h</includes>
+    <incdepgraph>
+      <node id="3">
+        <label>my.h</label>
+        <link refid="lib_2my_2my_8h"/>
+      </node>
+      <node id="1">
+        <label>lib/my/my_putstr.c</label>
+        <link refid="my__putstr_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>unistd.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="my__putstr_8c_1acfc5d69edef049c3fe6c3a4a724654d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int my_putstr</definition>
+        <argsstring>(char const *str)</argsstring>
+        <name>my_putstr</name>
+        <param>
+          <type>char const *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>Write a string in the standard output. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string to write</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/my/my_putstr.c" line="11" column="5" bodyfile="lib/my/my_putstr.c" bodystart="11" bodyend="15"/>
+        <references refid="include_2my_8h_1a3b3960588932459570799afa357e32b5" compoundref="my__strlen_8c" startline="10" endline="17">my_strlen</references>
+        <referencedby refid="my__show__word__array_8c_1a8a25778cf44c7d7d2c10cfea2059caea" compoundref="my__show__word__array_8c" startline="12" endline="21">my_show_word_array</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">**<sp/>EPITECH<sp/>PROJECT,<sp/>2021</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">**<sp/>my_swap.c</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">**<sp/>File<sp/>description:</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">**<sp/>my<sp/>swap</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;unistd.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lib_2my_2my_8h" kindref="compound">my.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="my__show__word__array_8c_1acfc5d69edef049c3fe6c3a4a724654d2" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="my__putstr_8c_1acfc5d69edef049c3fe6c3a4a724654d2" kindref="member">my_putstr</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*str)</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>write(1,<sp/>str,<sp/><ref refid="include_2my_8h_1a3b3960588932459570799afa357e32b5" kindref="member">my_strlen</ref>(str));</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="lib/my/my_putstr.c"/>
+  </compounddef>
+</doxygen>

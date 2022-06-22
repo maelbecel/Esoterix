@@ -1,0 +1,217 @@
+\hypertarget{array_8c}{}\doxysection{src/array.c File Reference}
+\label{array_8c}\index{src/array.c@{src/array.c}}
+{\ttfamily \#include \char`\"{}esoterix.\+h\char`\"{}}\newline
+Include dependency graph for array.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{array_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{array_8c_a5e4216c3a9c693ea1e816c062b2f4382}{is\+\_\+in}} (char $\ast$$\ast$array, char $\ast$str)
+\begin{DoxyCompactList}\small\item\em Check if a string is in an array. \end{DoxyCompactList}\item 
+char $\ast$$\ast$ \mbox{\hyperlink{array_8c_a7d8817d87c0f38087af49a654edbc308}{append}} (char $\ast$$\ast$array, char $\ast$str)
+\begin{DoxyCompactList}\small\item\em Add a string in an Array. \end{DoxyCompactList}\item 
+char $\ast$$\ast$ \mbox{\hyperlink{array_8c_a72059dc959d6669f93addf413d969ff7}{remove}} (char $\ast$$\ast$array, char $\ast$str)
+\begin{DoxyCompactList}\small\item\em Remove first occurence of a string in an array. \end{DoxyCompactList}\item 
+char $\ast$$\ast$ \mbox{\hyperlink{array_8c_a6fdd8059e35129794c0095e7587367d1}{remove\+\_\+all}} (char $\ast$$\ast$array, char $\ast$str)
+\begin{DoxyCompactList}\small\item\em Delete all time str in array. \end{DoxyCompactList}\item 
+char $\ast$$\ast$ \mbox{\hyperlink{array_8c_aa1aace4d21f5c36fa589395b365d969d}{no\+\_\+double}} (char $\ast$$\ast$array)
+\begin{DoxyCompactList}\small\item\em Delete double in an array. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{array_8c_a7d8817d87c0f38087af49a654edbc308}\label{array_8c_a7d8817d87c0f38087af49a654edbc308}} 
+\index{array.c@{array.c}!append@{append}}
+\index{append@{append}!array.c@{array.c}}
+\doxysubsubsection{\texorpdfstring{append()}{append()}}
+{\footnotesize\ttfamily char$\ast$$\ast$ append (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{array,  }\item[{char $\ast$}]{str }\end{DoxyParamCaption})}
+
+
+
+Add a string in an Array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & array to check \\
+\hline
+{\em str} & string to check\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array with the string 
+\end{DoxyReturn}
+
+
+Definition at line 21 of file array.\+c.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=260pt]{array_8c_a7d8817d87c0f38087af49a654edbc308_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{array_8c_a7d8817d87c0f38087af49a654edbc308_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{array_8c_a5e4216c3a9c693ea1e816c062b2f4382}\label{array_8c_a5e4216c3a9c693ea1e816c062b2f4382}} 
+\index{array.c@{array.c}!is\_in@{is\_in}}
+\index{is\_in@{is\_in}!array.c@{array.c}}
+\doxysubsubsection{\texorpdfstring{is\_in()}{is\_in()}}
+{\footnotesize\ttfamily bool is\+\_\+in (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{array,  }\item[{char $\ast$}]{str }\end{DoxyParamCaption})}
+
+
+
+Check if a string is in an array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & array to check \\
+\hline
+{\em str} & string to check\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if str is in array, false otherwise 
+\end{DoxyReturn}
+
+
+Definition at line 10 of file array.\+c.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{array_8c_a5e4216c3a9c693ea1e816c062b2f4382_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{array_8c_a5e4216c3a9c693ea1e816c062b2f4382_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{array_8c_aa1aace4d21f5c36fa589395b365d969d}\label{array_8c_aa1aace4d21f5c36fa589395b365d969d}} 
+\index{array.c@{array.c}!no\_double@{no\_double}}
+\index{no\_double@{no\_double}!array.c@{array.c}}
+\doxysubsubsection{\texorpdfstring{no\_double()}{no\_double()}}
+{\footnotesize\ttfamily char$\ast$$\ast$ no\+\_\+double (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{array }\end{DoxyParamCaption})}
+
+
+
+Delete double in an array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & array to check\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array without double 
+\end{DoxyReturn}
+
+
+Definition at line 57 of file array.\+c.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{array_8c_aa1aace4d21f5c36fa589395b365d969d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{array_8c_aa1aace4d21f5c36fa589395b365d969d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{array_8c_a72059dc959d6669f93addf413d969ff7}\label{array_8c_a72059dc959d6669f93addf413d969ff7}} 
+\index{array.c@{array.c}!remove@{remove}}
+\index{remove@{remove}!array.c@{array.c}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily char$\ast$$\ast$ remove (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{array,  }\item[{char $\ast$}]{str }\end{DoxyParamCaption})}
+
+
+
+Remove first occurence of a string in an array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & array to check \\
+\hline
+{\em str} & string to check\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array without the string 
+\end{DoxyReturn}
+
+
+Definition at line 33 of file array.\+c.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=261pt]{array_8c_a72059dc959d6669f93addf413d969ff7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{array_8c_a72059dc959d6669f93addf413d969ff7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{array_8c_a6fdd8059e35129794c0095e7587367d1}\label{array_8c_a6fdd8059e35129794c0095e7587367d1}} 
+\index{array.c@{array.c}!remove\_all@{remove\_all}}
+\index{remove\_all@{remove\_all}!array.c@{array.c}}
+\doxysubsubsection{\texorpdfstring{remove\_all()}{remove\_all()}}
+{\footnotesize\ttfamily char$\ast$$\ast$ remove\+\_\+all (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{array,  }\item[{char $\ast$}]{str }\end{DoxyParamCaption})}
+
+
+
+Delete all time str in array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & array to clean \\
+\hline
+{\em str} & string to delete\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array without the string 
+\end{DoxyReturn}
+
+
+Definition at line 48 of file array.\+c.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{array_8c_a6fdd8059e35129794c0095e7587367d1_cgraph}
+\end{center}
+\end{figure}

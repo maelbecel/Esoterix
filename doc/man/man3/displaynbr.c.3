@@ -1,0 +1,75 @@
+.TH "lib/myprintf/displaynbr.c" 3 "Thu Jun 23 2022" "Version 1.0" "Esoterix" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+lib/myprintf/displaynbr.c
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <stdio\&.h>\fP
+.br
+\fC#include <stdarg\&.h>\fP
+.br
+\fC#include 'printf\&.h'\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "int \fBdisplaynbr\fP (va_list argv)"
+.br
+.RI "Write an int in the standard output\&. "
+.ti -1c
+.RI "void \fBmy_put_nbr_long\fP (long int nb)"
+.br
+.ti -1c
+.RI "int \fBdisplaynbr_long\fP (va_list argv)"
+.br
+.RI "Write a long int in the standard output\&. "
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "int displaynbr (va_list argv)"
+
+.PP
+Write an int in the standard output\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIargv\fP int to display
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+0 
+.RE
+.PP
+
+.PP
+Definition at line 34 of file displaynbr\&.c\&.
+.SS "int displaynbr_long (va_list argv)"
+
+.PP
+Write a long int in the standard output\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIargv\fP long int to display
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+0 
+.RE
+.PP
+
+.PP
+Definition at line 70 of file displaynbr\&.c\&.
+.SS "void my_put_nbr_long (long int nb)"
+
+.PP
+Definition at line 53 of file displaynbr\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Esoterix from the source code\&.

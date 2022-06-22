@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="_r_e_a_d_m_e_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>Esoterix</highlight></codeline>
+<codeline><highlight class="normal">[![CodeFactor](https://www.codefactor.io/repository/github/maelbecel/esoterix/badge)](https://www.codefactor.io/repository/github/maelbecel/esoterix)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Translator<sp/>from<sp/>basic<sp/>programming<sp/>language<sp/>to<sp/>esoteric<sp/>programming<sp/>language</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">For<sp/>more<sp/>information<sp/>check<sp/>the<sp/>[Esoterix<sp/>wiki](https://github.com/maelbecel/Esoterix/wiki)</highlight></codeline>
+    </programlisting>
+    <location file="README.md"/>
+  </compounddef>
+</doxygen>

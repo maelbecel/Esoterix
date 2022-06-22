@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="build_8py" kind="file" language="Python">
+    <compoundname>build.py</compoundname>
+    <innernamespace refid="namespacebuild">build</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacebuild" refkind="compound"><highlight class="comment">#/usr/bin/env<sp/>python3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>time<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>sleep</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>sys</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="namespacebuild_1a29229074e84d04d078416f4c643e4a25" refkind="member"><highlight class="normal">bold<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;\033[1m&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="namespacebuild_1a2f7d79b3e21f3245f03d426ceb0ef1e3" refkind="member"><highlight class="normal">normal<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;\033[0m&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="namespacebuild_1a021f4ce9854814899aad1e2c5b0b2d5c" refkind="member"><highlight class="normal">red<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;\033[31m\033[1m&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="namespacebuild_1a5d6ba79bcabe518536bff9acd4888310" refkind="member"><highlight class="normal">yellow<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;\033[33m\033[1m&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="namespacebuild_1a7ed4b1fc7c9d666931f413a1fe4d238a" refkind="member"><highlight class="normal">green<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;\033[32m\033[1m&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="namespacebuild_1a1e81cfa88bd66ccde9b070268de9c672" refkind="member"><highlight class="normal">spaces<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal">*50</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">sys.stdout.write(</highlight><highlight class="stringliteral">&apos;\r&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">sys.stdout.write(spaces<sp/>*<sp/>2)</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">sys.stdout.write(</highlight><highlight class="stringliteral">&apos;\r&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="namespacebuild_1a40a5d58ffa6e88aa578d6683ac413105" refkind="member"><highlight class="normal">file<sp/>=<sp/>sys.argv[1]</highlight></codeline>
+<codeline lineno="19" refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" refkind="member"><highlight class="normal">nb<sp/>=<sp/>sys.argv[2]</highlight></codeline>
+<codeline lineno="20" refid="namespacebuild_1a5f3fcf87333f5770d16608f67ad88d19" refkind="member"><highlight class="normal">all<sp/>=<sp/>sys.argv[3]</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="namespacebuild_1a70b1803f35e8b36a07f8ba97b8e51819" refkind="member"><highlight class="normal">place<sp/>=<sp/>40</highlight></codeline>
+<codeline lineno="23" refid="namespacebuild_1a2f4f51c5a35082684ccbbcae8dd4dc25" refkind="member"><highlight class="normal">percentage<sp/>=<sp/>int(nb)<sp/>*<sp/>100<sp/>/<sp/>int(all)</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="namespacebuild_1a0713fade3ba7938f7aa9e0b9df2347d0" refkind="member"><highlight class="normal">display<sp/>=<sp/>bold<sp/>+<sp/>file</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>len(file)<sp/>&lt;<sp/>place:</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>display<sp/>+=<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal"><sp/>*<sp/>(place<sp/>-<sp/>len(file))</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">display<sp/>+=<sp/></highlight><highlight class="stringliteral">&quot;[&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal">sys.stdout.write(display)</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>percentage<sp/>&gt;<sp/>67:</highlight></codeline>
+<codeline lineno="32" refid="namespacebuild_1a8e4894c1cf91ddf0fa2bdfa5563dfdbb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>color<sp/>=<sp/>green</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keywordflow">elif</highlight><highlight class="normal"><sp/>percentage<sp/>&gt;<sp/>33:</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>color<sp/>=<sp/>yellow</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>color<sp/>=<sp/>red</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">sys.stdout.write(color)</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="namespacebuild_1a905c521e05ec8042631a912b71d0454e" refkind="member"><highlight class="normal">temp<sp/>=<sp/>int(int(percentage)<sp/>*<sp/>place<sp/>/<sp/>100)</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">sys.stdout.write(</highlight><highlight class="stringliteral">u&quot;\u25AE&quot;</highlight><highlight class="normal"><sp/>*<sp/>temp)</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">sys.stdout.write(</highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal"><sp/>*<sp/>(place<sp/>-<sp/>temp))</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal">sys.stdout.write(normal<sp/>+<sp/>bold<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;]&quot;</highlight><highlight class="normal"><sp/>+<sp/></highlight><highlight class="stringliteral">&quot;\t&quot;</highlight><highlight class="normal"><sp/>+<sp/>str(int(percentage))<sp/>+<sp/></highlight><highlight class="stringliteral">&apos;%&apos;</highlight><highlight class="normal"><sp/>+<sp/>normal<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;\t&quot;</highlight><highlight class="normal"><sp/>+</highlight><highlight class="stringliteral">&quot;(&quot;</highlight><highlight class="normal"><sp/>+<sp/>nb<sp/>+<sp/></highlight><highlight class="stringliteral">&apos;/&apos;</highlight><highlight class="normal"><sp/>+<sp/>all<sp/>+</highlight><highlight class="stringliteral">&quot;)&quot;</highlight><highlight class="normal"><sp/>+<sp/>spaces<sp/>)</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">sys.stdout.flush()</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">sleep(0.01)</highlight></codeline>
+    </programlisting>
+    <location file="build/build.py"/>
+  </compounddef>
+</doxygen>

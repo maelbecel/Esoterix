@@ -1,0 +1,197 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="main_8c" kind="file" language="C++">
+    <compoundname>main.c</compoundname>
+    <includes refid="esoterix_8h" local="yes">esoterix.h</includes>
+    <incdepgraph>
+      <node id="12">
+        <label>sys/stat.h</label>
+      </node>
+      <node id="8">
+        <label>stdbool.h</label>
+      </node>
+      <node id="5">
+        <label>stdarg.h</label>
+      </node>
+      <node id="10">
+        <label>stdlib.h</label>
+      </node>
+      <node id="11">
+        <label>fcntl.h</label>
+      </node>
+      <node id="1">
+        <label>src/main.c</label>
+        <link refid="main_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>stddef.h</label>
+      </node>
+      <node id="2">
+        <label>esoterix.h</label>
+        <link refid="esoterix_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>formatstring.h</label>
+        <link refid="include_2formatstring_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>unistd.h</label>
+      </node>
+      <node id="4">
+        <label>printf.h</label>
+        <link refid="include_2printf_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>my.h</label>
+        <link refid="include_2my_8h"/>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="main_8c_1af2f095693396544effbacc006c601ae3" prot="public" static="no" mutable="no">
+        <type>const <ref refid="esoterix_8h_1a8338582deddf9007abc7ceae9fb82a58" kindref="member">filetype_t</ref></type>
+        <definition>const filetype_t Files[]</definition>
+        <argsstring>[]</argsstring>
+        <name>Files</name>
+        <initializer>= {
+    {<ref refid="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90af082602680c1a8548d7cd4aa59c67b1c" kindref="member">PYTHON</ref>, &quot;py&quot;, __python__},
+    {<ref refid="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90a739ce3f516592d245d16fd8a3893472c" kindref="member">C</ref>, &quot;c&quot;, NULL},
+    {<ref refid="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90aca1ef9dc7006f2011c38e2bcc8f64d16" kindref="member">CPP</ref>, &quot;cpp&quot;, NULL},
+    {<ref refid="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90a5a922e7d52f0f45d060f22d747c4dfcc" kindref="member">LUA</ref>, &quot;lua&quot;, NULL},
+    {<ref refid="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90a70b9213a328b71cbc9abad715b4601f1" kindref="member">JAVA</ref>, &quot;java&quot;, NULL},
+    {<ref refid="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90a50d8e53aac4e002d0fd296c5033ce985" kindref="member">GO</ref>, &quot;go&quot;, NULL},
+    {<ref refid="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90a0858e1a5b39e6393b1f1c564b6b049bd" kindref="member">JAVASCRIPT</ref>, &quot;js&quot;, NULL},
+    {<ref refid="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90aba113c37f25d24aada154b75c7dd91ba" kindref="member">WHITESPACE</ref>, &quot;ws&quot;, NULL},
+    {<ref refid="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90ab52dd1baad27c42561ce445ec2901edf" kindref="member">UNLAMBDA</ref>, &quot;ul&quot;, NULL},
+    {<ref refid="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90a51ba37e65278e8c05da830ef068ae6d5" kindref="member">MALBOLGE</ref>, &quot;mbg&quot;, NULL},
+    {<ref refid="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90a939e4ed3c238ce998bd4f54ba075c16b" kindref="member">LOLCODE</ref>, &quot;llcd&quot;, NULL},
+    {<ref refid="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90a94d6a17b2a7f879d8c06d7c8b12b74ae" kindref="member">JSFUCK</ref>, &quot;jsf&quot;, NULL},
+    {<ref refid="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90a0783629a69b8218d4e0054583a811898" kindref="member">INTERCAL</ref>, &quot;ic&quot;, NULL},
+    {<ref refid="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90afb658d1d295d3fbfa23687c969413e82" kindref="member">GOLFSCRIPT</ref>, &quot;gscript&quot;, NULL},
+    {<ref refid="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90a68a4207258bc0f3a22239285d65c9856" kindref="member">FRACTAN</ref>, &quot;frctn&quot;, NULL},
+    {<ref refid="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90a8d97da7a0012047a2856526e7b04b47b" kindref="member">BLC</ref>, &quot;blc&quot;, NULL},
+    {<ref refid="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90ab4f617b6ca63d13c876739895efc16f5" kindref="member">BEFUNGE</ref>, &quot;bfng&quot;, NULL},
+    {<ref refid="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90a4134eb8c9298e79e42bf898c008da394" kindref="member">SHEAKSPEAR</ref>, &quot;shspr&quot;, NULL},
+    {<ref refid="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90a6e4f6be6f8fed8d639481060ce9067b9" kindref="member">BRAINFUCK</ref>, &quot;bf&quot;, NULL},
+    {<ref refid="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90a028febad62c7e4a4e77bb3af33cb357e" kindref="member">CHEF</ref>, &quot;chef&quot;, NULL}
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main.c" line="10" column="18" bodyfile="src/main.c" bodystart="10" bodyend="-1"/>
+        <referencedby refid="main_8c_1ab6ab5095713a29ce48356b13afcb3a42" compoundref="main_8c" startline="33" endline="45">main</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="main_8c_1ab6ab5095713a29ce48356b13afcb3a42" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>(UNUSED int ac, char **argv)</argsstring>
+        <name>main</name>
+        <param>
+          <type><ref refid="lib_2my_2my_8h_1addf5ec070e9499d36b7f2009ce736076" kindref="member">UNUSED</ref> int</type>
+          <declname>ac</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>argv</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main.c" line="33" column="5" bodyfile="src/main.c" bodystart="33" bodyend="45"/>
+        <references refid="namespacebuild_1a40a5d58ffa6e88aa578d6683ac413105" compoundref="build_8py" startline="18">build.file</references>
+        <references refid="main_8c_1af2f095693396544effbacc006c601ae3" compoundref="main_8c" startline="10">Files</references>
+        <references refid="structfiletype__s_1a6b01db356a67f1504349c093d5da931e" compoundref="esoterix_8h" startline="164">filetype_s::func</references>
+        <references refid="include_2printf_8h_1a23690a6b1f3cf97e62ed0a74bb554062" compoundref="my__printf_8c" startline="64" endline="84">my_printf</references>
+        <references refid="include_2my_8h_1a75b8d8c9b6d5ebfc4d74dfa8eef65c4e" compoundref="my__str__to__word__array_8c" startline="54" endline="70">my_str_to_word_array</references>
+        <references refid="include_2my_8h_1ad0742a034086f291ec1184d327fa79fc">my_strarraylen</references>
+        <references refid="include_2my_8h_1a12d4044e7c0ab78ca1f186e0abdb08c6" compoundref="my__strcmp_8c" startline="12" endline="21">my_strcmp</references>
+        <references refid="include_2my_8h_1addf5ec070e9499d36b7f2009ce736076" compoundref="include_2my_8h" startline="15">UNUSED</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">**<sp/>@maelbecel\Esoterix</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">**<sp/>main.c</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">**<sp/>File<sp/>description:</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">**<sp/>main</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="esoterix_8h" kindref="compound">esoterix.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="main_8c_1af2f095693396544effbacc006c601ae3" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structfiletype__s" kindref="compound">filetype_t</ref><sp/><ref refid="main_8c_1af2f095693396544effbacc006c601ae3" kindref="member">Files</ref>[]<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>{<ref refid="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90af082602680c1a8548d7cd4aa59c67b1c" kindref="member">PYTHON</ref>,<sp/></highlight><highlight class="stringliteral">&quot;py&quot;</highlight><highlight class="normal">,<sp/><ref refid="esoterix_8h_1a2ab11f553fcf96faef056ef3f81ca211" kindref="member">__python__</ref>},</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>{<ref refid="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90a739ce3f516592d245d16fd8a3893472c" kindref="member">C</ref>,<sp/></highlight><highlight class="stringliteral">&quot;c&quot;</highlight><highlight class="normal">,<sp/>NULL},</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>{<ref refid="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90aca1ef9dc7006f2011c38e2bcc8f64d16" kindref="member">CPP</ref>,<sp/></highlight><highlight class="stringliteral">&quot;cpp&quot;</highlight><highlight class="normal">,<sp/>NULL},</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>{<ref refid="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90a5a922e7d52f0f45d060f22d747c4dfcc" kindref="member">LUA</ref>,<sp/></highlight><highlight class="stringliteral">&quot;lua&quot;</highlight><highlight class="normal">,<sp/>NULL},</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>{<ref refid="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90a70b9213a328b71cbc9abad715b4601f1" kindref="member">JAVA</ref>,<sp/></highlight><highlight class="stringliteral">&quot;java&quot;</highlight><highlight class="normal">,<sp/>NULL},</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>{<ref refid="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90a50d8e53aac4e002d0fd296c5033ce985" kindref="member">GO</ref>,<sp/></highlight><highlight class="stringliteral">&quot;go&quot;</highlight><highlight class="normal">,<sp/>NULL},</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>{<ref refid="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90a0858e1a5b39e6393b1f1c564b6b049bd" kindref="member">JAVASCRIPT</ref>,<sp/></highlight><highlight class="stringliteral">&quot;js&quot;</highlight><highlight class="normal">,<sp/>NULL},</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>{<ref refid="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90aba113c37f25d24aada154b75c7dd91ba" kindref="member">WHITESPACE</ref>,<sp/></highlight><highlight class="stringliteral">&quot;ws&quot;</highlight><highlight class="normal">,<sp/>NULL},</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>{<ref refid="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90ab52dd1baad27c42561ce445ec2901edf" kindref="member">UNLAMBDA</ref>,<sp/></highlight><highlight class="stringliteral">&quot;ul&quot;</highlight><highlight class="normal">,<sp/>NULL},</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>{<ref refid="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90a51ba37e65278e8c05da830ef068ae6d5" kindref="member">MALBOLGE</ref>,<sp/></highlight><highlight class="stringliteral">&quot;mbg&quot;</highlight><highlight class="normal">,<sp/>NULL},</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>{<ref refid="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90a939e4ed3c238ce998bd4f54ba075c16b" kindref="member">LOLCODE</ref>,<sp/></highlight><highlight class="stringliteral">&quot;llcd&quot;</highlight><highlight class="normal">,<sp/>NULL},</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>{<ref refid="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90a94d6a17b2a7f879d8c06d7c8b12b74ae" kindref="member">JSFUCK</ref>,<sp/></highlight><highlight class="stringliteral">&quot;jsf&quot;</highlight><highlight class="normal">,<sp/>NULL},</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>{<ref refid="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90a0783629a69b8218d4e0054583a811898" kindref="member">INTERCAL</ref>,<sp/></highlight><highlight class="stringliteral">&quot;ic&quot;</highlight><highlight class="normal">,<sp/>NULL},</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>{<ref refid="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90afb658d1d295d3fbfa23687c969413e82" kindref="member">GOLFSCRIPT</ref>,<sp/></highlight><highlight class="stringliteral">&quot;gscript&quot;</highlight><highlight class="normal">,<sp/>NULL},</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>{<ref refid="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90a68a4207258bc0f3a22239285d65c9856" kindref="member">FRACTAN</ref>,<sp/></highlight><highlight class="stringliteral">&quot;frctn&quot;</highlight><highlight class="normal">,<sp/>NULL},</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>{<ref refid="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90a8d97da7a0012047a2856526e7b04b47b" kindref="member">BLC</ref>,<sp/></highlight><highlight class="stringliteral">&quot;blc&quot;</highlight><highlight class="normal">,<sp/>NULL},</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>{<ref refid="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90ab4f617b6ca63d13c876739895efc16f5" kindref="member">BEFUNGE</ref>,<sp/></highlight><highlight class="stringliteral">&quot;bfng&quot;</highlight><highlight class="normal">,<sp/>NULL},</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>{<ref refid="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90a4134eb8c9298e79e42bf898c008da394" kindref="member">SHEAKSPEAR</ref>,<sp/></highlight><highlight class="stringliteral">&quot;shspr&quot;</highlight><highlight class="normal">,<sp/>NULL},</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>{<ref refid="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90a6e4f6be6f8fed8d639481060ce9067b9" kindref="member">BRAINFUCK</ref>,<sp/></highlight><highlight class="stringliteral">&quot;bf&quot;</highlight><highlight class="normal">,<sp/>NULL},</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>{<ref refid="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90a028febad62c7e4a4e77bb3af33cb357e" kindref="member">CHEF</ref>,<sp/></highlight><highlight class="stringliteral">&quot;chef&quot;</highlight><highlight class="normal">,<sp/>NULL}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="main_8c_1ab6ab5095713a29ce48356b13afcb3a42" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="main_8c_1ab6ab5095713a29ce48356b13afcb3a42" kindref="member">main</ref><sp/>(<ref refid="include_2my_8h_1addf5ec070e9499d36b7f2009ce736076" kindref="member">UNUSED</ref><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ac,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**argv)</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**<ref refid="namespacebuild_1a40a5d58ffa6e88aa578d6683ac413105" kindref="member">file</ref><sp/>=<sp/><ref refid="include_2my_8h_1a75b8d8c9b6d5ebfc4d74dfa8eef65c4e" kindref="member">my_str_to_word_array</ref>(argv[1],<sp/></highlight><highlight class="stringliteral">&quot;.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*ext<sp/>=<sp/><ref refid="namespacebuild_1a40a5d58ffa6e88aa578d6683ac413105" kindref="member">file</ref>[<ref refid="include_2my_8h_1ad0742a034086f291ec1184d327fa79fc" kindref="member">my_strarraylen</ref>(<ref refid="namespacebuild_1a40a5d58ffa6e88aa578d6683ac413105" kindref="member">file</ref>)<sp/>-<sp/>1];</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="include_2my_8h_1addf5ec070e9499d36b7f2009ce736076" kindref="member">UNUSED</ref><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*res;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="main_8c_1af2f095693396544effbacc006c601ae3" kindref="member">Files</ref>)<sp/>/<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structfiletype__s" kindref="compound">filetype_t</ref>);<sp/>i++)</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="include_2my_8h_1a12d4044e7c0ab78ca1f186e0abdb08c6" kindref="member">my_strcmp</ref>(<ref refid="main_8c_1af2f095693396544effbacc006c601ae3" kindref="member">Files</ref>[i].filename,<sp/>ext)<sp/>==<sp/>0){</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>res<sp/>=<sp/><ref refid="main_8c_1af2f095693396544effbacc006c601ae3" kindref="member">Files</ref>[i].<ref refid="structfiletype__s_1a6b01db356a67f1504349c093d5da931e" kindref="member">func</ref>(argv[1]);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="include_2printf_8h_1a23690a6b1f3cf97e62ed0a74bb554062" kindref="member">my_printf</ref>(</highlight><highlight class="stringliteral">&quot;%s\n&quot;</highlight><highlight class="normal">,<sp/>res);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/main.c"/>
+  </compounddef>
+</doxygen>

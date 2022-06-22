@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="my__isneg_8c" kind="file" language="C++">
+    <compoundname>my_isneg.c</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="my__isneg_8c_1ac4de74d04dc6e263345755eb62676802" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void my_putchar</definition>
+        <argsstring>(char c)</argsstring>
+        <name>my_putchar</name>
+        <param>
+          <type>char</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/my/my_isneg.c" line="8" column="6" declfile="lib/my/my_isneg.c" declline="8" declcolumn="6"/>
+        <referencedby refid="my__isneg_8c_1aebfe1142de7c94099bd0409547f3d048" compoundref="my__isneg_8c" startline="10" endline="18">my_isneg</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="my__isneg_8c_1aebfe1142de7c94099bd0409547f3d048" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int my_isneg</definition>
+        <argsstring>(int n)</argsstring>
+        <name>my_isneg</name>
+        <param>
+          <type>int</type>
+          <declname>nb</declname>
+          <defname>n</defname>
+        </param>
+        <briefdescription>
+<para>Check if a number is negative. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number to check</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/my/my_isneg.c" line="10" column="5" bodyfile="lib/my/my_isneg.c" bodystart="10" bodyend="18"/>
+        <references refid="my__isneg_8c_1ac4de74d04dc6e263345755eb62676802">my_putchar</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">**<sp/>EPITECH<sp/>PROJECT,<sp/>2021</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">**<sp/>my_print_digits.c</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">**<sp/>File<sp/>description:</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">**<sp/>print<sp/>digits<sp/>in<sp/>ascending<sp/>order</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="my__isneg_8c_1ac4de74d04dc6e263345755eb62676802" kindref="member">my_putchar</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>c);</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="my__isneg_8c_1aebfe1142de7c94099bd0409547f3d048" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="my__isneg_8c_1aebfe1142de7c94099bd0409547f3d048" kindref="member">my_isneg</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n)</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(n<sp/>&gt;=<sp/>0)</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="my__isneg_8c_1ac4de74d04dc6e263345755eb62676802" kindref="member">my_putchar</ref>(</highlight><highlight class="charliteral">&apos;P&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="my__isneg_8c_1ac4de74d04dc6e263345755eb62676802" kindref="member">my_putchar</ref>(</highlight><highlight class="charliteral">&apos;N&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="my__isneg_8c_1ac4de74d04dc6e263345755eb62676802" kindref="member">my_putchar</ref>(</highlight><highlight class="charliteral">&apos;\n&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="lib/my/my_isneg.c"/>
+  </compounddef>
+</doxygen>

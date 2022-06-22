@@ -1,0 +1,550 @@
+\hypertarget{esoterix_8h}{}\doxysection{include/esoterix.h File Reference}
+\label{esoterix_8h}\index{include/esoterix.h@{include/esoterix.h}}
+{\ttfamily \#include \char`\"{}my.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}printf.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}formatstring.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include $<$stddef.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$fcntl.\+h$>$}\newline
+{\ttfamily \#include $<$sys/stat.\+h$>$}\newline
+Include dependency graph for esoterix.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{esoterix_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{esoterix_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structfiletype__s}{filetype\+\_\+s}}
+\begin{DoxyCompactList}\small\item\em Struct for a type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{esoterix_8h_a79c5cc3bb96038d18debe7264944dbdb}{I\+N\+I\+T\+\_\+\+A\+R\+R\+AY}}(arr)~malloc(sizeof(char $\ast$)); $\ast$arr = N\+U\+LL;
+\begin{DoxyCompactList}\small\item\em Initialize an empty array. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{esoterix_8h_a3b3e3f26aaa682eaa4bcb7e7da77f585}{L\+A\+S\+T\+\_\+\+A\+R\+R\+AY}}(a)~a\mbox{[}\mbox{\hyperlink{my__strlen_8c_a7ea2710ab7129b43157020dc39934ab3}{my\+\_\+strarraylen}}(a) -\/ 1\mbox{]}
+\begin{DoxyCompactList}\small\item\em Get the last element of an array. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{esoterix_8h_a8308a804d1dcdf7b44178c918ecb9caf}{L\+A\+S\+T\+\_\+\+S\+TR}}(a)~a\mbox{[}\mbox{\hyperlink{my__strstr_8c_a3b3960588932459570799afa357e32b5}{my\+\_\+strlen}}(a) -\/ 1\mbox{]}
+\begin{DoxyCompactList}\small\item\em Get the last element of a string. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{esoterix_8h_a1bf7591a238bdacac67523dbfcbbe95e}{F\+R\+E\+E\+\_\+\+A\+R\+R\+AY}}(a)~for (int i = 0; a\mbox{[}i\mbox{]} != N\+U\+LL; i++) free(a\mbox{[}i\mbox{]}); free(a)
+\begin{DoxyCompactList}\small\item\em Free an array. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{esoterix_8h_a0da7d05dae8d796f276655d3d2df7ef6}{S\+H\+O\+W\+\_\+\+A\+R\+R\+AY}}(arr)~for (size\+\_\+t i = 0; arr\mbox{[}i\mbox{]}; i++) \mbox{\hyperlink{lib_2myprintf_2printf_8h_a23690a6b1f3cf97e62ed0a74bb554062}{my\+\_\+printf}}(\char`\"{}\textbackslash{}t-\/ \%s\textbackslash{}n\char`\"{}, arr\mbox{[}i\mbox{]});
+\begin{DoxyCompactList}\small\item\em Show an array. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{structfiletype__s}{filetype\+\_\+s}} \mbox{\hyperlink{esoterix_8h_a8338582deddf9007abc7ceae9fb82a58}{filetype\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Includes. \end{DoxyCompactList}\item 
+typedef enum \mbox{\hyperlink{esoterix_8h_af85e81e057e3ed8aa8725fa1da5c1e90}{fileref\+\_\+e}} \mbox{\hyperlink{esoterix_8h_a17e6d9e16d5e07dd4ccb65bbbd23a5ae}{fileref\+\_\+t}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{esoterix_8h_af85e81e057e3ed8aa8725fa1da5c1e90}{fileref\+\_\+e}} \{ \newline
+\mbox{\hyperlink{esoterix_8h_af85e81e057e3ed8aa8725fa1da5c1e90af082602680c1a8548d7cd4aa59c67b1c}{P\+Y\+T\+H\+ON}}, 
+\mbox{\hyperlink{esoterix_8h_af85e81e057e3ed8aa8725fa1da5c1e90a739ce3f516592d245d16fd8a3893472c}{C}}, 
+\mbox{\hyperlink{esoterix_8h_af85e81e057e3ed8aa8725fa1da5c1e90aca1ef9dc7006f2011c38e2bcc8f64d16}{C\+PP}}, 
+\mbox{\hyperlink{esoterix_8h_af85e81e057e3ed8aa8725fa1da5c1e90a5a922e7d52f0f45d060f22d747c4dfcc}{L\+UA}}, 
+\newline
+\mbox{\hyperlink{esoterix_8h_af85e81e057e3ed8aa8725fa1da5c1e90a70b9213a328b71cbc9abad715b4601f1}{J\+A\+VA}}, 
+\mbox{\hyperlink{esoterix_8h_af85e81e057e3ed8aa8725fa1da5c1e90a50d8e53aac4e002d0fd296c5033ce985}{GO}}, 
+\mbox{\hyperlink{esoterix_8h_af85e81e057e3ed8aa8725fa1da5c1e90a0858e1a5b39e6393b1f1c564b6b049bd}{J\+A\+V\+A\+S\+C\+R\+I\+PT}}, 
+\mbox{\hyperlink{esoterix_8h_af85e81e057e3ed8aa8725fa1da5c1e90aba113c37f25d24aada154b75c7dd91ba}{W\+H\+I\+T\+E\+S\+P\+A\+CE}}, 
+\newline
+\mbox{\hyperlink{esoterix_8h_af85e81e057e3ed8aa8725fa1da5c1e90ab52dd1baad27c42561ce445ec2901edf}{U\+N\+L\+A\+M\+B\+DA}}, 
+\mbox{\hyperlink{esoterix_8h_af85e81e057e3ed8aa8725fa1da5c1e90a51ba37e65278e8c05da830ef068ae6d5}{M\+A\+L\+B\+O\+L\+GE}}, 
+\mbox{\hyperlink{esoterix_8h_af85e81e057e3ed8aa8725fa1da5c1e90a939e4ed3c238ce998bd4f54ba075c16b}{L\+O\+L\+C\+O\+DE}}, 
+\mbox{\hyperlink{esoterix_8h_af85e81e057e3ed8aa8725fa1da5c1e90a94d6a17b2a7f879d8c06d7c8b12b74ae}{J\+S\+F\+U\+CK}}, 
+\newline
+\mbox{\hyperlink{esoterix_8h_af85e81e057e3ed8aa8725fa1da5c1e90a0783629a69b8218d4e0054583a811898}{I\+N\+T\+E\+R\+C\+AL}}, 
+\mbox{\hyperlink{esoterix_8h_af85e81e057e3ed8aa8725fa1da5c1e90afb658d1d295d3fbfa23687c969413e82}{G\+O\+L\+F\+S\+C\+R\+I\+PT}}, 
+\mbox{\hyperlink{esoterix_8h_af85e81e057e3ed8aa8725fa1da5c1e90a68a4207258bc0f3a22239285d65c9856}{F\+R\+A\+C\+T\+AN}}, 
+\mbox{\hyperlink{esoterix_8h_af85e81e057e3ed8aa8725fa1da5c1e90a8d97da7a0012047a2856526e7b04b47b}{B\+LC}}, 
+\newline
+\mbox{\hyperlink{esoterix_8h_af85e81e057e3ed8aa8725fa1da5c1e90ab4f617b6ca63d13c876739895efc16f5}{B\+E\+F\+U\+N\+GE}}, 
+\mbox{\hyperlink{esoterix_8h_af85e81e057e3ed8aa8725fa1da5c1e90a4134eb8c9298e79e42bf898c008da394}{S\+H\+E\+A\+K\+S\+P\+E\+AR}}, 
+\mbox{\hyperlink{esoterix_8h_af85e81e057e3ed8aa8725fa1da5c1e90a6e4f6be6f8fed8d639481060ce9067b9}{B\+R\+A\+I\+N\+F\+U\+CK}}, 
+\mbox{\hyperlink{esoterix_8h_af85e81e057e3ed8aa8725fa1da5c1e90a028febad62c7e4a4e77bb3af33cb357e}{C\+H\+EF}}
+ \}
+\begin{DoxyCompactList}\small\item\em Enum of filetypes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$ \mbox{\hyperlink{esoterix_8h_a7bc4404a42c203221a8ed0687c5b853c}{buff\+\_\+from\+\_\+file}} (char $\ast$file)
+\begin{DoxyCompactList}\small\item\em Get content of a file. \end{DoxyCompactList}\item 
+char $\ast$ \mbox{\hyperlink{esoterix_8h_a2ab11f553fcf96faef056ef3f81ca211}{\+\_\+\+\_\+python\+\_\+\+\_\+}} (char $\ast$file)
+\begin{DoxyCompactList}\small\item\em Translate python script in language X. \end{DoxyCompactList}\item 
+char $\ast$$\ast$ \mbox{\hyperlink{esoterix_8h_a6fdd8059e35129794c0095e7587367d1}{remove\+\_\+all}} (char $\ast$$\ast$array, char $\ast$str)
+\begin{DoxyCompactList}\small\item\em Delete all time str in array. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{esoterix_8h_a5e4216c3a9c693ea1e816c062b2f4382}{is\+\_\+in}} (char $\ast$$\ast$array, char $\ast$str)
+\begin{DoxyCompactList}\small\item\em Check if a string is in an array. \end{DoxyCompactList}\item 
+char $\ast$$\ast$ \mbox{\hyperlink{esoterix_8h_a72059dc959d6669f93addf413d969ff7}{remove}} (char $\ast$$\ast$array, char $\ast$str)
+\begin{DoxyCompactList}\small\item\em Remove first occurence of a string in an array. \end{DoxyCompactList}\item 
+char $\ast$$\ast$ \mbox{\hyperlink{esoterix_8h_a7d8817d87c0f38087af49a654edbc308}{append}} (char $\ast$$\ast$array, char $\ast$str)
+\begin{DoxyCompactList}\small\item\em Add a string in an Array. \end{DoxyCompactList}\item 
+char $\ast$$\ast$ \mbox{\hyperlink{esoterix_8h_aa1aace4d21f5c36fa589395b365d969d}{no\+\_\+double}} (char $\ast$$\ast$array)
+\begin{DoxyCompactList}\small\item\em Delete double in an array. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{esoterix_8h_a1bf7591a238bdacac67523dbfcbbe95e}\label{esoterix_8h_a1bf7591a238bdacac67523dbfcbbe95e}} 
+\index{esoterix.h@{esoterix.h}!FREE\_ARRAY@{FREE\_ARRAY}}
+\index{FREE\_ARRAY@{FREE\_ARRAY}!esoterix.h@{esoterix.h}}
+\doxysubsubsection{\texorpdfstring{FREE\_ARRAY}{FREE\_ARRAY}}
+{\footnotesize\ttfamily \#define F\+R\+E\+E\+\_\+\+A\+R\+R\+AY(\begin{DoxyParamCaption}\item[{}]{a }\end{DoxyParamCaption})~for (int i = 0; a\mbox{[}i\mbox{]} != N\+U\+LL; i++) free(a\mbox{[}i\mbox{]}); free(a)}
+
+
+
+Free an array. 
+
+
+
+Definition at line 47 of file esoterix.\+h.
+
+\mbox{\Hypertarget{esoterix_8h_a79c5cc3bb96038d18debe7264944dbdb}\label{esoterix_8h_a79c5cc3bb96038d18debe7264944dbdb}} 
+\index{esoterix.h@{esoterix.h}!INIT\_ARRAY@{INIT\_ARRAY}}
+\index{INIT\_ARRAY@{INIT\_ARRAY}!esoterix.h@{esoterix.h}}
+\doxysubsubsection{\texorpdfstring{INIT\_ARRAY}{INIT\_ARRAY}}
+{\footnotesize\ttfamily \#define I\+N\+I\+T\+\_\+\+A\+R\+R\+AY(\begin{DoxyParamCaption}\item[{}]{arr }\end{DoxyParamCaption})~malloc(sizeof(char $\ast$)); $\ast$arr = N\+U\+LL;}
+
+
+
+Initialize an empty array. 
+
+
+
+Definition at line 32 of file esoterix.\+h.
+
+\mbox{\Hypertarget{esoterix_8h_a3b3e3f26aaa682eaa4bcb7e7da77f585}\label{esoterix_8h_a3b3e3f26aaa682eaa4bcb7e7da77f585}} 
+\index{esoterix.h@{esoterix.h}!LAST\_ARRAY@{LAST\_ARRAY}}
+\index{LAST\_ARRAY@{LAST\_ARRAY}!esoterix.h@{esoterix.h}}
+\doxysubsubsection{\texorpdfstring{LAST\_ARRAY}{LAST\_ARRAY}}
+{\footnotesize\ttfamily \#define L\+A\+S\+T\+\_\+\+A\+R\+R\+AY(\begin{DoxyParamCaption}\item[{}]{a }\end{DoxyParamCaption})~a\mbox{[}\mbox{\hyperlink{my__strlen_8c_a7ea2710ab7129b43157020dc39934ab3}{my\+\_\+strarraylen}}(a) -\/ 1\mbox{]}}
+
+
+
+Get the last element of an array. 
+
+
+
+Definition at line 37 of file esoterix.\+h.
+
+\mbox{\Hypertarget{esoterix_8h_a8308a804d1dcdf7b44178c918ecb9caf}\label{esoterix_8h_a8308a804d1dcdf7b44178c918ecb9caf}} 
+\index{esoterix.h@{esoterix.h}!LAST\_STR@{LAST\_STR}}
+\index{LAST\_STR@{LAST\_STR}!esoterix.h@{esoterix.h}}
+\doxysubsubsection{\texorpdfstring{LAST\_STR}{LAST\_STR}}
+{\footnotesize\ttfamily \#define L\+A\+S\+T\+\_\+\+S\+TR(\begin{DoxyParamCaption}\item[{}]{a }\end{DoxyParamCaption})~a\mbox{[}\mbox{\hyperlink{my__strstr_8c_a3b3960588932459570799afa357e32b5}{my\+\_\+strlen}}(a) -\/ 1\mbox{]}}
+
+
+
+Get the last element of a string. 
+
+
+
+Definition at line 42 of file esoterix.\+h.
+
+\mbox{\Hypertarget{esoterix_8h_a0da7d05dae8d796f276655d3d2df7ef6}\label{esoterix_8h_a0da7d05dae8d796f276655d3d2df7ef6}} 
+\index{esoterix.h@{esoterix.h}!SHOW\_ARRAY@{SHOW\_ARRAY}}
+\index{SHOW\_ARRAY@{SHOW\_ARRAY}!esoterix.h@{esoterix.h}}
+\doxysubsubsection{\texorpdfstring{SHOW\_ARRAY}{SHOW\_ARRAY}}
+{\footnotesize\ttfamily \#define S\+H\+O\+W\+\_\+\+A\+R\+R\+AY(\begin{DoxyParamCaption}\item[{}]{arr }\end{DoxyParamCaption})~for (size\+\_\+t i = 0; arr\mbox{[}i\mbox{]}; i++) \mbox{\hyperlink{lib_2myprintf_2printf_8h_a23690a6b1f3cf97e62ed0a74bb554062}{my\+\_\+printf}}(\char`\"{}\textbackslash{}t-\/ \%s\textbackslash{}n\char`\"{}, arr\mbox{[}i\mbox{]});}
+
+
+
+Show an array. 
+
+
+
+Definition at line 52 of file esoterix.\+h.
+
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{esoterix_8h_a17e6d9e16d5e07dd4ccb65bbbd23a5ae}\label{esoterix_8h_a17e6d9e16d5e07dd4ccb65bbbd23a5ae}} 
+\index{esoterix.h@{esoterix.h}!fileref\_t@{fileref\_t}}
+\index{fileref\_t@{fileref\_t}!esoterix.h@{esoterix.h}}
+\doxysubsubsection{\texorpdfstring{fileref\_t}{fileref\_t}}
+{\footnotesize\ttfamily typedef enum \mbox{\hyperlink{esoterix_8h_af85e81e057e3ed8aa8725fa1da5c1e90}{fileref\+\_\+e}} \mbox{\hyperlink{esoterix_8h_a17e6d9e16d5e07dd4ccb65bbbd23a5ae}{fileref\+\_\+t}}}
+
+
+
+Definition at line 27 of file esoterix.\+h.
+
+\mbox{\Hypertarget{esoterix_8h_a8338582deddf9007abc7ceae9fb82a58}\label{esoterix_8h_a8338582deddf9007abc7ceae9fb82a58}} 
+\index{esoterix.h@{esoterix.h}!filetype\_t@{filetype\_t}}
+\index{filetype\_t@{filetype\_t}!esoterix.h@{esoterix.h}}
+\doxysubsubsection{\texorpdfstring{filetype\_t}{filetype\_t}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structfiletype__s}{filetype\+\_\+s}} \mbox{\hyperlink{esoterix_8h_a8338582deddf9007abc7ceae9fb82a58}{filetype\+\_\+t}}}
+
+
+
+Includes. 
+
+Typedefs 
+
+Definition at line 26 of file esoterix.\+h.
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{esoterix_8h_af85e81e057e3ed8aa8725fa1da5c1e90}\label{esoterix_8h_af85e81e057e3ed8aa8725fa1da5c1e90}} 
+\index{esoterix.h@{esoterix.h}!fileref\_e@{fileref\_e}}
+\index{fileref\_e@{fileref\_e}!esoterix.h@{esoterix.h}}
+\doxysubsubsection{\texorpdfstring{fileref\_e}{fileref\_e}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{esoterix_8h_af85e81e057e3ed8aa8725fa1da5c1e90}{fileref\+\_\+e}}}
+
+
+
+Enum of filetypes. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PYTHON@{PYTHON}!esoterix.h@{esoterix.h}}\index{esoterix.h@{esoterix.h}!PYTHON@{PYTHON}}}\mbox{\Hypertarget{esoterix_8h_af85e81e057e3ed8aa8725fa1da5c1e90af082602680c1a8548d7cd4aa59c67b1c}\label{esoterix_8h_af85e81e057e3ed8aa8725fa1da5c1e90af082602680c1a8548d7cd4aa59c67b1c}} 
+P\+Y\+T\+H\+ON&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{C@{C}!esoterix.h@{esoterix.h}}\index{esoterix.h@{esoterix.h}!C@{C}}}\mbox{\Hypertarget{esoterix_8h_af85e81e057e3ed8aa8725fa1da5c1e90a739ce3f516592d245d16fd8a3893472c}\label{esoterix_8h_af85e81e057e3ed8aa8725fa1da5c1e90a739ce3f516592d245d16fd8a3893472c}} 
+C&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CPP@{CPP}!esoterix.h@{esoterix.h}}\index{esoterix.h@{esoterix.h}!CPP@{CPP}}}\mbox{\Hypertarget{esoterix_8h_af85e81e057e3ed8aa8725fa1da5c1e90aca1ef9dc7006f2011c38e2bcc8f64d16}\label{esoterix_8h_af85e81e057e3ed8aa8725fa1da5c1e90aca1ef9dc7006f2011c38e2bcc8f64d16}} 
+C\+PP&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LUA@{LUA}!esoterix.h@{esoterix.h}}\index{esoterix.h@{esoterix.h}!LUA@{LUA}}}\mbox{\Hypertarget{esoterix_8h_af85e81e057e3ed8aa8725fa1da5c1e90a5a922e7d52f0f45d060f22d747c4dfcc}\label{esoterix_8h_af85e81e057e3ed8aa8725fa1da5c1e90a5a922e7d52f0f45d060f22d747c4dfcc}} 
+L\+UA&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{JAVA@{JAVA}!esoterix.h@{esoterix.h}}\index{esoterix.h@{esoterix.h}!JAVA@{JAVA}}}\mbox{\Hypertarget{esoterix_8h_af85e81e057e3ed8aa8725fa1da5c1e90a70b9213a328b71cbc9abad715b4601f1}\label{esoterix_8h_af85e81e057e3ed8aa8725fa1da5c1e90a70b9213a328b71cbc9abad715b4601f1}} 
+J\+A\+VA&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GO@{GO}!esoterix.h@{esoterix.h}}\index{esoterix.h@{esoterix.h}!GO@{GO}}}\mbox{\Hypertarget{esoterix_8h_af85e81e057e3ed8aa8725fa1da5c1e90a50d8e53aac4e002d0fd296c5033ce985}\label{esoterix_8h_af85e81e057e3ed8aa8725fa1da5c1e90a50d8e53aac4e002d0fd296c5033ce985}} 
+GO&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{JAVASCRIPT@{JAVASCRIPT}!esoterix.h@{esoterix.h}}\index{esoterix.h@{esoterix.h}!JAVASCRIPT@{JAVASCRIPT}}}\mbox{\Hypertarget{esoterix_8h_af85e81e057e3ed8aa8725fa1da5c1e90a0858e1a5b39e6393b1f1c564b6b049bd}\label{esoterix_8h_af85e81e057e3ed8aa8725fa1da5c1e90a0858e1a5b39e6393b1f1c564b6b049bd}} 
+J\+A\+V\+A\+S\+C\+R\+I\+PT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WHITESPACE@{WHITESPACE}!esoterix.h@{esoterix.h}}\index{esoterix.h@{esoterix.h}!WHITESPACE@{WHITESPACE}}}\mbox{\Hypertarget{esoterix_8h_af85e81e057e3ed8aa8725fa1da5c1e90aba113c37f25d24aada154b75c7dd91ba}\label{esoterix_8h_af85e81e057e3ed8aa8725fa1da5c1e90aba113c37f25d24aada154b75c7dd91ba}} 
+W\+H\+I\+T\+E\+S\+P\+A\+CE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{UNLAMBDA@{UNLAMBDA}!esoterix.h@{esoterix.h}}\index{esoterix.h@{esoterix.h}!UNLAMBDA@{UNLAMBDA}}}\mbox{\Hypertarget{esoterix_8h_af85e81e057e3ed8aa8725fa1da5c1e90ab52dd1baad27c42561ce445ec2901edf}\label{esoterix_8h_af85e81e057e3ed8aa8725fa1da5c1e90ab52dd1baad27c42561ce445ec2901edf}} 
+U\+N\+L\+A\+M\+B\+DA&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MALBOLGE@{MALBOLGE}!esoterix.h@{esoterix.h}}\index{esoterix.h@{esoterix.h}!MALBOLGE@{MALBOLGE}}}\mbox{\Hypertarget{esoterix_8h_af85e81e057e3ed8aa8725fa1da5c1e90a51ba37e65278e8c05da830ef068ae6d5}\label{esoterix_8h_af85e81e057e3ed8aa8725fa1da5c1e90a51ba37e65278e8c05da830ef068ae6d5}} 
+M\+A\+L\+B\+O\+L\+GE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LOLCODE@{LOLCODE}!esoterix.h@{esoterix.h}}\index{esoterix.h@{esoterix.h}!LOLCODE@{LOLCODE}}}\mbox{\Hypertarget{esoterix_8h_af85e81e057e3ed8aa8725fa1da5c1e90a939e4ed3c238ce998bd4f54ba075c16b}\label{esoterix_8h_af85e81e057e3ed8aa8725fa1da5c1e90a939e4ed3c238ce998bd4f54ba075c16b}} 
+L\+O\+L\+C\+O\+DE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{JSFUCK@{JSFUCK}!esoterix.h@{esoterix.h}}\index{esoterix.h@{esoterix.h}!JSFUCK@{JSFUCK}}}\mbox{\Hypertarget{esoterix_8h_af85e81e057e3ed8aa8725fa1da5c1e90a94d6a17b2a7f879d8c06d7c8b12b74ae}\label{esoterix_8h_af85e81e057e3ed8aa8725fa1da5c1e90a94d6a17b2a7f879d8c06d7c8b12b74ae}} 
+J\+S\+F\+U\+CK&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{INTERCAL@{INTERCAL}!esoterix.h@{esoterix.h}}\index{esoterix.h@{esoterix.h}!INTERCAL@{INTERCAL}}}\mbox{\Hypertarget{esoterix_8h_af85e81e057e3ed8aa8725fa1da5c1e90a0783629a69b8218d4e0054583a811898}\label{esoterix_8h_af85e81e057e3ed8aa8725fa1da5c1e90a0783629a69b8218d4e0054583a811898}} 
+I\+N\+T\+E\+R\+C\+AL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GOLFSCRIPT@{GOLFSCRIPT}!esoterix.h@{esoterix.h}}\index{esoterix.h@{esoterix.h}!GOLFSCRIPT@{GOLFSCRIPT}}}\mbox{\Hypertarget{esoterix_8h_af85e81e057e3ed8aa8725fa1da5c1e90afb658d1d295d3fbfa23687c969413e82}\label{esoterix_8h_af85e81e057e3ed8aa8725fa1da5c1e90afb658d1d295d3fbfa23687c969413e82}} 
+G\+O\+L\+F\+S\+C\+R\+I\+PT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FRACTAN@{FRACTAN}!esoterix.h@{esoterix.h}}\index{esoterix.h@{esoterix.h}!FRACTAN@{FRACTAN}}}\mbox{\Hypertarget{esoterix_8h_af85e81e057e3ed8aa8725fa1da5c1e90a68a4207258bc0f3a22239285d65c9856}\label{esoterix_8h_af85e81e057e3ed8aa8725fa1da5c1e90a68a4207258bc0f3a22239285d65c9856}} 
+F\+R\+A\+C\+T\+AN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BLC@{BLC}!esoterix.h@{esoterix.h}}\index{esoterix.h@{esoterix.h}!BLC@{BLC}}}\mbox{\Hypertarget{esoterix_8h_af85e81e057e3ed8aa8725fa1da5c1e90a8d97da7a0012047a2856526e7b04b47b}\label{esoterix_8h_af85e81e057e3ed8aa8725fa1da5c1e90a8d97da7a0012047a2856526e7b04b47b}} 
+B\+LC&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BEFUNGE@{BEFUNGE}!esoterix.h@{esoterix.h}}\index{esoterix.h@{esoterix.h}!BEFUNGE@{BEFUNGE}}}\mbox{\Hypertarget{esoterix_8h_af85e81e057e3ed8aa8725fa1da5c1e90ab4f617b6ca63d13c876739895efc16f5}\label{esoterix_8h_af85e81e057e3ed8aa8725fa1da5c1e90ab4f617b6ca63d13c876739895efc16f5}} 
+B\+E\+F\+U\+N\+GE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SHEAKSPEAR@{SHEAKSPEAR}!esoterix.h@{esoterix.h}}\index{esoterix.h@{esoterix.h}!SHEAKSPEAR@{SHEAKSPEAR}}}\mbox{\Hypertarget{esoterix_8h_af85e81e057e3ed8aa8725fa1da5c1e90a4134eb8c9298e79e42bf898c008da394}\label{esoterix_8h_af85e81e057e3ed8aa8725fa1da5c1e90a4134eb8c9298e79e42bf898c008da394}} 
+S\+H\+E\+A\+K\+S\+P\+E\+AR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BRAINFUCK@{BRAINFUCK}!esoterix.h@{esoterix.h}}\index{esoterix.h@{esoterix.h}!BRAINFUCK@{BRAINFUCK}}}\mbox{\Hypertarget{esoterix_8h_af85e81e057e3ed8aa8725fa1da5c1e90a6e4f6be6f8fed8d639481060ce9067b9}\label{esoterix_8h_af85e81e057e3ed8aa8725fa1da5c1e90a6e4f6be6f8fed8d639481060ce9067b9}} 
+B\+R\+A\+I\+N\+F\+U\+CK&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CHEF@{CHEF}!esoterix.h@{esoterix.h}}\index{esoterix.h@{esoterix.h}!CHEF@{CHEF}}}\mbox{\Hypertarget{esoterix_8h_af85e81e057e3ed8aa8725fa1da5c1e90a028febad62c7e4a4e77bb3af33cb357e}\label{esoterix_8h_af85e81e057e3ed8aa8725fa1da5c1e90a028febad62c7e4a4e77bb3af33cb357e}} 
+C\+H\+EF&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 57 of file esoterix.\+h.
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{esoterix_8h_a2ab11f553fcf96faef056ef3f81ca211}\label{esoterix_8h_a2ab11f553fcf96faef056ef3f81ca211}} 
+\index{esoterix.h@{esoterix.h}!\_\_python\_\_@{\_\_python\_\_}}
+\index{\_\_python\_\_@{\_\_python\_\_}!esoterix.h@{esoterix.h}}
+\doxysubsubsection{\texorpdfstring{\_\_python\_\_()}{\_\_python\_\_()}}
+{\footnotesize\ttfamily char$\ast$ \+\_\+\+\_\+python\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{char $\ast$}]{file }\end{DoxyParamCaption})}
+
+
+
+Translate python script in language X. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & name of the file to read\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Content traduce 
+\end{DoxyReturn}
+
+
+Definition at line 58 of file python\+\_\+parser.\+c.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{esoterix_8h_a2ab11f553fcf96faef056ef3f81ca211_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{esoterix_8h_a7d8817d87c0f38087af49a654edbc308}\label{esoterix_8h_a7d8817d87c0f38087af49a654edbc308}} 
+\index{esoterix.h@{esoterix.h}!append@{append}}
+\index{append@{append}!esoterix.h@{esoterix.h}}
+\doxysubsubsection{\texorpdfstring{append()}{append()}}
+{\footnotesize\ttfamily char$\ast$$\ast$ append (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{array,  }\item[{char $\ast$}]{str }\end{DoxyParamCaption})}
+
+
+
+Add a string in an Array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & array to check \\
+\hline
+{\em str} & string to check\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array with the string 
+\end{DoxyReturn}
+
+
+Definition at line 21 of file array.\+c.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=260pt]{esoterix_8h_a7d8817d87c0f38087af49a654edbc308_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{esoterix_8h_a7d8817d87c0f38087af49a654edbc308_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{esoterix_8h_a7bc4404a42c203221a8ed0687c5b853c}\label{esoterix_8h_a7bc4404a42c203221a8ed0687c5b853c}} 
+\index{esoterix.h@{esoterix.h}!buff\_from\_file@{buff\_from\_file}}
+\index{buff\_from\_file@{buff\_from\_file}!esoterix.h@{esoterix.h}}
+\doxysubsubsection{\texorpdfstring{buff\_from\_file()}{buff\_from\_file()}}
+{\footnotesize\ttfamily char$\ast$ buff\+\_\+from\+\_\+file (\begin{DoxyParamCaption}\item[{char $\ast$}]{file }\end{DoxyParamCaption})}
+
+
+
+Get content of a file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & name of the file to read\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Content of the file 
+\end{DoxyReturn}
+
+
+Definition at line 18 of file buff\+\_\+from\+\_\+file.\+c.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=273pt]{esoterix_8h_a7bc4404a42c203221a8ed0687c5b853c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{esoterix_8h_a5e4216c3a9c693ea1e816c062b2f4382}\label{esoterix_8h_a5e4216c3a9c693ea1e816c062b2f4382}} 
+\index{esoterix.h@{esoterix.h}!is\_in@{is\_in}}
+\index{is\_in@{is\_in}!esoterix.h@{esoterix.h}}
+\doxysubsubsection{\texorpdfstring{is\_in()}{is\_in()}}
+{\footnotesize\ttfamily bool is\+\_\+in (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{array,  }\item[{char $\ast$}]{str }\end{DoxyParamCaption})}
+
+
+
+Check if a string is in an array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & array to check \\
+\hline
+{\em str} & string to check\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if str is in array, false otherwise 
+\end{DoxyReturn}
+
+
+Definition at line 10 of file array.\+c.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{esoterix_8h_a5e4216c3a9c693ea1e816c062b2f4382_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{esoterix_8h_a5e4216c3a9c693ea1e816c062b2f4382_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{esoterix_8h_aa1aace4d21f5c36fa589395b365d969d}\label{esoterix_8h_aa1aace4d21f5c36fa589395b365d969d}} 
+\index{esoterix.h@{esoterix.h}!no\_double@{no\_double}}
+\index{no\_double@{no\_double}!esoterix.h@{esoterix.h}}
+\doxysubsubsection{\texorpdfstring{no\_double()}{no\_double()}}
+{\footnotesize\ttfamily char$\ast$$\ast$ no\+\_\+double (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{array }\end{DoxyParamCaption})}
+
+
+
+Delete double in an array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & array to check\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array without double 
+\end{DoxyReturn}
+
+
+Definition at line 57 of file array.\+c.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{esoterix_8h_aa1aace4d21f5c36fa589395b365d969d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{esoterix_8h_aa1aace4d21f5c36fa589395b365d969d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{esoterix_8h_a72059dc959d6669f93addf413d969ff7}\label{esoterix_8h_a72059dc959d6669f93addf413d969ff7}} 
+\index{esoterix.h@{esoterix.h}!remove@{remove}}
+\index{remove@{remove}!esoterix.h@{esoterix.h}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily char$\ast$$\ast$ remove (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{array,  }\item[{char $\ast$}]{str }\end{DoxyParamCaption})}
+
+
+
+Remove first occurence of a string in an array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & array to check \\
+\hline
+{\em str} & string to check\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array without the string 
+\end{DoxyReturn}
+
+
+Definition at line 33 of file array.\+c.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=261pt]{esoterix_8h_a72059dc959d6669f93addf413d969ff7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{esoterix_8h_a72059dc959d6669f93addf413d969ff7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{esoterix_8h_a6fdd8059e35129794c0095e7587367d1}\label{esoterix_8h_a6fdd8059e35129794c0095e7587367d1}} 
+\index{esoterix.h@{esoterix.h}!remove\_all@{remove\_all}}
+\index{remove\_all@{remove\_all}!esoterix.h@{esoterix.h}}
+\doxysubsubsection{\texorpdfstring{remove\_all()}{remove\_all()}}
+{\footnotesize\ttfamily char$\ast$$\ast$ remove\+\_\+all (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{array,  }\item[{char $\ast$}]{str }\end{DoxyParamCaption})}
+
+
+
+Delete all time str in array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & array to clean \\
+\hline
+{\em str} & string to delete\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array without the string 
+\end{DoxyReturn}
+
+
+Definition at line 48 of file array.\+c.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{esoterix_8h_a6fdd8059e35129794c0095e7587367d1_cgraph}
+\end{center}
+\end{figure}

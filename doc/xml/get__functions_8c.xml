@@ -1,0 +1,225 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="get__functions_8c" kind="file" language="C++">
+    <compoundname>get_functions.c</compoundname>
+    <includes refid="esoterix_8h" local="yes">esoterix.h</includes>
+    <includes refid="python_8h" local="yes">python.h</includes>
+    <incdepgraph>
+      <node id="12">
+        <label>sys/stat.h</label>
+      </node>
+      <node id="8">
+        <label>stdbool.h</label>
+      </node>
+      <node id="5">
+        <label>stdarg.h</label>
+      </node>
+      <node id="10">
+        <label>stdlib.h</label>
+      </node>
+      <node id="11">
+        <label>fcntl.h</label>
+      </node>
+      <node id="9">
+        <label>stddef.h</label>
+      </node>
+      <node id="2">
+        <label>esoterix.h</label>
+        <link refid="esoterix_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>src/encrypt/python/get_functions.c</label>
+        <link refid="get__functions_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>formatstring.h</label>
+        <link refid="include_2formatstring_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>unistd.h</label>
+      </node>
+      <node id="13">
+        <label>python.h</label>
+        <link refid="python_8h"/>
+      </node>
+      <node id="4">
+        <label>printf.h</label>
+        <link refid="include_2printf_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>my.h</label>
+        <link refid="include_2my_8h"/>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="get__functions_8c_1a4ee8080c2946785d315720bb2f0f51c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int chr_in_array</definition>
+        <argsstring>(char c, char *array)</argsstring>
+        <name>chr_in_array</name>
+        <param>
+          <type>char</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>array</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/encrypt/python/get_functions.c" line="11" column="5" bodyfile="src/encrypt/python/get_functions.c" bodystart="11" bodyend="17"/>
+        <referencedby refid="get__functions_8c_1a331ee9f33563f4477d7dd800d6f57914" compoundref="get__functions_8c" startline="19" endline="31">__py__get_func</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="get__functions_8c_1a331ee9f33563f4477d7dd800d6f57914" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char **</type>
+        <definition>char** __py__get_func</definition>
+        <argsstring>(char **functions)</argsstring>
+        <name>__py__get_func</name>
+        <param>
+          <type>char **</type>
+          <declname>functions</declname>
+        </param>
+        <briefdescription>
+<para>Get function name. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>functions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>all name to check</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>array of function name </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/encrypt/python/get_functions.c" line="19" column="6" bodyfile="src/encrypt/python/get_functions.c" bodystart="19" bodyend="31"/>
+        <references refid="esoterix_8h_1a7d8817d87c0f38087af49a654edbc308" compoundref="array_8c" startline="21" endline="31">append</references>
+        <references refid="get__functions_8c_1a4ee8080c2946785d315720bb2f0f51c6" compoundref="get__functions_8c" startline="11" endline="17">chr_in_array</references>
+        <references refid="esoterix_8h_1a79c5cc3bb96038d18debe7264944dbdb" compoundref="esoterix_8h" startline="32">INIT_ARRAY</references>
+        <references refid="esoterix_8h_1a3b3e3f26aaa682eaa4bcb7e7da77f585" compoundref="esoterix_8h" startline="37">LAST_ARRAY</references>
+        <references refid="include_2my_8h_1a1a42d9b749358a7c132f87a9502a948d" compoundref="my__strdup_8c" startline="14" endline="22">my_strdup</references>
+        <references refid="include_2my_8h_1a3b3960588932459570799afa357e32b5" compoundref="my__strlen_8c" startline="10" endline="17">my_strlen</references>
+        <references refid="esoterix_8h_1aa1aace4d21f5c36fa589395b365d969d" compoundref="array_8c" startline="57" endline="67">no_double</references>
+        <referencedby refid="python__parser_8c_1a2ab11f553fcf96faef056ef3f81ca211" compoundref="python__parser_8c" startline="58" endline="73">__python__</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="get__functions_8c_1a9c2e622c81bd3d6b4ebe0d1692faf266" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* __py__fcnt_display</definition>
+        <argsstring>(char **array)</argsstring>
+        <name>__py__fcnt_display</name>
+        <param>
+          <type>char **</type>
+          <declname>array</declname>
+        </param>
+        <briefdescription>
+<para>Get function printing string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>array</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>all name to check</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>array of function printing string </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/encrypt/python/get_functions.c" line="33" column="6" bodyfile="src/encrypt/python/get_functions.c" bodystart="33" bodyend="41"/>
+        <references refid="include_2formatstring_8h_1a6f2c69610dc237549da5171b58e348d6" compoundref="formatstring_8c" startline="81" endline="103">format</references>
+        <referencedby refid="python__parser_8c_1a2ab11f553fcf96faef056ef3f81ca211" compoundref="python__parser_8c" startline="58" endline="73">__python__</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">**<sp/>@maelbecel\Esoterix</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">**<sp/>get_functions.c</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">**<sp/>File<sp/>description:</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">**<sp/>get<sp/>all<sp/>functions<sp/>called</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="esoterix_8h" kindref="compound">esoterix.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="python_8h" kindref="compound">python.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="get__functions_8c_1a4ee8080c2946785d315720bb2f0f51c6" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="get__functions_8c_1a4ee8080c2946785d315720bb2f0f51c6" kindref="member">chr_in_array</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>c,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*array)</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>array[i];<sp/>i++)</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(array[i]<sp/>==<sp/>c)</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>i;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="get__functions_8c_1a331ee9f33563f4477d7dd800d6f57914" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**<ref refid="get__functions_8c_1a331ee9f33563f4477d7dd800d6f57914" kindref="member">__py__get_func</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**functions)</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**res<sp/>=<sp/><ref refid="esoterix_8h_1a79c5cc3bb96038d18debe7264944dbdb" kindref="member">INIT_ARRAY</ref>(res);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>functions[i]<sp/>!=<sp/>NULL;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((x<sp/>=<sp/><ref refid="get__functions_8c_1a4ee8080c2946785d315720bb2f0f51c6" kindref="member">chr_in_array</ref>(</highlight><highlight class="charliteral">&apos;(&apos;</highlight><highlight class="normal">,<sp/>functions[i]))<sp/>!=<sp/>-1<sp/>&amp;&amp;<sp/><ref refid="include_2my_8h_1a3b3960588932459570799afa357e32b5" kindref="member">my_strlen</ref>(functions[i])<sp/>&gt;<sp/>1)<sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>res<sp/>=<sp/><ref refid="esoterix_8h_1a7d8817d87c0f38087af49a654edbc308" kindref="member">append</ref>(res,<sp/><ref refid="include_2my_8h_1a1a42d9b749358a7c132f87a9502a948d" kindref="member">my_strdup</ref>(functions[i]));</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="esoterix_8h_1a3b3e3f26aaa682eaa4bcb7e7da77f585" kindref="member">LAST_ARRAY</ref>(res)[x]<sp/>=<sp/></highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="esoterix_8h_1aa1aace4d21f5c36fa589395b365d969d" kindref="member">no_double</ref>(res);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="get__functions_8c_1a9c2e622c81bd3d6b4ebe0d1692faf266" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="get__functions_8c_1a9c2e622c81bd3d6b4ebe0d1692faf266" kindref="member">__py__fcnt_display</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**array)</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*res<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>array[i];<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>res<sp/>=<sp/><ref refid="include_2formatstring_8h_1a6f2c69610dc237549da5171b58e348d6" kindref="member">format</ref>(</highlight><highlight class="stringliteral">&quot;%s\x6%c%s&quot;</highlight><highlight class="normal">,<sp/>res,<sp/>i<sp/>+<sp/>127,<sp/>array[i]);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>res;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/encrypt/python/get_functions.c"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,303 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="python__parser_8c" kind="file" language="C++">
+    <compoundname>python_parser.c</compoundname>
+    <includes refid="esoterix_8h" local="yes">esoterix.h</includes>
+    <includes refid="python_8h" local="yes">python.h</includes>
+    <incdepgraph>
+      <node id="12">
+        <label>sys/stat.h</label>
+      </node>
+      <node id="8">
+        <label>stdbool.h</label>
+      </node>
+      <node id="5">
+        <label>stdarg.h</label>
+      </node>
+      <node id="10">
+        <label>stdlib.h</label>
+      </node>
+      <node id="11">
+        <label>fcntl.h</label>
+      </node>
+      <node id="1">
+        <label>src/encrypt/python/python_parser.c</label>
+        <link refid="python__parser_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>stddef.h</label>
+      </node>
+      <node id="2">
+        <label>esoterix.h</label>
+        <link refid="esoterix_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>formatstring.h</label>
+        <link refid="include_2formatstring_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>unistd.h</label>
+      </node>
+      <node id="13">
+        <label>python.h</label>
+        <link refid="python_8h"/>
+      </node>
+      <node id="4">
+        <label>printf.h</label>
+        <link refid="include_2printf_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>my.h</label>
+        <link refid="include_2my_8h"/>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="python__parser_8c_1a078c1218fcc731ecdf4349bb6d51f25c" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* pywords[]</definition>
+        <argsstring>[]</argsstring>
+        <name>pywords</name>
+        <initializer>= {
+    &quot;and&quot;, &quot;as&quot;, &quot;assert&quot;, &quot;break&quot;, &quot;class&quot;, &quot;continue&quot;, &quot;def&quot;, &quot;del&quot;, &quot;elif&quot;,
+    &quot;else&quot;, &quot;except&quot;, &quot;False&quot;, &quot;finally&quot;, &quot;for&quot;, &quot;from&quot;, &quot;global&quot;, &quot;if&quot;,
+    &quot;import&quot;, &quot;in&quot;, &quot;is&quot;, &quot;lambda&quot;, &quot;None&quot;, &quot;nonlocal&quot;, &quot;not&quot;, &quot;or&quot;, &quot;pass&quot;,
+    &quot;print&quot;, &quot;raise&quot;, &quot;return&quot;, &quot;True&quot;, &quot;try&quot;, &quot;while&quot;, &quot;with&quot;, &quot;yield&quot;, &quot;range&quot;,
+    &quot;int&quot;, &quot;str&quot;
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/encrypt/python/python_parser.c" line="11" column="6" bodyfile="src/encrypt/python/python_parser.c" bodystart="11" bodyend="-1"/>
+        <referencedby refid="python__parser_8c_1a65513290015f4a326d72e14b8f885846" compoundref="python__parser_8c" startline="42" endline="56">getvar</referencedby>
+        <referencedby refid="python__parser_8c_1a2ab11f553fcf96faef056ef3f81ca211" compoundref="python__parser_8c" startline="58" endline="73">__python__</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="python__parser_8c_1af7acc50aaef5965aae459b7a32a11936" prot="public" static="no" mutable="no">
+        <type><ref refid="python_8h_1a5773ca13d946ce09a5061ac463f40be5" kindref="member">__py__symbol_keyword_t</ref></type>
+        <definition>__py__symbol_keyword_t Symbols[]</definition>
+        <argsstring>[]</argsstring>
+        <name>Symbols</name>
+        <initializer>= {
+    {&apos;\x0&apos;, &quot;while&quot;, false, 2},
+    {&apos;\x0&apos;, &quot;for&quot;, false, 2},
+    {&apos;\x1&apos;, &quot;if&quot;, false, 2},
+    {&apos;\x2&apos;, &quot;else&quot;, false, 1},
+    {&apos;\x4&apos;, &quot;print&quot;, true, 0},
+    {&apos;\x5&apos;, NULL, true, 0},
+    {&apos;\x6&apos;, &quot;def&quot;, true, 1},
+    {&apos;\x7&apos;, &quot;class&quot;, true, 1},
+    {&apos;\x9&apos;, NULL, true, 0},
+    {&apos;\x10&apos;, &quot;return&quot;, true, 0}
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/encrypt/python/python_parser.c" line="19" column="24" bodyfile="src/encrypt/python/python_parser.c" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="python__parser_8c_1ac4df1ad18328e60dff2fa09161e75bc0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* var_from_array</definition>
+        <argsstring>(char **array)</argsstring>
+        <name>var_from_array</name>
+        <param>
+          <type>char **</type>
+          <declname>array</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/encrypt/python/python_parser.c" line="32" column="6" bodyfile="src/encrypt/python/python_parser.c" bodystart="32" bodyend="40"/>
+        <references refid="include_2formatstring_8h_1a6f2c69610dc237549da5171b58e348d6" compoundref="formatstring_8c" startline="81" endline="103">format</references>
+        <referencedby refid="python__parser_8c_1a65513290015f4a326d72e14b8f885846" compoundref="python__parser_8c" startline="42" endline="56">getvar</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="python__parser_8c_1a65513290015f4a326d72e14b8f885846" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* getvar</definition>
+        <argsstring>(char *buffer, char **functions)</argsstring>
+        <name>getvar</name>
+        <param>
+          <type>char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>functions</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/encrypt/python/python_parser.c" line="42" column="6" bodyfile="src/encrypt/python/python_parser.c" bodystart="42" bodyend="56"/>
+        <references refid="include_2printf_8h_1a23690a6b1f3cf97e62ed0a74bb554062" compoundref="my__printf_8c" startline="64" endline="84">my_printf</references>
+        <references refid="include_2my_8h_1a75b8d8c9b6d5ebfc4d74dfa8eef65c4e" compoundref="my__str__to__word__array_8c" startline="54" endline="70">my_str_to_word_array</references>
+        <references refid="include_2my_8h_1a1a42d9b749358a7c132f87a9502a948d" compoundref="my__strdup_8c" startline="14" endline="22">my_strdup</references>
+        <references refid="esoterix_8h_1aa1aace4d21f5c36fa589395b365d969d" compoundref="array_8c" startline="57" endline="67">no_double</references>
+        <references refid="python__parser_8c_1a078c1218fcc731ecdf4349bb6d51f25c" compoundref="python__parser_8c" startline="11">pywords</references>
+        <references refid="esoterix_8h_1a72059dc959d6669f93addf413d969ff7" compoundref="array_8c" startline="33" endline="46">remove</references>
+        <references refid="esoterix_8h_1a0da7d05dae8d796f276655d3d2df7ef6" compoundref="esoterix_8h" startline="52">SHOW_ARRAY</references>
+        <references refid="python__parser_8c_1ac4df1ad18328e60dff2fa09161e75bc0" compoundref="python__parser_8c" startline="32" endline="40">var_from_array</references>
+        <referencedby refid="python__parser_8c_1a2ab11f553fcf96faef056ef3f81ca211" compoundref="python__parser_8c" startline="58" endline="73">__python__</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="python__parser_8c_1a2ab11f553fcf96faef056ef3f81ca211" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* __python__</definition>
+        <argsstring>(char *file)</argsstring>
+        <name>__python__</name>
+        <param>
+          <type>char *</type>
+          <declname>file</declname>
+        </param>
+        <briefdescription>
+<para>Translate python script in language X. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>name of the file to read</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Content traduce </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/encrypt/python/python_parser.c" line="58" column="6" bodyfile="src/encrypt/python/python_parser.c" bodystart="58" bodyend="73"/>
+        <references refid="python_8h_1a9c2e622c81bd3d6b4ebe0d1692faf266" compoundref="get__functions_8c" startline="33" endline="41">__py__fcnt_display</references>
+        <references refid="python_8h_1a331ee9f33563f4477d7dd800d6f57914" compoundref="get__functions_8c" startline="19" endline="31">__py__get_func</references>
+        <references refid="esoterix_8h_1a7bc4404a42c203221a8ed0687c5b853c" compoundref="buff__from__file_8c" startline="18" endline="31">buff_from_file</references>
+        <references refid="namespacebuild_1a40a5d58ffa6e88aa578d6683ac413105" compoundref="build_8py" startline="18">build.file</references>
+        <references refid="include_2formatstring_8h_1a6f2c69610dc237549da5171b58e348d6" compoundref="formatstring_8c" startline="81" endline="103">format</references>
+        <references refid="python__parser_8c_1a65513290015f4a326d72e14b8f885846" compoundref="python__parser_8c" startline="42" endline="56">getvar</references>
+        <references refid="include_2my_8h_1a75b8d8c9b6d5ebfc4d74dfa8eef65c4e" compoundref="my__str__to__word__array_8c" startline="54" endline="70">my_str_to_word_array</references>
+        <references refid="include_2my_8h_1a1a42d9b749358a7c132f87a9502a948d" compoundref="my__strdup_8c" startline="14" endline="22">my_strdup</references>
+        <references refid="python__parser_8c_1a078c1218fcc731ecdf4349bb6d51f25c" compoundref="python__parser_8c" startline="11">pywords</references>
+        <references refid="esoterix_8h_1a72059dc959d6669f93addf413d969ff7" compoundref="array_8c" startline="33" endline="46">remove</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">**<sp/>@maelbecel\Esoterix</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">**<sp/>python_parser.c</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">**<sp/>File<sp/>description:</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">**<sp/>Parser<sp/>python</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="esoterix_8h" kindref="compound">esoterix.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="python_8h" kindref="compound">python.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="python__parser_8c_1a078c1218fcc731ecdf4349bb6d51f25c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="python__parser_8c_1a078c1218fcc731ecdf4349bb6d51f25c" kindref="member">pywords</ref>[]<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;and&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;as&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;assert&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;break&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;class&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;continue&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;def&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;del&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;elif&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;else&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;except&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;False&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;finally&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;for&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;from&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;global&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;if&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;import&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;in&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;is&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;lambda&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;None&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;nonlocal&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;not&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;or&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;pass&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;print&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;raise&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;return&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;True&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;try&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;while&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;with&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;yield&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;range&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;int&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;str&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="python__parser_8c_1af7acc50aaef5965aae459b7a32a11936" refkind="member"><highlight class="normal"><ref refid="struct____py____symbol__keyword__s" kindref="compound">__py__symbol_keyword_t</ref><sp/><ref refid="python__parser_8c_1af7acc50aaef5965aae459b7a32a11936" kindref="member">Symbols</ref>[]<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&apos;\x0&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;while&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">,<sp/>2},</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&apos;\x0&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;for&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">,<sp/>2},</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&apos;\x1&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;if&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">,<sp/>2},</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&apos;\x2&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;else&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">,<sp/>1},</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&apos;\x4&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;print&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/>0},</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&apos;\x5&apos;</highlight><highlight class="normal">,<sp/>NULL,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/>0},</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&apos;\x6&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;def&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/>1},</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&apos;\x7&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;class&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/>1},</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&apos;\x9&apos;</highlight><highlight class="normal">,<sp/>NULL,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/>0},</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&apos;\x10&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;return&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/>0}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="python__parser_8c_1ac4df1ad18328e60dff2fa09161e75bc0" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="python__parser_8c_1ac4df1ad18328e60dff2fa09161e75bc0" kindref="member">var_from_array</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**array)</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*res<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>array[i];<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>res<sp/>=<sp/><ref refid="include_2formatstring_8h_1a6f2c69610dc237549da5171b58e348d6" kindref="member">format</ref>(</highlight><highlight class="stringliteral">&quot;%s\x5%c=%s&quot;</highlight><highlight class="normal">,<sp/>res,<sp/>i<sp/>+<sp/>1,<sp/>array[i]);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>res;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="python__parser_8c_1a65513290015f4a326d72e14b8f885846" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="python__parser_8c_1a65513290015f4a326d72e14b8f885846" kindref="member">getvar</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*buffer,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**functions)</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**arr<sp/>=<sp/><ref refid="include_2my_8h_1a75b8d8c9b6d5ebfc4d74dfa8eef65c4e" kindref="member">my_str_to_word_array</ref>(buffer,<sp/></highlight><highlight class="stringliteral">&quot;<sp/>\t\n()+=-/%!&lt;&gt;*\&quot;\&apos;:&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="python__parser_8c_1a078c1218fcc731ecdf4349bb6d51f25c" kindref="member">pywords</ref>)<sp/>/<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*);<sp/>i++)</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>arr<sp/>=<sp/><ref refid="esoterix_8h_1a72059dc959d6669f93addf413d969ff7" kindref="member">remove</ref>(arr,<sp/><ref refid="include_2my_8h_1a1a42d9b749358a7c132f87a9502a948d" kindref="member">my_strdup</ref>(<ref refid="python__parser_8c_1a078c1218fcc731ecdf4349bb6d51f25c" kindref="member">pywords</ref>[i]));</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>functions[i];<sp/>i++)</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>arr<sp/>=<sp/><ref refid="esoterix_8h_1a72059dc959d6669f93addf413d969ff7" kindref="member">remove</ref>(arr,<sp/>functions[i]);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>arr<sp/>=<sp/><ref refid="esoterix_8h_1aa1aace4d21f5c36fa589395b365d969d" kindref="member">no_double</ref>(arr);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="include_2printf_8h_1a23690a6b1f3cf97e62ed0a74bb554062" kindref="member">my_printf</ref>(</highlight><highlight class="stringliteral">&quot;Variables:\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="esoterix_8h_1a0da7d05dae8d796f276655d3d2df7ef6" kindref="member">SHOW_ARRAY</ref>(arr);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="include_2printf_8h_1a23690a6b1f3cf97e62ed0a74bb554062" kindref="member">my_printf</ref>(</highlight><highlight class="stringliteral">&quot;Fonctions:\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="esoterix_8h_1a0da7d05dae8d796f276655d3d2df7ef6" kindref="member">SHOW_ARRAY</ref>(functions);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="python__parser_8c_1ac4df1ad18328e60dff2fa09161e75bc0" kindref="member">var_from_array</ref>(arr);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="python__parser_8c_1a2ab11f553fcf96faef056ef3f81ca211" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="python__parser_8c_1a2ab11f553fcf96faef056ef3f81ca211" kindref="member">__python__</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="namespacebuild_1a40a5d58ffa6e88aa578d6683ac413105" kindref="member">file</ref>)</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*buffer<sp/>=<sp/><ref refid="esoterix_8h_1a7bc4404a42c203221a8ed0687c5b853c" kindref="member">buff_from_file</ref>(<ref refid="namespacebuild_1a40a5d58ffa6e88aa578d6683ac413105" kindref="member">file</ref>);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**functions<sp/>=<sp/><ref refid="include_2my_8h_1a75b8d8c9b6d5ebfc4d74dfa8eef65c4e" kindref="member">my_str_to_word_array</ref>(buffer,<sp/></highlight><highlight class="stringliteral">&quot;<sp/>\t\n+=-/%!&lt;&gt;*\&quot;\&apos;:&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*res;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*var;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!buffer)</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="include_2my_8h_1a1a42d9b749358a7c132f87a9502a948d" kindref="member">my_strdup</ref>(</highlight><highlight class="stringliteral">&quot;Error:<sp/>File<sp/>not<sp/>found&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>functions<sp/>=<sp/><ref refid="python_8h_1a331ee9f33563f4477d7dd800d6f57914" kindref="member">__py__get_func</ref>(functions);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>var<sp/>=<sp/><ref refid="python__parser_8c_1a65513290015f4a326d72e14b8f885846" kindref="member">getvar</ref>(buffer,<sp/>functions);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="python__parser_8c_1a078c1218fcc731ecdf4349bb6d51f25c" kindref="member">pywords</ref>)<sp/>/<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*);<sp/>i++)</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>functions<sp/>=<sp/><ref refid="esoterix_8h_1a72059dc959d6669f93addf413d969ff7" kindref="member">remove</ref>(functions,<sp/><ref refid="python__parser_8c_1a078c1218fcc731ecdf4349bb6d51f25c" kindref="member">pywords</ref>[i]);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>res<sp/>=<sp/><ref refid="include_2formatstring_8h_1a6f2c69610dc237549da5171b58e348d6" kindref="member">format</ref>(</highlight><highlight class="stringliteral">&quot;%s\n%s\n&quot;</highlight><highlight class="normal">,<sp/>var,<sp/><ref refid="python_8h_1a9c2e622c81bd3d6b4ebe0d1692faf266" kindref="member">__py__fcnt_display</ref>(functions));</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>res;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/encrypt/python/python_parser.c"/>
+  </compounddef>
+</doxygen>

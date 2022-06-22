@@ -1,0 +1,86 @@
+\hypertarget{concat_8c}{}\doxysection{lib/my/concat.c File Reference}
+\label{concat_8c}\index{lib/my/concat.c@{lib/my/concat.c}}
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}my.\+h\char`\"{}}\newline
+Include dependency graph for concat.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=192pt]{concat_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{concat_8c_a3b3960588932459570799afa357e32b5}{my\+\_\+strlen}} (char const $\ast$str)
+\begin{DoxyCompactList}\small\item\em Get the lenth of a string. \end{DoxyCompactList}\item 
+char $\ast$ \mbox{\hyperlink{concat_8c_aa786ac9ee00076459ce23bc37bdf2430}{concat}} (char $\ast$before, char $\ast$mid, char $\ast$after)
+\begin{DoxyCompactList}\small\item\em Concat three strings. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{concat_8c_aa786ac9ee00076459ce23bc37bdf2430}\label{concat_8c_aa786ac9ee00076459ce23bc37bdf2430}} 
+\index{concat.c@{concat.c}!concat@{concat}}
+\index{concat@{concat}!concat.c@{concat.c}}
+\doxysubsubsection{\texorpdfstring{concat()}{concat()}}
+{\footnotesize\ttfamily char$\ast$ concat (\begin{DoxyParamCaption}\item[{char $\ast$}]{before,  }\item[{char $\ast$}]{mid,  }\item[{char $\ast$}]{after }\end{DoxyParamCaption})}
+
+
+
+Concat three strings. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em before} & first string to concat \\
+\hline
+{\em mid} & second string to concat \\
+\hline
+{\em after} & third string to concat\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Concatenated string 
+\end{DoxyReturn}
+
+
+Definition at line 13 of file concat.\+c.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{concat_8c_aa786ac9ee00076459ce23bc37bdf2430_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{concat_8c_a3b3960588932459570799afa357e32b5}\label{concat_8c_a3b3960588932459570799afa357e32b5}} 
+\index{concat.c@{concat.c}!my\_strlen@{my\_strlen}}
+\index{my\_strlen@{my\_strlen}!concat.c@{concat.c}}
+\doxysubsubsection{\texorpdfstring{my\_strlen()}{my\_strlen()}}
+{\footnotesize\ttfamily int my\+\_\+strlen (\begin{DoxyParamCaption}\item[{char const $\ast$}]{str }\end{DoxyParamCaption})}
+
+
+
+Get the lenth of a string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & string to check\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Length of the string 
+\end{DoxyReturn}
+
+
+Definition at line 10 of file my\+\_\+strlen.\+c.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{concat_8c_a3b3960588932459570799afa357e32b5_icgraph}
+\end{center}
+\end{figure}

@@ -19,7 +19,7 @@ file = sys.argv[1]
 nb = sys.argv[2]
 all = sys.argv[3]
 
-place = 30
+place = 40
 percentage = int(nb) * 100 / int(all)
 
 display = bold + file
@@ -36,8 +36,9 @@ else:
     color = red
 sys.stdout.write(color)
 
-sys.stdout.write(u"\u25AE" * int(int(percentage) * place / 100))
-sys.stdout.write(" " * int(place - (percentage * place / 100)))
+temp = int(int(percentage) * place / 100)
+sys.stdout.write(u"\u25AE" * temp)
+sys.stdout.write(" " * (place - temp))
 
 sys.stdout.write(normal + bold + "]" + "\t" + str(int(percentage)) + '%' + normal + "\t" +"(" + nb + '/' + all +")" + spaces )
 sys.stdout.flush()

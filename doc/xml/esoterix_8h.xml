@@ -1,0 +1,750 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="esoterix_8h" kind="file" language="C++">
+    <compoundname>esoterix.h</compoundname>
+    <includes refid="include_2my_8h" local="yes">my.h</includes>
+    <includes refid="include_2printf_8h" local="yes">printf.h</includes>
+    <includes refid="include_2formatstring_8h" local="yes">formatstring.h</includes>
+    <includes local="no">stdbool.h</includes>
+    <includes local="no">stddef.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">fcntl.h</includes>
+    <includes local="no">sys/stat.h</includes>
+    <includedby refid="array_8c" local="yes">src/array.c</includedby>
+    <includedby refid="buff__from__file_8c" local="yes">src/buff_from_file.c</includedby>
+    <includedby refid="get__functions_8c" local="yes">src/encrypt/python/get_functions.c</includedby>
+    <includedby refid="python__parser_8c" local="yes">src/encrypt/python/python_parser.c</includedby>
+    <includedby refid="values_8c" local="yes">src/encrypt/python/values.c</includedby>
+    <includedby refid="main_8c" local="yes">src/main.c</includedby>
+    <incdepgraph>
+      <node id="11">
+        <label>sys/stat.h</label>
+      </node>
+      <node id="7">
+        <label>stdbool.h</label>
+      </node>
+      <node id="4">
+        <label>stdarg.h</label>
+      </node>
+      <node id="9">
+        <label>stdlib.h</label>
+      </node>
+      <node id="10">
+        <label>fcntl.h</label>
+      </node>
+      <node id="8">
+        <label>stddef.h</label>
+      </node>
+      <node id="1">
+        <label>include/esoterix.h</label>
+        <link refid="esoterix_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>formatstring.h</label>
+        <link refid="include_2formatstring_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>unistd.h</label>
+      </node>
+      <node id="3">
+        <label>printf.h</label>
+        <link refid="include_2printf_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>my.h</label>
+        <link refid="include_2my_8h"/>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>src/array.c</label>
+        <link refid="array_8c"/>
+      </node>
+      <node id="5">
+        <label>src/encrypt/python/python_parser.c</label>
+        <link refid="python__parser_8c"/>
+      </node>
+      <node id="7">
+        <label>src/main.c</label>
+        <link refid="main_8c"/>
+      </node>
+      <node id="6">
+        <label>src/encrypt/python/values.c</label>
+        <link refid="values_8c"/>
+      </node>
+      <node id="3">
+        <label>src/buff_from_file.c</label>
+        <link refid="buff__from__file_8c"/>
+      </node>
+      <node id="1">
+        <label>include/esoterix.h</label>
+        <link refid="esoterix_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>src/encrypt/python/get_functions.c</label>
+        <link refid="get__functions_8c"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structfiletype__s" prot="public">filetype_s</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="esoterix_8h_1a79c5cc3bb96038d18debe7264944dbdb" prot="public" static="no">
+        <name>INIT_ARRAY</name>
+        <param><defname>arr</defname></param>
+        <initializer>malloc(sizeof(char *)); *arr = NULL;</initializer>
+        <briefdescription>
+<para>Initialize an empty array. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/esoterix.h" line="32" column="13" bodyfile="include/esoterix.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="esoterix_8h_1a3b3e3f26aaa682eaa4bcb7e7da77f585" prot="public" static="no">
+        <name>LAST_ARRAY</name>
+        <param><defname>a</defname></param>
+        <initializer>a[<ref refid="my__strlen_8c_1a7ea2710ab7129b43157020dc39934ab3" kindref="member">my_strarraylen</ref>(a) - 1]</initializer>
+        <briefdescription>
+<para>Get the last element of an array. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/esoterix.h" line="37" column="13" bodyfile="include/esoterix.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="esoterix_8h_1a8308a804d1dcdf7b44178c918ecb9caf" prot="public" static="no">
+        <name>LAST_STR</name>
+        <param><defname>a</defname></param>
+        <initializer>a[<ref refid="my__strstr_8c_1a3b3960588932459570799afa357e32b5" kindref="member">my_strlen</ref>(a) - 1]</initializer>
+        <briefdescription>
+<para>Get the last element of a string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/esoterix.h" line="42" column="13" bodyfile="include/esoterix.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="esoterix_8h_1a1bf7591a238bdacac67523dbfcbbe95e" prot="public" static="no">
+        <name>FREE_ARRAY</name>
+        <param><defname>a</defname></param>
+        <initializer>for (int i = 0; a[i] != NULL; i++) free(a[i]); free(a)</initializer>
+        <briefdescription>
+<para>Free an array. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/esoterix.h" line="47" column="13" bodyfile="include/esoterix.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="esoterix_8h_1a0da7d05dae8d796f276655d3d2df7ef6" prot="public" static="no">
+        <name>SHOW_ARRAY</name>
+        <param><defname>arr</defname></param>
+        <initializer>for (size_t i = 0; arr[i]; i++) <ref refid="lib_2myprintf_2printf_8h_1a23690a6b1f3cf97e62ed0a74bb554062" kindref="member">my_printf</ref>(&quot;\t- %s\n&quot;, arr[i]);</initializer>
+        <briefdescription>
+<para>Show an array. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/esoterix.h" line="52" column="13" bodyfile="include/esoterix.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90" prot="public" static="no" strong="no">
+        <type></type>
+        <name>fileref_e</name>
+        <enumvalue id="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90af082602680c1a8548d7cd4aa59c67b1c" prot="public">
+          <name>PYTHON</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90a739ce3f516592d245d16fd8a3893472c" prot="public">
+          <name>C</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90aca1ef9dc7006f2011c38e2bcc8f64d16" prot="public">
+          <name>CPP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90a5a922e7d52f0f45d060f22d747c4dfcc" prot="public">
+          <name>LUA</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90a70b9213a328b71cbc9abad715b4601f1" prot="public">
+          <name>JAVA</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90a50d8e53aac4e002d0fd296c5033ce985" prot="public">
+          <name>GO</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90a0858e1a5b39e6393b1f1c564b6b049bd" prot="public">
+          <name>JAVASCRIPT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90aba113c37f25d24aada154b75c7dd91ba" prot="public">
+          <name>WHITESPACE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90ab52dd1baad27c42561ce445ec2901edf" prot="public">
+          <name>UNLAMBDA</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90a51ba37e65278e8c05da830ef068ae6d5" prot="public">
+          <name>MALBOLGE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90a939e4ed3c238ce998bd4f54ba075c16b" prot="public">
+          <name>LOLCODE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90a94d6a17b2a7f879d8c06d7c8b12b74ae" prot="public">
+          <name>JSFUCK</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90a0783629a69b8218d4e0054583a811898" prot="public">
+          <name>INTERCAL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90afb658d1d295d3fbfa23687c969413e82" prot="public">
+          <name>GOLFSCRIPT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90a68a4207258bc0f3a22239285d65c9856" prot="public">
+          <name>FRACTAN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90a8d97da7a0012047a2856526e7b04b47b" prot="public">
+          <name>BLC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90ab4f617b6ca63d13c876739895efc16f5" prot="public">
+          <name>BEFUNGE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90a4134eb8c9298e79e42bf898c008da394" prot="public">
+          <name>SHEAKSPEAR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90a6e4f6be6f8fed8d639481060ce9067b9" prot="public">
+          <name>BRAINFUCK</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90a028febad62c7e4a4e77bb3af33cb357e" prot="public">
+          <name>CHEF</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enum of filetypes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/esoterix.h" line="57" column="19" bodyfile="include/esoterix.h" bodystart="57" bodyend="78"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="esoterix_8h_1a8338582deddf9007abc7ceae9fb82a58" prot="public" static="no">
+        <type>struct <ref refid="structfiletype__s" kindref="compound">filetype_s</ref></type>
+        <definition>typedef struct filetype_s filetype_t</definition>
+        <argsstring></argsstring>
+        <name>filetype_t</name>
+        <briefdescription>
+<para>Includes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Typedefs </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/esoterix.h" line="1" column="0" bodyfile="include/esoterix.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="esoterix_8h_1a17e6d9e16d5e07dd4ccb65bbbd23a5ae" prot="public" static="no">
+        <type>enum <ref refid="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90" kindref="member">fileref_e</ref></type>
+        <definition>typedef enum fileref_e fileref_t</definition>
+        <argsstring></argsstring>
+        <name>fileref_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/esoterix.h" line="1" column="0" bodyfile="include/esoterix.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="esoterix_8h_1a7bc4404a42c203221a8ed0687c5b853c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* buff_from_file</definition>
+        <argsstring>(char *file)</argsstring>
+        <name>buff_from_file</name>
+        <param>
+          <type>char *</type>
+          <declname>file</declname>
+        </param>
+        <briefdescription>
+<para>Get content of a file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>name of the file to read</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Content of the file </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/esoterix.h" line="88" column="10" bodyfile="src/buff_from_file.c" bodystart="18" bodyend="31" declfile="include/esoterix.h" declline="88" declcolumn="10"/>
+        <references refid="namespacebuild_1a40a5d58ffa6e88aa578d6683ac413105" compoundref="build_8py" startline="18">build.file</references>
+        <referencedby refid="python__parser_8c_1a2ab11f553fcf96faef056ef3f81ca211" compoundref="python__parser_8c" startline="58" endline="73">__python__</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="esoterix_8h_1a2ab11f553fcf96faef056ef3f81ca211" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* __python__</definition>
+        <argsstring>(char *file)</argsstring>
+        <name>__python__</name>
+        <param>
+          <type>char *</type>
+          <declname>file</declname>
+        </param>
+        <briefdescription>
+<para>Translate python script in language X. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>name of the file to read</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Content traduce </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/esoterix.h" line="98" column="10" bodyfile="src/encrypt/python/python_parser.c" bodystart="58" bodyend="73" declfile="include/esoterix.h" declline="98" declcolumn="10"/>
+        <references refid="python_8h_1a9c2e622c81bd3d6b4ebe0d1692faf266" compoundref="get__functions_8c" startline="33" endline="41">__py__fcnt_display</references>
+        <references refid="python_8h_1a331ee9f33563f4477d7dd800d6f57914" compoundref="get__functions_8c" startline="19" endline="31">__py__get_func</references>
+        <references refid="esoterix_8h_1a7bc4404a42c203221a8ed0687c5b853c" compoundref="buff__from__file_8c" startline="18" endline="31">buff_from_file</references>
+        <references refid="namespacebuild_1a40a5d58ffa6e88aa578d6683ac413105" compoundref="build_8py" startline="18">build.file</references>
+        <references refid="include_2formatstring_8h_1a6f2c69610dc237549da5171b58e348d6" compoundref="formatstring_8c" startline="81" endline="103">format</references>
+        <references refid="python__parser_8c_1a65513290015f4a326d72e14b8f885846" compoundref="python__parser_8c" startline="42" endline="56">getvar</references>
+        <references refid="include_2my_8h_1a75b8d8c9b6d5ebfc4d74dfa8eef65c4e" compoundref="my__str__to__word__array_8c" startline="54" endline="70">my_str_to_word_array</references>
+        <references refid="include_2my_8h_1a1a42d9b749358a7c132f87a9502a948d" compoundref="my__strdup_8c" startline="14" endline="22">my_strdup</references>
+        <references refid="python__parser_8c_1a078c1218fcc731ecdf4349bb6d51f25c" compoundref="python__parser_8c" startline="11">pywords</references>
+        <references refid="esoterix_8h_1a72059dc959d6669f93addf413d969ff7" compoundref="array_8c" startline="33" endline="46">remove</references>
+      </memberdef>
+      <memberdef kind="function" id="esoterix_8h_1a6fdd8059e35129794c0095e7587367d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char **</type>
+        <definition>char** remove_all</definition>
+        <argsstring>(char **array, char *str)</argsstring>
+        <name>remove_all</name>
+        <param>
+          <type>char **</type>
+          <declname>array</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>Delete all time str in array. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>array</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array to clean </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string to delete</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>array without the string </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/esoterix.h" line="109" column="10" bodyfile="src/array.c" bodystart="48" bodyend="55" declfile="include/esoterix.h" declline="109" declcolumn="10"/>
+        <references refid="array_8c_1a5e4216c3a9c693ea1e816c062b2f4382" compoundref="array_8c" startline="10" endline="19">is_in</references>
+        <references refid="array_8c_1a72059dc959d6669f93addf413d969ff7" compoundref="array_8c" startline="33" endline="46">remove</references>
+      </memberdef>
+      <memberdef kind="function" id="esoterix_8h_1a5e4216c3a9c693ea1e816c062b2f4382" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool is_in</definition>
+        <argsstring>(char **array, char *str)</argsstring>
+        <name>is_in</name>
+        <param>
+          <type>char **</type>
+          <declname>array</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>Check if a string is in an array. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>array</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array to check </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string to check</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if str is in array, false otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/esoterix.h" line="120" column="10" bodyfile="src/array.c" bodystart="10" bodyend="19" declfile="include/esoterix.h" declline="120" declcolumn="10"/>
+        <references refid="include_2my_8h_1a12d4044e7c0ab78ca1f186e0abdb08c6" compoundref="my__strcmp_8c" startline="12" endline="21">my_strcmp</references>
+        <referencedby refid="array_8c_1aa1aace4d21f5c36fa589395b365d969d" compoundref="array_8c" startline="57" endline="67">no_double</referencedby>
+        <referencedby refid="array_8c_1a6fdd8059e35129794c0095e7587367d1" compoundref="array_8c" startline="48" endline="55">remove_all</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="esoterix_8h_1a72059dc959d6669f93addf413d969ff7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char **</type>
+        <definition>char** remove</definition>
+        <argsstring>(char **array, char *str)</argsstring>
+        <name>remove</name>
+        <param>
+          <type>char **</type>
+          <declname>array</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>Remove first occurence of a string in an array. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>array</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array to check </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string to check</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>array without the string </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/esoterix.h" line="131" column="10" bodyfile="src/array.c" bodystart="33" bodyend="46" declfile="include/esoterix.h" declline="131" declcolumn="10"/>
+        <references refid="include_2my_8h_1ad0742a034086f291ec1184d327fa79fc">my_strarraylen</references>
+        <references refid="include_2my_8h_1a12d4044e7c0ab78ca1f186e0abdb08c6" compoundref="my__strcmp_8c" startline="12" endline="21">my_strcmp</references>
+        <referencedby refid="python__parser_8c_1a2ab11f553fcf96faef056ef3f81ca211" compoundref="python__parser_8c" startline="58" endline="73">__python__</referencedby>
+        <referencedby refid="python__parser_8c_1a65513290015f4a326d72e14b8f885846" compoundref="python__parser_8c" startline="42" endline="56">getvar</referencedby>
+        <referencedby refid="array_8c_1a6fdd8059e35129794c0095e7587367d1" compoundref="array_8c" startline="48" endline="55">remove_all</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="esoterix_8h_1a7d8817d87c0f38087af49a654edbc308" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char **</type>
+        <definition>char** append</definition>
+        <argsstring>(char **array, char *str)</argsstring>
+        <name>append</name>
+        <param>
+          <type>char **</type>
+          <declname>array</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>Add a string in an Array. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>array</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array to check </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string to check</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>array with the string </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/esoterix.h" line="142" column="10" bodyfile="src/array.c" bodystart="21" bodyend="31" declfile="include/esoterix.h" declline="142" declcolumn="10"/>
+        <references refid="include_2my_8h_1ad0742a034086f291ec1184d327fa79fc">my_strarraylen</references>
+        <referencedby refid="get__functions_8c_1a331ee9f33563f4477d7dd800d6f57914" compoundref="get__functions_8c" startline="19" endline="31">__py__get_func</referencedby>
+        <referencedby refid="array_8c_1aa1aace4d21f5c36fa589395b365d969d" compoundref="array_8c" startline="57" endline="67">no_double</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="esoterix_8h_1aa1aace4d21f5c36fa589395b365d969d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char **</type>
+        <definition>char** no_double</definition>
+        <argsstring>(char **array)</argsstring>
+        <name>no_double</name>
+        <param>
+          <type>char **</type>
+          <declname>array</declname>
+        </param>
+        <briefdescription>
+<para>Delete double in an array. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>array</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array to check</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>array without double </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/esoterix.h" line="152" column="10" bodyfile="src/array.c" bodystart="57" bodyend="67" declfile="include/esoterix.h" declline="152" declcolumn="10"/>
+        <references refid="array_8c_1a7d8817d87c0f38087af49a654edbc308" compoundref="array_8c" startline="21" endline="31">append</references>
+        <references refid="array_8c_1a5e4216c3a9c693ea1e816c062b2f4382" compoundref="array_8c" startline="10" endline="19">is_in</references>
+        <references refid="include_2my_8h_1ad0742a034086f291ec1184d327fa79fc">my_strarraylen</references>
+        <referencedby refid="get__functions_8c_1a331ee9f33563f4477d7dd800d6f57914" compoundref="get__functions_8c" startline="19" endline="31">__py__get_func</referencedby>
+        <referencedby refid="python__parser_8c_1a65513290015f4a326d72e14b8f885846" compoundref="python__parser_8c" startline="42" endline="56">getvar</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">**<sp/>@maelbecel\Esoterix</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">**<sp/>esoterix.c</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">**<sp/>File<sp/>description:</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">**<sp/>esoterix</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>ESOTERIX</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>ESOTERIX</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#include<sp/>&quot;<ref refid="include_2my_8h" kindref="compound">my.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#include<sp/>&quot;<ref refid="include_2printf_8h" kindref="compound">printf.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#include<sp/>&quot;<ref refid="include_2formatstring_8h" kindref="compound">formatstring.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#include<sp/>&lt;stdbool.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#include<sp/>&lt;stddef.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#include<sp/>&lt;fcntl.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#include<sp/>&lt;sys/stat.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="esoterix_8h_1a8338582deddf9007abc7ceae9fb82a58" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structfiletype__s" kindref="compound">filetype_s</ref><sp/><ref refid="structfiletype__s" kindref="compound">filetype_t</ref>;</highlight></codeline>
+<codeline lineno="27" refid="esoterix_8h_1a17e6d9e16d5e07dd4ccb65bbbd23a5ae" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90" kindref="member">fileref_e</ref><sp/><ref refid="esoterix_8h_1a17e6d9e16d5e07dd4ccb65bbbd23a5ae" kindref="member">fileref_t</ref>;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="esoterix_8h_1a79c5cc3bb96038d18debe7264944dbdb" refkind="member"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>INIT_ARRAY(arr)<sp/>malloc(sizeof(char<sp/>*));<sp/>*arr<sp/>=<sp/>NULL;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="esoterix_8h_1a3b3e3f26aaa682eaa4bcb7e7da77f585" refkind="member"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>LAST_ARRAY(a)<sp/>a[my_strarraylen(a)<sp/>-<sp/>1]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="esoterix_8h_1a8308a804d1dcdf7b44178c918ecb9caf" refkind="member"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>LAST_STR(a)<sp/>a[my_strlen(a)<sp/>-<sp/>1]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="esoterix_8h_1a1bf7591a238bdacac67523dbfcbbe95e" refkind="member"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>FREE_ARRAY(a)<sp/>for<sp/>(int<sp/>i<sp/>=<sp/>0;<sp/>a[i]<sp/>!=<sp/>NULL;<sp/>i++)<sp/>free(a[i]);<sp/>free(a)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="esoterix_8h_1a0da7d05dae8d796f276655d3d2df7ef6" refkind="member"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>SHOW_ARRAY(arr)<sp/>for<sp/>(size_t<sp/>i<sp/>=<sp/>0;<sp/>arr[i];<sp/>i++)<sp/>my_printf(&quot;\t-<sp/>%s\n&quot;,<sp/>arr[i]);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90" kindref="member">fileref_e</ref><sp/>{</highlight></codeline>
+<codeline lineno="58" refid="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90af082602680c1a8548d7cd4aa59c67b1c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90af082602680c1a8548d7cd4aa59c67b1c" kindref="member">PYTHON</ref>,</highlight></codeline>
+<codeline lineno="59" refid="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90a739ce3f516592d245d16fd8a3893472c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90a739ce3f516592d245d16fd8a3893472c" kindref="member">C</ref>,</highlight></codeline>
+<codeline lineno="60" refid="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90aca1ef9dc7006f2011c38e2bcc8f64d16" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90aca1ef9dc7006f2011c38e2bcc8f64d16" kindref="member">CPP</ref>,</highlight></codeline>
+<codeline lineno="61" refid="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90a5a922e7d52f0f45d060f22d747c4dfcc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90a5a922e7d52f0f45d060f22d747c4dfcc" kindref="member">LUA</ref>,</highlight></codeline>
+<codeline lineno="62" refid="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90a70b9213a328b71cbc9abad715b4601f1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90a70b9213a328b71cbc9abad715b4601f1" kindref="member">JAVA</ref>,</highlight></codeline>
+<codeline lineno="63" refid="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90a50d8e53aac4e002d0fd296c5033ce985" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90a50d8e53aac4e002d0fd296c5033ce985" kindref="member">GO</ref>,</highlight></codeline>
+<codeline lineno="64" refid="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90a0858e1a5b39e6393b1f1c564b6b049bd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90a0858e1a5b39e6393b1f1c564b6b049bd" kindref="member">JAVASCRIPT</ref>,</highlight></codeline>
+<codeline lineno="65" refid="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90aba113c37f25d24aada154b75c7dd91ba" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90aba113c37f25d24aada154b75c7dd91ba" kindref="member">WHITESPACE</ref>,</highlight></codeline>
+<codeline lineno="66" refid="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90ab52dd1baad27c42561ce445ec2901edf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90ab52dd1baad27c42561ce445ec2901edf" kindref="member">UNLAMBDA</ref>,</highlight></codeline>
+<codeline lineno="67" refid="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90a51ba37e65278e8c05da830ef068ae6d5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90a51ba37e65278e8c05da830ef068ae6d5" kindref="member">MALBOLGE</ref>,</highlight></codeline>
+<codeline lineno="68" refid="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90a939e4ed3c238ce998bd4f54ba075c16b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90a939e4ed3c238ce998bd4f54ba075c16b" kindref="member">LOLCODE</ref>,</highlight></codeline>
+<codeline lineno="69" refid="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90a94d6a17b2a7f879d8c06d7c8b12b74ae" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90a94d6a17b2a7f879d8c06d7c8b12b74ae" kindref="member">JSFUCK</ref>,</highlight></codeline>
+<codeline lineno="70" refid="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90a0783629a69b8218d4e0054583a811898" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90a0783629a69b8218d4e0054583a811898" kindref="member">INTERCAL</ref>,</highlight></codeline>
+<codeline lineno="71" refid="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90afb658d1d295d3fbfa23687c969413e82" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90afb658d1d295d3fbfa23687c969413e82" kindref="member">GOLFSCRIPT</ref>,</highlight></codeline>
+<codeline lineno="72" refid="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90a68a4207258bc0f3a22239285d65c9856" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90a68a4207258bc0f3a22239285d65c9856" kindref="member">FRACTAN</ref>,</highlight></codeline>
+<codeline lineno="73" refid="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90a8d97da7a0012047a2856526e7b04b47b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90a8d97da7a0012047a2856526e7b04b47b" kindref="member">BLC</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Binary<sp/>lambda<sp/>calculus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90ab4f617b6ca63d13c876739895efc16f5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90ab4f617b6ca63d13c876739895efc16f5" kindref="member">BEFUNGE</ref>,</highlight></codeline>
+<codeline lineno="75" refid="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90a4134eb8c9298e79e42bf898c008da394" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90a4134eb8c9298e79e42bf898c008da394" kindref="member">SHEAKSPEAR</ref>,</highlight></codeline>
+<codeline lineno="76" refid="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90a6e4f6be6f8fed8d639481060ce9067b9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90a6e4f6be6f8fed8d639481060ce9067b9" kindref="member">BRAINFUCK</ref>,</highlight></codeline>
+<codeline lineno="77" refid="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90a028febad62c7e4a4e77bb3af33cb357e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="esoterix_8h_1af85e81e057e3ed8aa8725fa1da5c1e90a028febad62c7e4a4e77bb3af33cb357e" kindref="member">CHEF</ref></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="esoterix_8h_1a7bc4404a42c203221a8ed0687c5b853c" kindref="member">buff_from_file</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="namespacebuild_1a40a5d58ffa6e88aa578d6683ac413105" kindref="member">file</ref>);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="esoterix_8h_1a2ab11f553fcf96faef056ef3f81ca211" kindref="member">__python__</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="namespacebuild_1a40a5d58ffa6e88aa578d6683ac413105" kindref="member">file</ref>);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**<ref refid="esoterix_8h_1a6fdd8059e35129794c0095e7587367d1" kindref="member">remove_all</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**array,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*str);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="esoterix_8h_1a5e4216c3a9c693ea1e816c062b2f4382" kindref="member">is_in</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**array,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*str);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**<ref refid="esoterix_8h_1a72059dc959d6669f93addf413d969ff7" kindref="member">remove</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**array,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*str);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**<ref refid="esoterix_8h_1a7d8817d87c0f38087af49a654edbc308" kindref="member">append</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**array,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*str);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**<ref refid="esoterix_8h_1aa1aace4d21f5c36fa589395b365d969d" kindref="member">no_double</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**array);</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161" refid="structfiletype__s" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structfiletype__s" kindref="compound">filetype_s</ref><sp/>{</highlight></codeline>
+<codeline lineno="162" refid="structfiletype__s_1a047fd5e3abe6b4702ee66ec0b1f01404" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="esoterix_8h_1a17e6d9e16d5e07dd4ccb65bbbd23a5ae" kindref="member">fileref_t</ref><sp/><ref refid="structfiletype__s_1a047fd5e3abe6b4702ee66ec0b1f01404" kindref="member">reference</ref>;</highlight></codeline>
+<codeline lineno="163" refid="structfiletype__s_1aeac90097f29f7529968697163cea5c18" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="structfiletype__s_1aeac90097f29f7529968697163cea5c18" kindref="member">filename</ref>;</highlight></codeline>
+<codeline lineno="164" refid="structfiletype__s_1a6b01db356a67f1504349c093d5da931e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*(<sp/>*func)(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="include/esoterix.h"/>
+  </compounddef>
+</doxygen>

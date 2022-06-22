@@ -1,0 +1,83 @@
+\hypertarget{my__strstr_8c}{}\doxysection{lib/my/my\+\_\+strstr.c File Reference}
+\label{my__strstr_8c}\index{lib/my/my\_strstr.c@{lib/my/my\_strstr.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+Include dependency graph for my\+\_\+strstr.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=185pt]{my__strstr_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{my__strstr_8c_a3b3960588932459570799afa357e32b5}{my\+\_\+strlen}} (char const $\ast$str)
+\begin{DoxyCompactList}\small\item\em Get the lenth of a string. \end{DoxyCompactList}\item 
+char $\ast$ \mbox{\hyperlink{my__strstr_8c_a97396eb13250cce5cf8513f5e6a7dbf1}{my\+\_\+strstr}} (char $\ast$str, char const $\ast$to\+\_\+find)
+\begin{DoxyCompactList}\small\item\em Find a string into an other string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{my__strstr_8c_a3b3960588932459570799afa357e32b5}\label{my__strstr_8c_a3b3960588932459570799afa357e32b5}} 
+\index{my\_strstr.c@{my\_strstr.c}!my\_strlen@{my\_strlen}}
+\index{my\_strlen@{my\_strlen}!my\_strstr.c@{my\_strstr.c}}
+\doxysubsubsection{\texorpdfstring{my\_strlen()}{my\_strlen()}}
+{\footnotesize\ttfamily int my\+\_\+strlen (\begin{DoxyParamCaption}\item[{char const $\ast$}]{str }\end{DoxyParamCaption})}
+
+
+
+Get the lenth of a string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & string to check\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Length of the string 
+\end{DoxyReturn}
+
+
+Definition at line 10 of file my\+\_\+strlen.\+c.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{my__strstr_8c_a3b3960588932459570799afa357e32b5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{my__strstr_8c_a97396eb13250cce5cf8513f5e6a7dbf1}\label{my__strstr_8c_a97396eb13250cce5cf8513f5e6a7dbf1}} 
+\index{my\_strstr.c@{my\_strstr.c}!my\_strstr@{my\_strstr}}
+\index{my\_strstr@{my\_strstr}!my\_strstr.c@{my\_strstr.c}}
+\doxysubsubsection{\texorpdfstring{my\_strstr()}{my\_strstr()}}
+{\footnotesize\ttfamily char$\ast$ my\+\_\+strstr (\begin{DoxyParamCaption}\item[{char $\ast$}]{str,  }\item[{char const $\ast$}]{to\+\_\+find }\end{DoxyParamCaption})}
+
+
+
+Find a string into an other string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & base string \\
+\hline
+{\em to\+\_\+find} & string to find\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+N\+U\+LL if not found, string from to\+\_\+find otherwise 
+\end{DoxyReturn}
+
+
+Definition at line 12 of file my\+\_\+strstr.\+c.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{my__strstr_8c_a97396eb13250cce5cf8513f5e6a7dbf1_cgraph}
+\end{center}
+\end{figure}

@@ -1,0 +1,849 @@
+.TH "lib/my/my.h" 3 "Thu Jun 23 2022" "Version 1.0" "Esoterix" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+lib/my/my.h
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBUNUSED\fP   __attribute__((unused))"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBmy_putchar\fP (char c)"
+.br
+.RI "Write a char in the standard output\&. "
+.ti -1c
+.RI "void \fBmy_sort_int_array\fP (int *tab, int size)"
+.br
+.RI "Write an int array in the standard output\&. "
+.ti -1c
+.RI "void \fBmy_swap\fP (int *a, int *b)"
+.br
+.RI "Swap to int\&. "
+.ti -1c
+.RI "int \fBmy_isneg\fP (int nb)"
+.br
+.RI "Check if a number is negative\&. "
+.ti -1c
+.RI "int \fBmy_put_nbr\fP (int nb)"
+.br
+.RI "Write a number in the standard output\&. "
+.ti -1c
+.RI "int \fBmy_putstr\fP (char const *str)"
+.br
+.RI "Write a string in the standard output\&. "
+.ti -1c
+.RI "int \fBmy_strlen\fP (char const *str)"
+.br
+.RI "Get the lenth of a string\&. "
+.ti -1c
+.RI "int \fBmy_getnbr\fP (char const *str)"
+.br
+.RI "Get a number from a string\&. "
+.ti -1c
+.RI "int \fBmy_compute_power_rec\fP (int nb, int \fBpower\fP)"
+.br
+.RI "Get a number at a given power recursively\&. "
+.ti -1c
+.RI "int \fBmy_intlen\fP (int x)"
+.br
+.RI "Get lenth of an int\&. "
+.ti -1c
+.RI "int \fBmy_compute_square_root\fP (int nb)"
+.br
+.RI "Get the square root of an int\&. "
+.ti -1c
+.RI "int \fBmy_is_prime\fP (int nb)"
+.br
+.RI "Check if a number is prime\&. "
+.ti -1c
+.RI "int \fBmy_find_prime_sup\fP (int nb)"
+.br
+.RI "Get the first superior prime number\&. "
+.ti -1c
+.RI "int \fBmy_strcmp\fP (char const *s1, char const *s2)"
+.br
+.RI "Compare two string\&. "
+.ti -1c
+.RI "int \fBmy_strncmp\fP (char const *s1, char const *s2, int n)"
+.br
+.RI "Compare firsts characters of two string\&. "
+.ti -1c
+.RI "int \fBmy_str_islower\fP (char const *str)"
+.br
+.RI "Check if a string contain only lower characters\&. "
+.ti -1c
+.RI "int \fBmy_str_isnum\fP (char const *str)"
+.br
+.RI "Check if a string contain only numbers\&. "
+.ti -1c
+.RI "int \fBmy_str_isprintable\fP (char const *str)"
+.br
+.RI "Check if a string contain only printable characters\&. "
+.ti -1c
+.RI "int \fBmy_str_isupper\fP (char const *str)"
+.br
+.RI "Check if a string contain only upper characters\&. "
+.ti -1c
+.RI "int \fBmy_showmem\fP (char const *str, int size)"
+.br
+.RI "Show memory allocations\&. "
+.ti -1c
+.RI "int \fBmy_showstr\fP (char const *str)"
+.br
+.RI "Write a string in the standard output\&. "
+.ti -1c
+.RI "int \fBmy_str_isalpha\fP (char const *str)"
+.br
+.RI "Check if a string contain only alphanumeric characters\&. "
+.ti -1c
+.RI "int \fBmy_show_word_array\fP (char *const *tab)"
+.br
+.RI "Write a string array in the standard output\&. "
+.ti -1c
+.RI "int \fBmy_strarraylen\fP (char **str)"
+.br
+.RI "Get the size of a string array\&. "
+.ti -1c
+.RI "char * \fBmy_strcpy\fP (char const *src)"
+.br
+.RI "Copy a string into an other string\&. "
+.ti -1c
+.RI "char * \fBmy_strncpy\fP (char *dest, char const *src, int n)"
+.br
+.RI "Copy firsts characters of a string into an other string\&. "
+.ti -1c
+.RI "char * \fBmy_revstr\fP (char *str)"
+.br
+.RI "Reverse a string\&. "
+.ti -1c
+.RI "char * \fBmy_strstr\fP (char *str, char const *to_find)"
+.br
+.RI "Find a string into an other string\&. "
+.ti -1c
+.RI "char * \fBmy_strupcase\fP (char *str)"
+.br
+.RI "Set a string to upper case\&. "
+.ti -1c
+.RI "char * \fBmy_strlowcase\fP (char *str)"
+.br
+.RI "Set a string to lower case\&. "
+.ti -1c
+.RI "char * \fBmy_strcapitalize\fP (char *str)"
+.br
+.RI "Set a string to upper case\&. "
+.ti -1c
+.RI "char * \fBmy_strcat\fP (char *dest, char const *src)"
+.br
+.RI "Concat a string into an other string\&. "
+.ti -1c
+.RI "char * \fBmy_strncat\fP (char *dest, char const *src, int nb)"
+.br
+.RI "Concat a string into an other string on n characters\&. "
+.ti -1c
+.RI "char * \fBmy_strdup\fP (char const *str)"
+.br
+.RI "Make a copy of a string\&. "
+.ti -1c
+.RI "char * \fBconcat\fP (char *before, char *mid, char *after)"
+.br
+.RI "Concat three strings\&. "
+.ti -1c
+.RI "char * \fBinttochar\fP (int nb)"
+.br
+.RI "Change a number into a strings\&. "
+.ti -1c
+.RI "char ** \fBmy_str_to_word_array\fP (char *str, char *sep)"
+.br
+.RI "Turn a string into an array\&. "
+.in -1c
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define UNUSED   __attribute__((unused))"
+
+.PP
+Definition at line 15 of file my\&.h\&.
+.SH "Function Documentation"
+.PP 
+.SS "char* concat (char * before, char * mid, char * after)"
+
+.PP
+Concat three strings\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIbefore\fP first string to concat 
+.br
+\fImid\fP second string to concat 
+.br
+\fIafter\fP third string to concat
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Concatenated string 
+.RE
+.PP
+
+.PP
+Definition at line 13 of file concat\&.c\&.
+.SS "char* inttochar (int nb)"
+
+.PP
+Change a number into a strings\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fInb\fP number to change
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+String of the number 
+.RE
+.PP
+
+.PP
+Definition at line 11 of file inttochar\&.c\&.
+.SS "int my_compute_power_rec (int nb, int power)"
+
+.PP
+Get a number at a given power recursively\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fInb\fP number 
+.br
+\fIpower\fP power
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Number at power given 
+.RE
+.PP
+
+.PP
+Definition at line 17 of file my_compute_power_rec\&.c\&.
+.SS "int my_compute_square_root (int nb)"
+
+.PP
+Get the square root of an int\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fInb\fP number to check
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Square root of the argument 
+.RE
+.PP
+
+.PP
+Definition at line 8 of file my_compute_square_root\&.c\&.
+.SS "int my_find_prime_sup (int nb)"
+
+.PP
+Get the first superior prime number\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fInb\fP number to check
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+First prime number superior to the argument 
+.RE
+.PP
+
+.PP
+Definition at line 10 of file my_find_prime_sup\&.c\&.
+.SS "int my_getnbr (char const * str)"
+
+.PP
+Get a number from a string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIstr\fP string to check
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Number from the string 
+.RE
+.PP
+
+.PP
+Definition at line 8 of file my_getnbr\&.c\&.
+.SS "int my_intlen (int x)"
+
+.PP
+Get lenth of an int\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIx\fP number to check
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Length of the int 
+.RE
+.PP
+
+.PP
+Definition at line 8 of file my_intlen\&.c\&.
+.SS "int my_is_prime (int nb)"
+
+.PP
+Check if a number is prime\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fInb\fP number to check
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+1 if is prime, 0 otherwise 
+.RE
+.PP
+
+.PP
+Definition at line 8 of file my_is_prime\&.c\&.
+.SS "int my_isneg (int nb)"
+
+.PP
+Check if a number is negative\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fInb\fP number to check
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+0 
+.RE
+.PP
+
+.PP
+Definition at line 10 of file my_isneg\&.c\&.
+.SS "int my_put_nbr (int nb)"
+
+.PP
+Write a number in the standard output\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fInb\fP number to write
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+0 
+.RE
+.PP
+
+.SS "void my_putchar (char c)"
+
+.PP
+Write a char in the standard output\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIc\fP char to write 
+.RE
+.PP
+
+.SS "int my_putstr (char const * str)"
+
+.PP
+Write a string in the standard output\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIstr\fP string to write
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+0 
+.RE
+.PP
+
+.PP
+Definition at line 11 of file my_putstr\&.c\&.
+.SS "char* my_revstr (char * str)"
+
+.PP
+Reverse a string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIstr\fP string to reverse
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+String reverse 
+.RE
+.PP
+
+.PP
+Definition at line 12 of file my_revstr\&.c\&.
+.SS "int my_show_word_array (char *const * tab)"
+
+.PP
+Write a string array in the standard output\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fItab\fP array to write
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+0 
+.RE
+.PP
+
+.PP
+Definition at line 12 of file my_show_word_array\&.c\&.
+.SS "int my_showmem (char const * str, int size)"
+
+.PP
+Show memory allocations\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIstr\fP string to check 
+.br
+\fIsize\fP number of place to check
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+0 
+.RE
+.PP
+
+.SS "int my_showstr (char const * str)"
+
+.PP
+Write a string in the standard output\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIstr\fP string to write
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+0 
+.RE
+.PP
+
+.SS "void my_sort_int_array (int * tab, int size)"
+
+.PP
+Write an int array in the standard output\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fItab\fP int array 
+.br
+\fIsize\fP size of the int array 
+.RE
+.PP
+
+.PP
+Definition at line 28 of file my_sort_int_array\&.c\&.
+.SS "int my_str_isalpha (char const * str)"
+
+.PP
+Check if a string contain only alphanumeric characters\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIstr\fP string to check
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+0 if contains only alphanumeric characters, 1 otherwise 
+.RE
+.PP
+
+.PP
+Definition at line 10 of file my_str_isalpha\&.c\&.
+.SS "int my_str_islower (char const * str)"
+
+.PP
+Check if a string contain only lower characters\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIstr\fP string to check
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+0 if contains only lower characters, 1 otherwise 
+.RE
+.PP
+
+.PP
+Definition at line 10 of file my_str_islower\&.c\&.
+.SS "int my_str_isnum (char const * str)"
+
+.PP
+Check if a string contain only numbers\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIstr\fP string to check
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+0 if contains only numbers, 1 otherwise 
+.RE
+.PP
+
+.PP
+Definition at line 10 of file my_str_isnum\&.c\&.
+.SS "int my_str_isprintable (char const * str)"
+
+.PP
+Check if a string contain only printable characters\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIstr\fP string to check
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+0 if contains only printable characters, 1 otherwise 
+.RE
+.PP
+
+.PP
+Definition at line 12 of file my_str_isprintable\&.c\&.
+.SS "int my_str_isupper (char const * str)"
+
+.PP
+Check if a string contain only upper characters\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIstr\fP string to check
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+0 if contains only upper characters, 1 otherwise 
+.RE
+.PP
+
+.PP
+Definition at line 10 of file my_str_isupper\&.c\&.
+.SS "char** my_str_to_word_array (char * str, char * sep)"
+
+.PP
+Turn a string into an array\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIstr\fP string to transform 
+.br
+\fIsep\fP separator to transform
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Array of string 
+.RE
+.PP
+
+.PP
+Definition at line 54 of file my_str_to_word_array\&.c\&.
+.SS "int my_strarraylen (char ** str)"
+
+.PP
+Get the size of a string array\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIstr\fP array to check
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Length of the array given in argument 
+.RE
+.PP
+
+.SS "char* my_strcapitalize (char * str)"
+
+.PP
+Set a string to upper case\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIstr\fP base string
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+String set to upper case 
+.RE
+.PP
+
+.PP
+Definition at line 12 of file my_strcapitalize\&.c\&.
+.SS "char* my_strcat (char * dest, char const * src)"
+
+.PP
+Concat a string into an other string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIdest\fP destination string 
+.br
+\fIsrc\fP source string
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Destination string with copied source string 
+.RE
+.PP
+
+.PP
+Definition at line 10 of file my_strcat\&.c\&.
+.SS "int my_strcmp (char const * s1, char const * s2)"
+
+.PP
+Compare two string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIs1\fP string to check 
+.br
+\fIs2\fP string to check
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+0 if equal, difference between otherwise 
+.RE
+.PP
+
+.PP
+Definition at line 12 of file my_strcmp\&.c\&.
+.SS "char* my_strcpy (char const * src)"
+
+.PP
+Copy a string into an other string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIsrc\fP source string
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Destination string with copied source string 
+.RE
+.PP
+
+.SS "char* my_strdup (char const * str)"
+
+.PP
+Make a copy of a string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIstr\fP Copy the string
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+String copy 
+.RE
+.PP
+
+.PP
+Definition at line 14 of file my_strdup\&.c\&.
+.SS "int my_strlen (char const * str)"
+
+.PP
+Get the lenth of a string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIstr\fP string to check
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Length of the string 
+.RE
+.PP
+
+.PP
+Definition at line 10 of file my_strlen\&.c\&.
+.SS "char* my_strlowcase (char * str)"
+
+.PP
+Set a string to lower case\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIstr\fP base string
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+String set to lower case 
+.RE
+.PP
+
+.PP
+Definition at line 8 of file my_strlowcase\&.c\&.
+.SS "char* my_strncat (char * dest, char const * src, int nb)"
+
+.PP
+Concat a string into an other string on n characters\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIdest\fP destination string 
+.br
+\fIsrc\fP source string 
+.br
+\fInb\fP nb of characters to check
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Destination string with copied source string on n characters 
+.RE
+.PP
+
+.PP
+Definition at line 10 of file my_strncat\&.c\&.
+.SS "int my_strncmp (char const * s1, char const * s2, int n)"
+
+.PP
+Compare firsts characters of two string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIs1\fP string to check 
+.br
+\fIs2\fP string to check 
+.br
+\fIn\fP number of characters to compare
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+0 if equal, difference between otherwise 
+.RE
+.PP
+
+.PP
+Definition at line 8 of file my_strncmp\&.c\&.
+.SS "char* my_strncpy (char * dest, char const * src, int n)"
+
+.PP
+Copy firsts characters of a string into an other string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIdest\fP destination string 
+.br
+\fIsrc\fP source string 
+.br
+\fIn\fP number of characters to copy
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Destination string with copied source string 
+.RE
+.PP
+
+.PP
+Definition at line 8 of file my_strncpy\&.c\&.
+.SS "char* my_strstr (char * str, char const * to_find)"
+
+.PP
+Find a string into an other string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIstr\fP base string 
+.br
+\fIto_find\fP string to find
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+NULL if not found, string from to_find otherwise 
+.RE
+.PP
+
+.PP
+Definition at line 12 of file my_strstr\&.c\&.
+.SS "char* my_strupcase (char * str)"
+
+.PP
+Set a string to upper case\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIstr\fP base string
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+String set to upper case 
+.RE
+.PP
+
+.PP
+Definition at line 8 of file my_strupcase\&.c\&.
+.SS "void my_swap (int * a, int * b)"
+
+.PP
+Swap to int\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIa\fP first int 
+.br
+\fIb\fP second int 
+.RE
+.PP
+
+.PP
+Definition at line 8 of file my_swap\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Esoterix from the source code\&.

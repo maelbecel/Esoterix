@@ -1,0 +1,681 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="lib_2myprintf_2printf_8h" kind="file" language="C++">
+    <compoundname>printf.h</compoundname>
+    <includes local="no">stdarg.h</includes>
+    <includes local="no">unistd.h</includes>
+    <includedby refid="myprintf_2displaybinary_8c" local="yes">lib/myprintf/displaybinary.c</includedby>
+    <includedby refid="myprintf_2displaychar_8c" local="yes">lib/myprintf/displaychar.c</includedby>
+    <includedby refid="myprintf_2displaynbr_8c" local="yes">lib/myprintf/displaynbr.c</includedby>
+    <includedby refid="myprintf_2displaynbr__dec_8c" local="yes">lib/myprintf/displaynbr_dec.c</includedby>
+    <includedby refid="myprintf_2displaynbr__hexa_8c" local="yes">lib/myprintf/displaynbr_hexa.c</includedby>
+    <includedby refid="myprintf_2displaynbr__hexa__capital_8c" local="yes">lib/myprintf/displaynbr_hexa_capital.c</includedby>
+    <includedby refid="myprintf_2displaynbr__octal_8c" local="yes">lib/myprintf/displaynbr_octal.c</includedby>
+    <includedby refid="myprintf_2displaypercent_8c" local="yes">lib/myprintf/displaypercent.c</includedby>
+    <includedby refid="myprintf_2displaypointer_8c" local="yes">lib/myprintf/displaypointer.c</includedby>
+    <includedby refid="myprintf_2displaystr_8c" local="yes">lib/myprintf/displaystr.c</includedby>
+    <includedby refid="myprintf_2displaystr__unprintable_8c" local="yes">lib/myprintf/displaystr_unprintable.c</includedby>
+    <includedby refid="my__printf_8c" local="yes">lib/myprintf/my_printf.c</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>stdarg.h</label>
+      </node>
+      <node id="1">
+        <label>lib/myprintf/printf.h</label>
+        <link refid="lib_2myprintf_2printf_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>unistd.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>lib/myprintf/printf.h</label>
+        <link refid="lib_2myprintf_2printf_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>lib/myprintf/displaynbr.c</label>
+        <link refid="myprintf_2displaynbr_8c"/>
+      </node>
+      <node id="7">
+        <label>lib/myprintf/displaynbr_hexa_capital.c</label>
+        <link refid="myprintf_2displaynbr__hexa__capital_8c"/>
+      </node>
+      <node id="13">
+        <label>lib/myprintf/my_printf.c</label>
+        <link refid="my__printf_8c"/>
+      </node>
+      <node id="6">
+        <label>lib/myprintf/displaynbr_hexa.c</label>
+        <link refid="myprintf_2displaynbr__hexa_8c"/>
+      </node>
+      <node id="11">
+        <label>lib/myprintf/displaystr.c</label>
+        <link refid="myprintf_2displaystr_8c"/>
+      </node>
+      <node id="8">
+        <label>lib/myprintf/displaynbr_octal.c</label>
+        <link refid="myprintf_2displaynbr__octal_8c"/>
+      </node>
+      <node id="5">
+        <label>lib/myprintf/displaynbr_dec.c</label>
+        <link refid="myprintf_2displaynbr__dec_8c"/>
+      </node>
+      <node id="2">
+        <label>lib/myprintf/displaybinary.c</label>
+        <link refid="myprintf_2displaybinary_8c"/>
+      </node>
+      <node id="10">
+        <label>lib/myprintf/displaypointer.c</label>
+        <link refid="myprintf_2displaypointer_8c"/>
+      </node>
+      <node id="9">
+        <label>lib/myprintf/displaypercent.c</label>
+        <link refid="myprintf_2displaypercent_8c"/>
+      </node>
+      <node id="12">
+        <label>lib/myprintf/displaystr_unprintable.c</label>
+        <link refid="myprintf_2displaystr__unprintable_8c"/>
+      </node>
+      <node id="3">
+        <label>lib/myprintf/displaychar.c</label>
+        <link refid="myprintf_2displaychar_8c"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structflags" prot="public">flags</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="lib_2myprintf_2printf_8h_1a2a72dd0b1dd647f26a1a427e38e10bc8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int displaychar</definition>
+        <argsstring>(va_list argv)</argsstring>
+        <name>displaychar</name>
+        <param>
+          <type>va_list</type>
+          <declname>argv</declname>
+        </param>
+        <briefdescription>
+<para>Write a char in the standard output. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>argv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>char to display</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/myprintf/printf.h" line="21" column="9" bodyfile="lib/myprintf/displaychar.c" bodystart="17" bodyend="22" declfile="lib/myprintf/printf.h" declline="21" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="lib_2myprintf_2printf_8h_1a2ad0a95479688134062d3fad17c7c805" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int displaystr</definition>
+        <argsstring>(va_list argv)</argsstring>
+        <name>displaystr</name>
+        <param>
+          <type>va_list</type>
+          <declname>argv</declname>
+        </param>
+        <briefdescription>
+<para>Write a string in the standard output. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>argv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string to display</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/myprintf/printf.h" line="31" column="9" bodyfile="lib/myprintf/displaystr.c" bodystart="22" bodyend="27" declfile="lib/myprintf/printf.h" declline="31" declcolumn="9"/>
+        <references refid="formatstring_2displaystr_8c_1a3b3960588932459570799afa357e32b5" compoundref="my__strlen_8c" startline="10" endline="17">my_strlen</references>
+      </memberdef>
+      <memberdef kind="function" id="lib_2myprintf_2printf_8h_1a7a90dc75c287d69d157b48142f75937d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int displaynbr</definition>
+        <argsstring>(va_list argv)</argsstring>
+        <name>displaynbr</name>
+        <param>
+          <type>va_list</type>
+          <declname>argv</declname>
+        </param>
+        <briefdescription>
+<para>Write an int in the standard output. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>argv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int to display</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/myprintf/printf.h" line="41" column="9" bodyfile="lib/myprintf/displaynbr.c" bodystart="34" bodyend="51" declfile="lib/myprintf/printf.h" declline="41" declcolumn="9"/>
+        <references refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" compoundref="build_8py" startline="19">build.nb</references>
+      </memberdef>
+      <memberdef kind="function" id="lib_2myprintf_2printf_8h_1a083a1f9ab0bc512f2f081834b80a7ba7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int displaynbr_long</definition>
+        <argsstring>(va_list argv)</argsstring>
+        <name>displaynbr_long</name>
+        <param>
+          <type>va_list</type>
+          <declname>argv</declname>
+        </param>
+        <briefdescription>
+<para>Write a long int in the standard output. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>argv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>long int to display</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/myprintf/printf.h" line="51" column="9" bodyfile="lib/myprintf/displaynbr.c" bodystart="70" bodyend="87" declfile="lib/myprintf/printf.h" declline="51" declcolumn="9"/>
+        <references refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" compoundref="build_8py" startline="19">build.nb</references>
+      </memberdef>
+      <memberdef kind="function" id="lib_2myprintf_2printf_8h_1ac303bbbb865e2221e003caf9b16eab96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int displaybinary</definition>
+        <argsstring>(va_list argv)</argsstring>
+        <name>displaybinary</name>
+        <param>
+          <type>va_list</type>
+          <declname>argv</declname>
+        </param>
+        <briefdescription>
+<para>Write an int in binary format in the standard output. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>argv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int to display</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/myprintf/printf.h" line="61" column="9" bodyfile="lib/myprintf/displaybinary.c" bodystart="18" bodyend="39" declfile="lib/myprintf/printf.h" declline="61" declcolumn="9"/>
+        <references refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" compoundref="build_8py" startline="19">build.nb</references>
+      </memberdef>
+      <memberdef kind="function" id="lib_2myprintf_2printf_8h_1a2d671cdf2fab73802dcfbef05a43460b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int displaypercent</definition>
+        <argsstring>(va_list argv)</argsstring>
+        <name>displaypercent</name>
+        <param>
+          <type>va_list</type>
+          <declname>argv</declname>
+        </param>
+        <briefdescription>
+<para>Write a &apos;&apos; in the standard output. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>argv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>useless</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/myprintf/printf.h" line="71" column="9" declfile="lib/myprintf/printf.h" declline="71" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="lib_2myprintf_2printf_8h_1aded5dda92fae59e43be862461071db26" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int displaypointer</definition>
+        <argsstring>(va_list argv)</argsstring>
+        <name>displaypointer</name>
+        <param>
+          <type>va_list</type>
+          <declname>argv</declname>
+        </param>
+        <briefdescription>
+<para>Write a pointer in the standard output. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>argv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string to display</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/myprintf/printf.h" line="81" column="9" bodyfile="lib/myprintf/displaypointer.c" bodystart="40" bodyend="47" declfile="lib/myprintf/printf.h" declline="81" declcolumn="9"/>
+        <references refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" compoundref="build_8py" startline="19">build.nb</references>
+      </memberdef>
+      <memberdef kind="function" id="lib_2myprintf_2printf_8h_1a9d4862896d4f9695c933690924f68981" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int displaynbr_hexa</definition>
+        <argsstring>(va_list argv)</argsstring>
+        <name>displaynbr_hexa</name>
+        <param>
+          <type>va_list</type>
+          <declname>argv</declname>
+        </param>
+        <briefdescription>
+<para>Write an int in hexadecimal format in the standard output. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>argv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int to display</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/myprintf/printf.h" line="91" column="9" bodyfile="lib/myprintf/displaynbr_hexa.c" bodystart="40" bodyend="45" declfile="lib/myprintf/printf.h" declline="91" declcolumn="9"/>
+        <references refid="myprintf_2displaynbr__hexa_8c_1ad942d8b01be26c4738eeed0fd2e8b1d2" compoundref="myprintf_2displaynbr__hexa_8c" startline="18" endline="38">my_putinhexa</references>
+        <references refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" compoundref="build_8py" startline="19">build.nb</references>
+      </memberdef>
+      <memberdef kind="function" id="lib_2myprintf_2printf_8h_1a13a3dfc9cbc91abda44ceb8106df71e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int displaynbr_hexa_capital</definition>
+        <argsstring>(va_list argv)</argsstring>
+        <name>displaynbr_hexa_capital</name>
+        <param>
+          <type>va_list</type>
+          <declname>argv</declname>
+        </param>
+        <briefdescription>
+<para>Write an int in upper case hexadecimal format in the standard output. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>argv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int to display</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/myprintf/printf.h" line="102" column="9" bodyfile="lib/myprintf/displaynbr_hexa_capital.c" bodystart="41" bodyend="46" declfile="lib/myprintf/printf.h" declline="102" declcolumn="9"/>
+        <references refid="myprintf_2displaynbr__hexa__capital_8c_1ad88ac67baea9bd961ac34eb7fb2b8e11" compoundref="myprintf_2displaynbr__hexa__capital_8c" startline="18" endline="39">my_putinhexa_capital</references>
+        <references refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" compoundref="build_8py" startline="19">build.nb</references>
+      </memberdef>
+      <memberdef kind="function" id="lib_2myprintf_2printf_8h_1af54f93c35f9f2d567ccf5b2d81c41afd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int displaystr_unprintable</definition>
+        <argsstring>(va_list argv)</argsstring>
+        <name>displaystr_unprintable</name>
+        <param>
+          <type>va_list</type>
+          <declname>argv</declname>
+        </param>
+        <briefdescription>
+<para>Write a string with unprintable characters in the standard output. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>argv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string to display</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/myprintf/printf.h" line="113" column="9" bodyfile="lib/myprintf/displaystr_unprintable.c" bodystart="52" bodyend="64" declfile="lib/myprintf/printf.h" declline="113" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="lib_2myprintf_2printf_8h_1a2492c8f289a6b628987fa0d071e086bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int displaynbr_dec</definition>
+        <argsstring>(va_list argv)</argsstring>
+        <name>displaynbr_dec</name>
+        <param>
+          <type>va_list</type>
+          <declname>argv</declname>
+        </param>
+        <briefdescription>
+<para>Write an int in the standard output. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>argv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int to display</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/myprintf/printf.h" line="123" column="9" bodyfile="lib/myprintf/displaynbr_dec.c" bodystart="47" bodyend="60" declfile="lib/myprintf/printf.h" declline="123" declcolumn="9"/>
+        <references refid="myprintf_2displaynbr__dec_8c_1acd94a0438a954e5b7d8b98126b30658f" compoundref="myprintf_2displaynbr__dec_8c" startline="34" endline="45">my_put_nbr_dec</references>
+        <references refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" compoundref="build_8py" startline="19">build.nb</references>
+      </memberdef>
+      <memberdef kind="function" id="lib_2myprintf_2printf_8h_1aa69c0a59bcd8484db75ad71af0517848" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int displaynbr_octal</definition>
+        <argsstring>(va_list argv)</argsstring>
+        <name>displaynbr_octal</name>
+        <param>
+          <type>va_list</type>
+          <declname>argv</declname>
+        </param>
+        <briefdescription>
+<para>Write an int in octal base in the standard output. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>argv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int to display</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/myprintf/printf.h" line="133" column="9" bodyfile="lib/myprintf/displaynbr_octal.c" bodystart="57" bodyend="62" declfile="lib/myprintf/printf.h" declline="133" declcolumn="9"/>
+        <references refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" compoundref="build_8py" startline="19">build.nb</references>
+      </memberdef>
+      <memberdef kind="function" id="lib_2myprintf_2printf_8h_1abeb55d53082183f8529abc7fbc4853f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int displaynbr_octal_hashtag</definition>
+        <argsstring>(va_list argv)</argsstring>
+        <name>displaynbr_octal_hashtag</name>
+        <param>
+          <type>va_list</type>
+          <declname>argv</declname>
+        </param>
+        <briefdescription>
+<para>Write an int in octal base in the standard output. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>argv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int to display</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/myprintf/printf.h" line="143" column="9" bodyfile="lib/myprintf/displaynbr_octal.c" bodystart="64" bodyend="69" declfile="lib/myprintf/printf.h" declline="143" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="lib_2myprintf_2printf_8h_1ac837582ffcb3e78bd204dcd7d8b51899" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int displaynbr_hexa_hashtag</definition>
+        <argsstring>(va_list argv)</argsstring>
+        <name>displaynbr_hexa_hashtag</name>
+        <param>
+          <type>va_list</type>
+          <declname>argv</declname>
+        </param>
+        <briefdescription>
+<para>Write an int in hexadecimal format in the standard output. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>argv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int to display</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/myprintf/printf.h" line="153" column="9" bodyfile="lib/myprintf/displaynbr_hexa.c" bodystart="47" bodyend="54" declfile="lib/myprintf/printf.h" declline="153" declcolumn="9"/>
+        <references refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" compoundref="build_8py" startline="19">build.nb</references>
+      </memberdef>
+      <memberdef kind="function" id="lib_2myprintf_2printf_8h_1a320766646b81f5208f095bb71e7573a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int displaynbr_hexa_capital_hashtag</definition>
+        <argsstring>(va_list argv)</argsstring>
+        <name>displaynbr_hexa_capital_hashtag</name>
+        <param>
+          <type>va_list</type>
+          <declname>argv</declname>
+        </param>
+        <briefdescription>
+<para>Write an int in upper case hexadecimal format in the standard output. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>argv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int to display</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/myprintf/printf.h" line="164" column="9" bodyfile="lib/myprintf/displaynbr_hexa_capital.c" bodystart="48" bodyend="55" declfile="lib/myprintf/printf.h" declline="164" declcolumn="9"/>
+        <references refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" compoundref="build_8py" startline="19">build.nb</references>
+      </memberdef>
+      <memberdef kind="function" id="lib_2myprintf_2printf_8h_1a23690a6b1f3cf97e62ed0a74bb554062" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int my_printf</definition>
+        <argsstring>(char const *str,...)</argsstring>
+        <name>my_printf</name>
+        <param>
+          <type>char const *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+<para>Write a string with arguments in the standard output. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>argv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string to display </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>...</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>params for the string</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/myprintf/printf.h" line="175" column="9" bodyfile="lib/myprintf/my_printf.c" bodystart="64" bodyend="84" declfile="lib/myprintf/printf.h" declline="175" declcolumn="9"/>
+        <references refid="my__printf_8c_1a2df715c53a390d0a8c0dd5cc3d10e4b8" compoundref="my__printf_8c" startline="53" endline="62">displayflags</references>
+        <references refid="my__printf_8c_1a1028aa49c3c317bc3d74fae2f04b228a" compoundref="my__printf_8c" startline="42" endline="51">displayhashtag</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">**<sp/>EPITECH<sp/>PROJECT,<sp/>2021</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">**<sp/>star.c</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">**<sp/>File<sp/>description:</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">**<sp/>star.c</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>PRINTF_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>PRINTF_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#include<sp/>&lt;stdarg.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#include<sp/>&lt;unistd.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="include_2printf_8h_1a2a72dd0b1dd647f26a1a427e38e10bc8" kindref="member">displaychar</ref>(va_list<sp/>argv);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="include_2printf_8h_1a2ad0a95479688134062d3fad17c7c805" kindref="member">displaystr</ref>(va_list<sp/>argv);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="include_2printf_8h_1a7a90dc75c287d69d157b48142f75937d" kindref="member">displaynbr</ref>(va_list<sp/>argv);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="include_2printf_8h_1a083a1f9ab0bc512f2f081834b80a7ba7" kindref="member">displaynbr_long</ref>(va_list<sp/>argv);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="include_2printf_8h_1ac303bbbb865e2221e003caf9b16eab96" kindref="member">displaybinary</ref>(va_list<sp/>argv);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="include_2printf_8h_1a2d671cdf2fab73802dcfbef05a43460b" kindref="member">displaypercent</ref>(va_list<sp/>argv);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="include_2printf_8h_1aded5dda92fae59e43be862461071db26" kindref="member">displaypointer</ref>(va_list<sp/>argv);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="include_2printf_8h_1a9d4862896d4f9695c933690924f68981" kindref="member">displaynbr_hexa</ref>(va_list<sp/>argv);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="include_2printf_8h_1a13a3dfc9cbc91abda44ceb8106df71e5" kindref="member">displaynbr_hexa_capital</ref>(va_list<sp/>argv);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="include_2printf_8h_1af54f93c35f9f2d567ccf5b2d81c41afd" kindref="member">displaystr_unprintable</ref>(va_list<sp/>argv);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="include_2printf_8h_1a2492c8f289a6b628987fa0d071e086bc" kindref="member">displaynbr_dec</ref>(va_list<sp/>argv);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="include_2printf_8h_1aa69c0a59bcd8484db75ad71af0517848" kindref="member">displaynbr_octal</ref>(va_list<sp/>argv);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="include_2printf_8h_1abeb55d53082183f8529abc7fbc4853f8" kindref="member">displaynbr_octal_hashtag</ref>(va_list<sp/>argv);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="include_2printf_8h_1ac837582ffcb3e78bd204dcd7d8b51899" kindref="member">displaynbr_hexa_hashtag</ref>(va_list<sp/>argv);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="include_2printf_8h_1a320766646b81f5208f095bb71e7573a6" kindref="member">displaynbr_hexa_capital_hashtag</ref>(va_list<sp/>argv);</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="include_2printf_8h_1a23690a6b1f3cf97e62ed0a74bb554062" kindref="member">my_printf</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*str,<sp/>...);</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structflags" kindref="compound">flags</ref><sp/>{</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int(*<ref refid="structflags_1a115095187e7b25e8c8ce02fbd6551b3b" kindref="member">func</ref>)(va_list);</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="structflags_1a11764cc96bb263d1f257bcc01205a787" kindref="member">flag</ref>;</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="lib/myprintf/printf.h"/>
+  </compounddef>
+</doxygen>

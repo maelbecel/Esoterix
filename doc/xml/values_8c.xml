@@ -1,0 +1,173 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="values_8c" kind="file" language="C++">
+    <compoundname>values.c</compoundname>
+    <includes refid="esoterix_8h" local="yes">esoterix.h</includes>
+    <includes refid="python_8h" local="yes">python.h</includes>
+    <incdepgraph>
+      <node id="12">
+        <label>sys/stat.h</label>
+      </node>
+      <node id="8">
+        <label>stdbool.h</label>
+      </node>
+      <node id="5">
+        <label>stdarg.h</label>
+      </node>
+      <node id="10">
+        <label>stdlib.h</label>
+      </node>
+      <node id="11">
+        <label>fcntl.h</label>
+      </node>
+      <node id="9">
+        <label>stddef.h</label>
+      </node>
+      <node id="1">
+        <label>src/encrypt/python/values.c</label>
+        <link refid="values_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>esoterix.h</label>
+        <link refid="esoterix_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>formatstring.h</label>
+        <link refid="include_2formatstring_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>unistd.h</label>
+      </node>
+      <node id="13">
+        <label>python.h</label>
+        <link refid="python_8h"/>
+      </node>
+      <node id="4">
+        <label>printf.h</label>
+        <link refid="include_2printf_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>my.h</label>
+        <link refid="include_2my_8h"/>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="values_8c_1a531444dbe3f3fb427490607c2389630f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* __py__var_from_value</definition>
+        <argsstring>(int nb, char *values)</argsstring>
+        <name>__py__var_from_value</name>
+        <param>
+          <type>int</type>
+          <declname>nb</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>values</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/encrypt/python/values.c" line="11" column="6" bodyfile="src/encrypt/python/values.c" bodystart="11" bodyend="19"/>
+        <references refid="include_2my_8h_1a82df5be1f3ffc9a6c980fa963a3d2800" compoundref="my__getnbr_8c" startline="8" endline="30">my_getnbr</references>
+        <references refid="include_2my_8h_1a75b8d8c9b6d5ebfc4d74dfa8eef65c4e" compoundref="my__str__to__word__array_8c" startline="54" endline="70">my_str_to_word_array</references>
+        <references refid="include_2my_8h_1ad0742a034086f291ec1184d327fa79fc">my_strarraylen</references>
+        <references refid="include_2my_8h_1a1a42d9b749358a7c132f87a9502a948d" compoundref="my__strdup_8c" startline="14" endline="22">my_strdup</references>
+        <references refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" compoundref="build_8py" startline="19">build.nb</references>
+      </memberdef>
+      <memberdef kind="function" id="values_8c_1aa6106819fa3eb8f92456adc88d464633" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* __py__values_from_var</definition>
+        <argsstring>(int nb, char *values)</argsstring>
+        <name>__py__values_from_var</name>
+        <param>
+          <type>int</type>
+          <declname>nb</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>values</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/encrypt/python/values.c" line="21" column="6" bodyfile="src/encrypt/python/values.c" bodystart="21" bodyend="29"/>
+        <references refid="include_2my_8h_1a82df5be1f3ffc9a6c980fa963a3d2800" compoundref="my__getnbr_8c" startline="8" endline="30">my_getnbr</references>
+        <references refid="include_2my_8h_1a75b8d8c9b6d5ebfc4d74dfa8eef65c4e" compoundref="my__str__to__word__array_8c" startline="54" endline="70">my_str_to_word_array</references>
+        <references refid="include_2my_8h_1ad0742a034086f291ec1184d327fa79fc">my_strarraylen</references>
+        <references refid="include_2my_8h_1a1a42d9b749358a7c132f87a9502a948d" compoundref="my__strdup_8c" startline="14" endline="22">my_strdup</references>
+        <references refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" compoundref="build_8py" startline="19">build.nb</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">**<sp/>@maelbecel\Esoterix</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">**<sp/>values.c</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">**<sp/>File<sp/>description:</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">**<sp/>values</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="esoterix_8h" kindref="compound">esoterix.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="python_8h" kindref="compound">python.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="values_8c_1a531444dbe3f3fb427490607c2389630f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="values_8c_1a531444dbe3f3fb427490607c2389630f" kindref="member">__py__var_from_value</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" kindref="member">nb</ref>,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*values)</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**parsed<sp/>=<sp/><ref refid="include_2my_8h_1a75b8d8c9b6d5ebfc4d74dfa8eef65c4e" kindref="member">my_str_to_word_array</ref>(values,<sp/></highlight><highlight class="stringliteral">&quot;=\x5&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="include_2my_8h_1ad0742a034086f291ec1184d327fa79fc" kindref="member">my_strarraylen</ref>(parsed);<sp/>i<sp/>+=<sp/>2)</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="include_2my_8h_1a82df5be1f3ffc9a6c980fa963a3d2800" kindref="member">my_getnbr</ref>(parsed[i])<sp/>==<sp/><ref refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" kindref="member">nb</ref>)</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(parsed[i<sp/>+<sp/>1])<sp/>?<sp/>parsed[i<sp/>+<sp/>1]<sp/>:<sp/>NULL;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="include_2my_8h_1a1a42d9b749358a7c132f87a9502a948d" kindref="member">my_strdup</ref>(</highlight><highlight class="stringliteral">&quot;???&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="values_8c_1aa6106819fa3eb8f92456adc88d464633" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="values_8c_1aa6106819fa3eb8f92456adc88d464633" kindref="member">__py__values_from_var</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" kindref="member">nb</ref>,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*values)</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**parsed<sp/>=<sp/><ref refid="include_2my_8h_1a75b8d8c9b6d5ebfc4d74dfa8eef65c4e" kindref="member">my_str_to_word_array</ref>(values,<sp/></highlight><highlight class="stringliteral">&quot;=\x5&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>1;<sp/>i<sp/>&lt;<sp/><ref refid="include_2my_8h_1ad0742a034086f291ec1184d327fa79fc" kindref="member">my_strarraylen</ref>(parsed);<sp/>i<sp/>+=<sp/>2)</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="include_2my_8h_1a82df5be1f3ffc9a6c980fa963a3d2800" kindref="member">my_getnbr</ref>(parsed[i])<sp/>==<sp/><ref refid="namespacebuild_1a354239254bb0bbc70906efd41cd8adc9" kindref="member">nb</ref>)</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(parsed[i<sp/>+<sp/>1])<sp/>?<sp/>parsed[i<sp/>+<sp/>1]<sp/>:<sp/>NULL;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="include_2my_8h_1a1a42d9b749358a7c132f87a9502a948d" kindref="member">my_strdup</ref>(</highlight><highlight class="stringliteral">&quot;???&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/encrypt/python/values.c"/>
+  </compounddef>
+</doxygen>

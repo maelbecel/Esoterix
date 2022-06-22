@@ -1,0 +1,62 @@
+.TH "lib/myprintf/my_printf.c" 3 "Thu Jun 23 2022" "Version 1.0" "Esoterix" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+lib/myprintf/my_printf.c
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'printf\&.h'\fP
+.br
+\fC#include <stdarg\&.h>\fP
+.br
+\fC#include <stdlib\&.h>\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "int \fBdisplayhashtag\fP (char c, va_list argv)"
+.br
+.ti -1c
+.RI "int \fBdisplayflags\fP (char c, va_list argv)"
+.br
+.ti -1c
+.RI "int \fBmy_printf\fP (char const *str,\&.\&.\&.)"
+.br
+.RI "Write a string with arguments in the standard output\&. "
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "int displayflags (char c, va_list argv)"
+
+.PP
+Definition at line 53 of file my_printf\&.c\&.
+.SS "int displayhashtag (char c, va_list argv)"
+
+.PP
+Definition at line 42 of file my_printf\&.c\&.
+.SS "int my_printf (char const * str,  \&.\&.\&.)"
+
+.PP
+Write a string with arguments in the standard output\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIargv\fP string to display 
+.br
+\fI\&.\&.\&.\fP params for the string
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+0 
+.RE
+.PP
+
+.PP
+Definition at line 64 of file my_printf\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Esoterix from the source code\&.

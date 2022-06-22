@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="test_8py" kind="file" language="Python">
+    <compoundname>test.py</compoundname>
+    <innernamespace refid="namespacetest">test</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacetest_1aa4c2a5552e9bc49b1816ff532f558c74" refkind="member"><highlight class="normal">a<sp/>=<sp/>3</highlight></codeline>
+<codeline lineno="2" refid="namespacetest_1a21ad0bd836b90d08f4cf640b4c298e7c" refkind="member"><highlight class="normal">b<sp/>=<sp/>print(</highlight><highlight class="stringliteral">&apos;hello&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>x<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>range(a):</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/><sp/><sp/>print(</highlight><highlight class="stringliteral">&apos;World&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="test/test.py"/>
+  </compounddef>
+</doxygen>

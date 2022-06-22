@@ -1,0 +1,138 @@
+.TH "src/array.c" 3 "Thu Jun 23 2022" "Version 1.0" "Esoterix" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+src/array.c
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'esoterix\&.h'\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "bool \fBis_in\fP (char **array, char *str)"
+.br
+.RI "Check if a string is in an array\&. "
+.ti -1c
+.RI "char ** \fBappend\fP (char **array, char *str)"
+.br
+.RI "Add a string in an Array\&. "
+.ti -1c
+.RI "char ** \fBremove\fP (char **array, char *str)"
+.br
+.RI "Remove first occurence of a string in an array\&. "
+.ti -1c
+.RI "char ** \fBremove_all\fP (char **array, char *str)"
+.br
+.RI "Delete all time str in array\&. "
+.ti -1c
+.RI "char ** \fBno_double\fP (char **array)"
+.br
+.RI "Delete double in an array\&. "
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "char** append (char ** array, char * str)"
+
+.PP
+Add a string in an Array\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIarray\fP array to check 
+.br
+\fIstr\fP string to check
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+array with the string 
+.RE
+.PP
+
+.PP
+Definition at line 21 of file array\&.c\&.
+.SS "bool is_in (char ** array, char * str)"
+
+.PP
+Check if a string is in an array\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIarray\fP array to check 
+.br
+\fIstr\fP string to check
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+true if str is in array, false otherwise 
+.RE
+.PP
+
+.PP
+Definition at line 10 of file array\&.c\&.
+.SS "char** no_double (char ** array)"
+
+.PP
+Delete double in an array\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIarray\fP array to check
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+array without double 
+.RE
+.PP
+
+.PP
+Definition at line 57 of file array\&.c\&.
+.SS "char** remove (char ** array, char * str)"
+
+.PP
+Remove first occurence of a string in an array\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIarray\fP array to check 
+.br
+\fIstr\fP string to check
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+array without the string 
+.RE
+.PP
+
+.PP
+Definition at line 33 of file array\&.c\&.
+.SS "char** remove_all (char ** array, char * str)"
+
+.PP
+Delete all time str in array\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIarray\fP array to clean 
+.br
+\fIstr\fP string to delete
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+array without the string 
+.RE
+.PP
+
+.PP
+Definition at line 48 of file array\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Esoterix from the source code\&.

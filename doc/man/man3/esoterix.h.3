@@ -1,0 +1,342 @@
+.TH "include/esoterix.h" 3 "Thu Jun 23 2022" "Version 1.0" "Esoterix" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+include/esoterix.h
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'my\&.h'\fP
+.br
+\fC#include 'printf\&.h'\fP
+.br
+\fC#include 'formatstring\&.h'\fP
+.br
+\fC#include <stdbool\&.h>\fP
+.br
+\fC#include <stddef\&.h>\fP
+.br
+\fC#include <stdlib\&.h>\fP
+.br
+\fC#include <fcntl\&.h>\fP
+.br
+\fC#include <sys/stat\&.h>\fP
+.br
+
+.SS "Data Structures"
+
+.in +1c
+.ti -1c
+.RI "struct \fBfiletype_s\fP"
+.br
+.RI "Struct for a type\&. "
+.in -1c
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBINIT_ARRAY\fP(arr)   malloc(sizeof(char *)); *arr = NULL;"
+.br
+.RI "Initialize an empty array\&. "
+.ti -1c
+.RI "#define \fBLAST_ARRAY\fP(a)   a[\fBmy_strarraylen\fP(a) \- 1]"
+.br
+.RI "Get the last element of an array\&. "
+.ti -1c
+.RI "#define \fBLAST_STR\fP(a)   a[\fBmy_strlen\fP(a) \- 1]"
+.br
+.RI "Get the last element of a string\&. "
+.ti -1c
+.RI "#define \fBFREE_ARRAY\fP(a)   for (int i = 0; a[i] != NULL; i++) free(a[i]); free(a)"
+.br
+.RI "Free an array\&. "
+.ti -1c
+.RI "#define \fBSHOW_ARRAY\fP(arr)   for (size_t i = 0; arr[i]; i++) \fBmy_printf\fP('\\t\- %s\\n', arr[i]);"
+.br
+.RI "Show an array\&. "
+.in -1c
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef struct \fBfiletype_s\fP \fBfiletype_t\fP"
+.br
+.RI "Includes\&. "
+.ti -1c
+.RI "typedef enum \fBfileref_e\fP \fBfileref_t\fP"
+.br
+.in -1c
+.SS "Enumerations"
+
+.in +1c
+.ti -1c
+.RI "enum \fBfileref_e\fP { \fBPYTHON\fP, \fBC\fP, \fBCPP\fP, \fBLUA\fP, \fBJAVA\fP, \fBGO\fP, \fBJAVASCRIPT\fP, \fBWHITESPACE\fP, \fBUNLAMBDA\fP, \fBMALBOLGE\fP, \fBLOLCODE\fP, \fBJSFUCK\fP, \fBINTERCAL\fP, \fBGOLFSCRIPT\fP, \fBFRACTAN\fP, \fBBLC\fP, \fBBEFUNGE\fP, \fBSHEAKSPEAR\fP, \fBBRAINFUCK\fP, \fBCHEF\fP }"
+.br
+.RI "Enum of filetypes\&. "
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "char * \fBbuff_from_file\fP (char *file)"
+.br
+.RI "Get content of a file\&. "
+.ti -1c
+.RI "char * \fB__python__\fP (char *file)"
+.br
+.RI "Translate python script in language X\&. "
+.ti -1c
+.RI "char ** \fBremove_all\fP (char **array, char *str)"
+.br
+.RI "Delete all time str in array\&. "
+.ti -1c
+.RI "bool \fBis_in\fP (char **array, char *str)"
+.br
+.RI "Check if a string is in an array\&. "
+.ti -1c
+.RI "char ** \fBremove\fP (char **array, char *str)"
+.br
+.RI "Remove first occurence of a string in an array\&. "
+.ti -1c
+.RI "char ** \fBappend\fP (char **array, char *str)"
+.br
+.RI "Add a string in an Array\&. "
+.ti -1c
+.RI "char ** \fBno_double\fP (char **array)"
+.br
+.RI "Delete double in an array\&. "
+.in -1c
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define FREE_ARRAY(a)   for (int i = 0; a[i] != NULL; i++) free(a[i]); free(a)"
+
+.PP
+Free an array\&. 
+.PP
+Definition at line 47 of file esoterix\&.h\&.
+.SS "#define INIT_ARRAY(arr)   malloc(sizeof(char *)); *arr = NULL;"
+
+.PP
+Initialize an empty array\&. 
+.PP
+Definition at line 32 of file esoterix\&.h\&.
+.SS "#define LAST_ARRAY(a)   a[\fBmy_strarraylen\fP(a) \- 1]"
+
+.PP
+Get the last element of an array\&. 
+.PP
+Definition at line 37 of file esoterix\&.h\&.
+.SS "#define LAST_STR(a)   a[\fBmy_strlen\fP(a) \- 1]"
+
+.PP
+Get the last element of a string\&. 
+.PP
+Definition at line 42 of file esoterix\&.h\&.
+.SS "#define SHOW_ARRAY(arr)   for (size_t i = 0; arr[i]; i++) \fBmy_printf\fP('\\t\- %s\\n', arr[i]);"
+
+.PP
+Show an array\&. 
+.PP
+Definition at line 52 of file esoterix\&.h\&.
+.SH "Typedef Documentation"
+.PP 
+.SS "typedef enum \fBfileref_e\fP \fBfileref_t\fP"
+
+.PP
+Definition at line 27 of file esoterix\&.h\&.
+.SS "typedef struct \fBfiletype_s\fP \fBfiletype_t\fP"
+
+.PP
+Includes\&. Typedefs 
+.PP
+Definition at line 26 of file esoterix\&.h\&.
+.SH "Enumeration Type Documentation"
+.PP 
+.SS "enum \fBfileref_e\fP"
+
+.PP
+Enum of filetypes\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIPYTHON \fP\fP
+.TP
+\fB\fIC \fP\fP
+.TP
+\fB\fICPP \fP\fP
+.TP
+\fB\fILUA \fP\fP
+.TP
+\fB\fIJAVA \fP\fP
+.TP
+\fB\fIGO \fP\fP
+.TP
+\fB\fIJAVASCRIPT \fP\fP
+.TP
+\fB\fIWHITESPACE \fP\fP
+.TP
+\fB\fIUNLAMBDA \fP\fP
+.TP
+\fB\fIMALBOLGE \fP\fP
+.TP
+\fB\fILOLCODE \fP\fP
+.TP
+\fB\fIJSFUCK \fP\fP
+.TP
+\fB\fIINTERCAL \fP\fP
+.TP
+\fB\fIGOLFSCRIPT \fP\fP
+.TP
+\fB\fIFRACTAN \fP\fP
+.TP
+\fB\fIBLC \fP\fP
+.TP
+\fB\fIBEFUNGE \fP\fP
+.TP
+\fB\fISHEAKSPEAR \fP\fP
+.TP
+\fB\fIBRAINFUCK \fP\fP
+.TP
+\fB\fICHEF \fP\fP
+.PP
+Definition at line 57 of file esoterix\&.h\&.
+.SH "Function Documentation"
+.PP 
+.SS "char* __python__ (char * file)"
+
+.PP
+Translate python script in language X\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIfile\fP name of the file to read
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Content traduce 
+.RE
+.PP
+
+.PP
+Definition at line 58 of file python_parser\&.c\&.
+.SS "char** append (char ** array, char * str)"
+
+.PP
+Add a string in an Array\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIarray\fP array to check 
+.br
+\fIstr\fP string to check
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+array with the string 
+.RE
+.PP
+
+.PP
+Definition at line 21 of file array\&.c\&.
+.SS "char* buff_from_file (char * file)"
+
+.PP
+Get content of a file\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIfile\fP name of the file to read
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Content of the file 
+.RE
+.PP
+
+.PP
+Definition at line 18 of file buff_from_file\&.c\&.
+.SS "bool is_in (char ** array, char * str)"
+
+.PP
+Check if a string is in an array\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIarray\fP array to check 
+.br
+\fIstr\fP string to check
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+true if str is in array, false otherwise 
+.RE
+.PP
+
+.PP
+Definition at line 10 of file array\&.c\&.
+.SS "char** no_double (char ** array)"
+
+.PP
+Delete double in an array\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIarray\fP array to check
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+array without double 
+.RE
+.PP
+
+.PP
+Definition at line 57 of file array\&.c\&.
+.SS "char** remove (char ** array, char * str)"
+
+.PP
+Remove first occurence of a string in an array\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIarray\fP array to check 
+.br
+\fIstr\fP string to check
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+array without the string 
+.RE
+.PP
+
+.PP
+Definition at line 33 of file array\&.c\&.
+.SS "char** remove_all (char ** array, char * str)"
+
+.PP
+Delete all time str in array\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIarray\fP array to clean 
+.br
+\fIstr\fP string to delete
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+array without the string 
+.RE
+.PP
+
+.PP
+Definition at line 48 of file array\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Esoterix from the source code\&.

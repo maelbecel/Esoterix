@@ -1,0 +1,103 @@
+.TH "src/encrypt/python/python_parser.c" 3 "Thu Jun 23 2022" "Version 1.0" "Esoterix" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+src/encrypt/python/python_parser.c
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'esoterix\&.h'\fP
+.br
+\fC#include 'python\&.h'\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "char * \fBvar_from_array\fP (char **array)"
+.br
+.ti -1c
+.RI "char * \fBgetvar\fP (char *buffer, char **functions)"
+.br
+.ti -1c
+.RI "char * \fB__python__\fP (char *file)"
+.br
+.RI "Translate python script in language X\&. "
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "char * \fBpywords\fP []"
+.br
+.ti -1c
+.RI "\fB__py__symbol_keyword_t\fP \fBSymbols\fP []"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "char* __python__ (char * file)"
+
+.PP
+Translate python script in language X\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIfile\fP name of the file to read
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Content traduce 
+.RE
+.PP
+
+.PP
+Definition at line 58 of file python_parser\&.c\&.
+.SS "char* getvar (char * buffer, char ** functions)"
+
+.PP
+Definition at line 42 of file python_parser\&.c\&.
+.SS "char* var_from_array (char ** array)"
+
+.PP
+Definition at line 32 of file python_parser\&.c\&.
+.SH "Variable Documentation"
+.PP 
+.SS "char* pywords[]"
+\fBInitial value:\fP
+.PP
+.nf
+= {
+    "and", "as", "assert", "break", "class", "continue", "def", "del", "elif",
+    "else", "except", "False", "finally", "for", "from", "global", "if",
+    "import", "in", "is", "lambda", "None", "nonlocal", "not", "or", "pass",
+    "print", "raise", "return", "True", "try", "while", "with", "yield", "range",
+    "int", "str"
+}
+.fi
+.PP
+Definition at line 11 of file python_parser\&.c\&.
+.SS "\fB__py__symbol_keyword_t\fP Symbols[]"
+\fBInitial value:\fP
+.PP
+.nf
+= {
+    {'\x0', "while", false, 2},
+    {'\x0', "for", false, 2},
+    {'\x1', "if", false, 2},
+    {'\x2', "else", false, 1},
+    {'\x4', "print", true, 0},
+    {'\x5', NULL, true, 0},
+    {'\x6', "def", true, 1},
+    {'\x7', "class", true, 1},
+    {'\x9', NULL, true, 0},
+    {'\x10', "return", true, 0}
+}
+.fi
+.PP
+Definition at line 19 of file python_parser\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Esoterix from the source code\&.

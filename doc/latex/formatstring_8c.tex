@@ -1,0 +1,127 @@
+\hypertarget{formatstring_8c}{}\doxysection{lib/formatstring/formatstring.c File Reference}
+\label{formatstring_8c}\index{lib/formatstring/formatstring.c@{lib/formatstring/formatstring.c}}
+{\ttfamily \#include \char`\"{}formatstring.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdarg.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+Include dependency graph for formatstring.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{formatstring_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$ \mbox{\hyperlink{formatstring_8c_a5432efb36b44010f8bd84ef49de4cac5}{fus}} (char $\ast$a, char $\ast$b)
+\begin{DoxyCompactList}\small\item\em Fusion of two strings. \end{DoxyCompactList}\item 
+char $\ast$ \mbox{\hyperlink{formatstring_8c_a806a602d77c3bf1d9d1e7a1e2f64fe3a}{fdisplayhashtag}} (char c, va\+\_\+list argv)
+\item 
+char $\ast$ \mbox{\hyperlink{formatstring_8c_ac996d1a134b0ebf6f918a86c2ab05284}{fdisplayflags}} (char c, va\+\_\+list argv)
+\item 
+char $\ast$ \mbox{\hyperlink{formatstring_8c_a6f2c69610dc237549da5171b58e348d6}{format}} (char const $\ast$str,...)
+\begin{DoxyCompactList}\small\item\em Format string representation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{formatstring_8c_ac996d1a134b0ebf6f918a86c2ab05284}\label{formatstring_8c_ac996d1a134b0ebf6f918a86c2ab05284}} 
+\index{formatstring.c@{formatstring.c}!fdisplayflags@{fdisplayflags}}
+\index{fdisplayflags@{fdisplayflags}!formatstring.c@{formatstring.c}}
+\doxysubsubsection{\texorpdfstring{fdisplayflags()}{fdisplayflags()}}
+{\footnotesize\ttfamily char$\ast$ fdisplayflags (\begin{DoxyParamCaption}\item[{char}]{c,  }\item[{va\+\_\+list}]{argv }\end{DoxyParamCaption})}
+
+
+
+Definition at line 71 of file formatstring.\+c.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{formatstring_8c_ac996d1a134b0ebf6f918a86c2ab05284_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{formatstring_8c_a806a602d77c3bf1d9d1e7a1e2f64fe3a}\label{formatstring_8c_a806a602d77c3bf1d9d1e7a1e2f64fe3a}} 
+\index{formatstring.c@{formatstring.c}!fdisplayhashtag@{fdisplayhashtag}}
+\index{fdisplayhashtag@{fdisplayhashtag}!formatstring.c@{formatstring.c}}
+\doxysubsubsection{\texorpdfstring{fdisplayhashtag()}{fdisplayhashtag()}}
+{\footnotesize\ttfamily char$\ast$ fdisplayhashtag (\begin{DoxyParamCaption}\item[{char}]{c,  }\item[{va\+\_\+list}]{argv }\end{DoxyParamCaption})}
+
+
+
+Definition at line 61 of file formatstring.\+c.
+
+\mbox{\Hypertarget{formatstring_8c_a6f2c69610dc237549da5171b58e348d6}\label{formatstring_8c_a6f2c69610dc237549da5171b58e348d6}} 
+\index{formatstring.c@{formatstring.c}!format@{format}}
+\index{format@{format}!formatstring.c@{formatstring.c}}
+\doxysubsubsection{\texorpdfstring{format()}{format()}}
+{\footnotesize\ttfamily char$\ast$ format (\begin{DoxyParamCaption}\item[{char const $\ast$}]{str,  }\item[{}]{... }\end{DoxyParamCaption})}
+
+
+
+Format string representation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & string to format \\
+\hline
+{\em ...} & list of arguments\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+String of the string 
+\end{DoxyReturn}
+
+
+Definition at line 81 of file formatstring.\+c.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{formatstring_8c_a6f2c69610dc237549da5171b58e348d6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{formatstring_8c_a6f2c69610dc237549da5171b58e348d6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{formatstring_8c_a5432efb36b44010f8bd84ef49de4cac5}\label{formatstring_8c_a5432efb36b44010f8bd84ef49de4cac5}} 
+\index{formatstring.c@{formatstring.c}!fus@{fus}}
+\index{fus@{fus}!formatstring.c@{formatstring.c}}
+\doxysubsubsection{\texorpdfstring{fus()}{fus()}}
+{\footnotesize\ttfamily char$\ast$ fus (\begin{DoxyParamCaption}\item[{char $\ast$}]{a,  }\item[{char $\ast$}]{b }\end{DoxyParamCaption})}
+
+
+
+Fusion of two strings. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & first string \\
+\hline
+{\em b} & second string\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+String of the fusion 
+\end{DoxyReturn}
+
+
+Definition at line 46 of file formatstring.\+c.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{formatstring_8c_a5432efb36b44010f8bd84ef49de4cac5_icgraph}
+\end{center}
+\end{figure}

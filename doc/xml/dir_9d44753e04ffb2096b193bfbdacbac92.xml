@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_9d44753e04ffb2096b193bfbdacbac92" kind="dir">
+    <compoundname>lib/my</compoundname>
+    <innerfile refid="concat_8c">concat.c</innerfile>
+    <innerfile refid="inttochar_8c">inttochar.c</innerfile>
+    <innerfile refid="lib_2my_2my_8h">my.h</innerfile>
+    <innerfile refid="my__compute__power__rec_8c">my_compute_power_rec.c</innerfile>
+    <innerfile refid="my__compute__square__root_8c">my_compute_square_root.c</innerfile>
+    <innerfile refid="my__find__prime__sup_8c">my_find_prime_sup.c</innerfile>
+    <innerfile refid="my__getnbr_8c">my_getnbr.c</innerfile>
+    <innerfile refid="my__intlen_8c">my_intlen.c</innerfile>
+    <innerfile refid="my__is__prime_8c">my_is_prime.c</innerfile>
+    <innerfile refid="my__isneg_8c">my_isneg.c</innerfile>
+    <innerfile refid="my__putstarstr_8c">my_putstarstr.c</innerfile>
+    <innerfile refid="my__putstr_8c">my_putstr.c</innerfile>
+    <innerfile refid="my__revstr_8c">my_revstr.c</innerfile>
+    <innerfile refid="my__show__word__array_8c">my_show_word_array.c</innerfile>
+    <innerfile refid="my__showmem_8c">my_showmem.c</innerfile>
+    <innerfile refid="my__showstr_8c">my_showstr.c</innerfile>
+    <innerfile refid="my__sort__int__array_8c">my_sort_int_array.c</innerfile>
+    <innerfile refid="my__str__isalpha_8c">my_str_isalpha.c</innerfile>
+    <innerfile refid="my__str__islower_8c">my_str_islower.c</innerfile>
+    <innerfile refid="my__str__isnum_8c">my_str_isnum.c</innerfile>
+    <innerfile refid="my__str__isprintable_8c">my_str_isprintable.c</innerfile>
+    <innerfile refid="my__str__isupper_8c">my_str_isupper.c</innerfile>
+    <innerfile refid="my__str__to__word__array_8c">my_str_to_word_array.c</innerfile>
+    <innerfile refid="my__strcapitalize_8c">my_strcapitalize.c</innerfile>
+    <innerfile refid="my__strcat_8c">my_strcat.c</innerfile>
+    <innerfile refid="my__strcmp_8c">my_strcmp.c</innerfile>
+    <innerfile refid="my__strcpy_8c">my_strcpy.c</innerfile>
+    <innerfile refid="my__strdup_8c">my_strdup.c</innerfile>
+    <innerfile refid="my__strlen_8c">my_strlen.c</innerfile>
+    <innerfile refid="my__strlowcase_8c">my_strlowcase.c</innerfile>
+    <innerfile refid="my__strncat_8c">my_strncat.c</innerfile>
+    <innerfile refid="my__strncmp_8c">my_strncmp.c</innerfile>
+    <innerfile refid="my__strncpy_8c">my_strncpy.c</innerfile>
+    <innerfile refid="my__strstr_8c">my_strstr.c</innerfile>
+    <innerfile refid="my__strupcase_8c">my_strupcase.c</innerfile>
+    <innerfile refid="my__swap_8c">my_swap.c</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="lib/my/"/>
+  </compounddef>
+</doxygen>
