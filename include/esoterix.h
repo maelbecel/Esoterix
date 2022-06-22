@@ -1,5 +1,5 @@
 /*
-** EPITECH PROJECT, 2022
+** @maelbecel\Esoterix
 ** esoterix.c
 ** File description:
 ** esoterix
@@ -150,26 +150,6 @@
     ///
     ////////////////////////////////////////////////////////////
     char **no_double(char **array);
-
-    ////////////////////////////////////////////////////////////
-    /// \brief Get function name
-    ///
-    /// \param functions all name to check
-    ///
-    /// \return array of function name
-    ///
-    ////////////////////////////////////////////////////////////
-    char **get_func(char **functions);
-
-    ////////////////////////////////////////////////////////////
-    /// \brief Get function printing string
-    ///
-    /// \param array all name to check
-    ///
-    /// \return array of function printing string
-    ///
-    ////////////////////////////////////////////////////////////
-    char *fcnt_display(char **array);
 
     ////////////////////////////////////////////////////////////
     /// \brief Struct for a type

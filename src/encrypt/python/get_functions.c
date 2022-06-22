@@ -1,11 +1,12 @@
 /*
-** EPITECH PROJECT, 2022
+** @maelbecel\Esoterix
 ** get_functions.c
 ** File description:
 ** get all functions called
 */
 
 #include "esoterix.h"
+#include "python.h"
 
 int chr_in_array(char c, char *array)
 {
@@ -15,7 +16,7 @@ int chr_in_array(char c, char *array)
     return -1;
 }
 
-char **get_func(char **functions)
+char **__py__get_func(char **functions)
 {
     char **res = INIT_ARRAY(res);
     int x = 0;
@@ -29,7 +30,7 @@ char **get_func(char **functions)
     return no_double(res);
 }
 
-char *fcnt_display(char **array)
+char *__py__fcnt_display(char **array)
 {
     char *res = "";
 

@@ -1,5 +1,5 @@
 /*
-** EPITECH PROJECT, 2022
+** @maelbecel\Esoterix
 ** main.c
 ** File description:
 ** main

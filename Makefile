@@ -21,7 +21,8 @@ DECRYPT      =         decrypt/
 PY           =         python/
 
 PYTHON       =         $(SOURCES)$(ENCRYPT)$(PY)python_parser.c  \
-					   $(SOURCES)$(ENCRYPT)$(PY)get_functions.c
+					   $(SOURCES)$(ENCRYPT)$(PY)get_functions.c  \
+					   $(SOURCES)$(ENCRYPT)$(PY)values.c
 
 FROM         =         $(PYTHON)
 

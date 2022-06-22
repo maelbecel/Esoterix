@@ -1,5 +1,5 @@
 /*
-** EPITECH PROJECT, 2022
+** @maelbecel\Esoterix
 ** array.c
 ** File description:
 ** Array manipulation

@@ -1,5 +1,5 @@
 /*
-** EPITECH PROJECT, 2022
+** @maelbecel\Esoterix
 ** python_parser.c
 ** File description:
 ** Parser python
